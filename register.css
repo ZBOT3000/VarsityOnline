@@ -1,0 +1,58 @@
+body {
+	margin: 0;
+	padding :0;
+	text-align: center;
+}
+.LogIn-Title{
+	margin-top:100px
+	text-transform:	uppercase;
+	transition: all 4s ease-in-out; 
+}
+
+.LogIn-Title h1 {
+	font-size: 32px;
+	line-height: 10px;
+}
+
+.LogIn-Title h2 {
+	font: 16px;
+}
+
+form{
+	margin: 50px;
+	transition: all 4s ease-in-out; 
+
+}
+
+.form-control{
+	width: 600px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid blue;
+	color: red;
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+
+input{
+	height: 45px;
+
+}
+
+form .submit {
+	background-color: orange;
+	border-color: transparent;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	height: 50px;
+	margin-top:20px;
+}
+
+form .submit:hover{
+	background-color: darkgreen;
+
+
+}
