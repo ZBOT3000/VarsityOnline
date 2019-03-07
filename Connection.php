@@ -8,7 +8,7 @@
 	$PASSWORD = $_POST['PASSWORD'].$salt;
 	$PASSWORD = shal($PASSWORD);
 	if(mysqli_query($connection,"INSERT INTO 'USERS'(
-		'PASSWORD',
+		'PASSWORD'
 		 ) VALUES (
 		 '{$PASSWORD}');")){
 //where user will go once correct info is submitted 	
