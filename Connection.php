@@ -4,7 +4,6 @@
 	
 	if(isset($_POST['submit'])){
 	
-	$USER_ID = $POST['USER_ID'];
 	$salt = "jdfhsfuhsfiuh4353453543535";
 	$PASSWORD = $_POST['PASSWORD'].$salt;
 	$PASSWORD = shal($PASSWORD);
