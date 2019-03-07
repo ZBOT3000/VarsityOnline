@@ -1,6 +1,9 @@
 body {
 	margin: 0;
 	padding :0;
+	//background-color: blue;
+    background-image:
+    radial-gradient(yellow,orange);
 	text-align: center;
 }
 .LogIn-Title{
@@ -20,6 +23,8 @@ body {
 
 form{
 	margin: 50px;
+	border: groove;
+	border-width: thick;
 	transition: all 4s ease-in-out; 
 
 }
