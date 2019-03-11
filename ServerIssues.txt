@@ -1,0 +1,12 @@
+Server Log Problems:
+1. First Problem Occured when proxy set up was done wrong at first
+2. Second Problem Occured after installing taskel:
+	couldn't install lamp via tasksel
+	couldn't install php via tasksel
+	couldn't install DNS via tasksel
+3. Server ssh got uninstalled when uninstalling tasksel
+	#problem was resolved, went to Shun(MSS Manager for help)
+	#Regained acces after that
+4.SSH login request time out, can not access sever
+	
+	#Solution pending
