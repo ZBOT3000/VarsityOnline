@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html>
+
+<!--Navigation -->
+
+<div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="WelcomePage.html" >Home</a>
+  <a href="login.html">Login</a>
+  <a href="register.html" >Register</a>
+  <a href="" >About</a>
+  <a href="" >Contact</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<!-- End of nagivation-->
+
+
+<div class="Form-Control">
 <head>
 	<link rel="shortcut icon" href="icon1.jpg">
 	<title>LOG IN </title>
 	<link rel="stylesheet" type="text/css" href="register.css">
 
 </head>
+
+
 <body>
 	<div class="LogIn-Title">
 		<h1>Hello And Welcome</h1>
@@ -29,4 +56,5 @@
 	</div>
 
 </body>
+</div>
 </html> 
