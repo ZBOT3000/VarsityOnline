@@ -160,7 +160,7 @@ form .submit {
 	margin-top:20px;
 }
 
-form .submit:hover{
+.login-button:hover{
 	background-color: darkgreen;
 
 

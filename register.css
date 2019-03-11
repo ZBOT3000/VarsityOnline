@@ -64,20 +64,34 @@ body {
     radial-gradient(white,silver);
 	
 }
-.LogIn-Title{
-	margin-top:100px
+
+.LogIn-Form
+{
+	
+	margin-top:2px
+	margin-left:2px;
+	margin-right: 50px: 
+
+}
+
+.LogIn-Form h1 {
+	
 	text-transform:	uppercase;
 	transition: all 4s ease-in-out; 
-}
-
-.LogIn-Title h1 {
 	font-size: 32px;
+	font-family: "Palatino Linotype";
 	line-height: 10px;
+	color: white;
+	text-shadow: 2px 2px 0 #000000, 
+	2px -2px 0 #000000, 
+	-2px 2px 0 #000000, 
+	-2px -2px 0 #000000, 
+	2px 0px 0 #000000,
+	0px 2px 0 #000000, 
+	-2px 0px 0 #000000, 
+	0px -2px 0 #000000
 }
 
-.LogIn-Title h2 {
-	font: 16px;
-}
 
 form{
 	margin: 50px;
@@ -87,16 +101,21 @@ form{
 
 }
 
+
 .form-control{
-	width: 600px;
-	background: transparent;
-	border: thin;
-	outline: none;
-	border-bottom: 1px solid blue;
-	color: red;
-	font-size: 18px;
-	margin-bottom: 16px;
+	
+
+	width: 285px;
+  height: 50px;
+  margin-bottom: 25px;
+  padding-left:10px;
+  font-size: 15px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
+
+
 
 input{
 	height: 45px;
