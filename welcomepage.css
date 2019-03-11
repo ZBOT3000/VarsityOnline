@@ -1,0 +1,121 @@
+
+
+//Bird Animation
+.container {
+	z-index: 1;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-blend-mode: soft-light;
+	background-size: cover;
+	background-position: center center;
+	padding: 2rem;
+
+
+
+}
+
+
+
+
+
+
+.bird1 {
+  background-image: url('4.png');
+  background-size:  100%;
+  width: 1200px;
+  height: 300px;
+  will-change: background-position;
+  animation-name: fly-cycle;
+  animation-timing-function: linear;
+	animation-timing-function: steps(10);
+	animation-iteration-count: infinite;
+	animation-duration: 0.5s;
+	animation-delay: -0.5s;
+alternate;
+}
+.bird-container {
+
+	
+	will-change: transform;
+	
+	
+	
+}
+@keyframes fly-cycle {
+  100% {
+  background-position: 1000px;
+  } 
+}
+
+
+.bird--one {
+  animation-duration: 6s;
+  animation-delay: -5s;
+
+}
+
+//End of Bird Animation
+
+
+
+
+
+.logo-class{
+	font-size: 20;
+	text-align: center;
+	align-content: center;
+
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  
+  animation: pulse 6s infinite;
+  overflow-x: hidden;
+  transition: 0.6s;
+  padding-top: 60px;
+}
+	@keyframes pulse {
+  		0% {
+    	background-color: #DCDCDC;
+  	}
+  		100% {
+    background-color:#C0C0C0;
+  }
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
