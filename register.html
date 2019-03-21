@@ -41,29 +41,47 @@ function closeNav() {
 			<input type="text" name="name" class="form-control" placeholder="Enter your name here" required><br>
 			<input type="text" name="surname" class="form-control" placeholder="Enter your surname here" required><br>
 
-			<input type="email" name="email" class="form-control" placeholder="Enter your email here" required><br>
-			<input type="email" name="confirmemail" class="form-control" placeholder="re-Enter your email here" required><br>
+			<input type="email" id="email1"  name="email1" class="form-control" placeholder="Enter your email here" required><br>
+			<input type="email" id="email2"  name="confirmemail" class="form-control" placeholder="re-Enter your email here" required><br>
 
-			<input type="password" name="password1" class="form-control" placeholder="Enter your password here" required><br>
-			<input type="password" name="password2" class="form-control" placeholder="re-Enter your password here" required><br>
+			<input type="password" id = "password1"name="password1" class="form-control" placeholder="Enter your password here" required><br>
+			<input type="password" id = "password2" name="password2" class="form-control" placeholder="re-Enter your password here" required><br>
 
 			<input type="submit" class="form-control submit" value="SUBMIT">
 		</form>
 
     <script type="text/javascript">
     var password = document.getElementById("password1")
-    var confirm_password = document.getElementById("password2");
+    ,confirm_password = document.getElementById("password2");
 
-    function validatePassword(){
-    if(password.value != confirm_password.value) {
-    confirm_password.setCustomValidity("Passwords Don't Match");
-    } else {
-    confirm_password.setCustomValidity('');
-    }
+    function validatePassword()
+    {
+        if(password.value != confirm_password.value)
+        {
+        confirm_password.setCustomValidity("Passwords Don't Match");
+        } else
+        {
+        confirm_password.setCustomValidity('');
+        }
     }
 
     password.onchange = validatePassword;
     confirm_password.onkeyup = validatePassword;
+    </script>
+
+    <script type="text/javascript">
+    var email1 = document.getElementById("email1"),
+    email2 = document.getElementById("email2");
+    function validateEmail
+    {
+        if (email1.value!=email2.value) {
+          email2.setCustomValidity("Emails dont Match");
+
+        }else {
+          email2.setCustomValidity('');
+        }
+    }
+
     </script>
 
 	</div>

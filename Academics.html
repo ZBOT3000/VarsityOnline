@@ -1,5 +1,25 @@
 <!DOCTYPE html>
 <html>
+<!--Navigation -->
+
+
+<div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Demographicstml" >Demographics</a>
+  <a href="Academics.html">Academics</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<!-- End of nagivation-->
 <head>
 	<title>Academics</title>
 </head>
@@ -7,7 +27,7 @@
 
 	<h1>Academics</h1>
 	<div class="LogIn-Form">
-		<form id="LogIn-Form"  method="post" action="">
+		<form id="LogIn-Form"  method="post" action="Academics.php">
 			<h1>FILL IN THE DETAILS BELOW TO REGISTER</h1>
 			<input type="text" name="School Name" class="form-control" placeholder="Enter your School Name" required><br>
 			<input type="text" name="Current Grade" class="form-control" placeholder="Enter your current Grade" required><br>
@@ -18,18 +38,18 @@
 				<option value="Afrikaans">Afrikaans</option>
 				<option value="Zulu">Zulu</option>
 				<option value="Xhosa">Xhosa</option>
-			    <option value="SeSotho">SeSotho</option>
-		  	    <option value="SeTswana">SeTswana</option>
+	   	  <option value="SeSotho">SeSotho</option>
+		    <option value="SeTswana">SeTswana</option>
 				<option value="Ndebele">Ndebele</option>
 				<option value="SeSwati">SeSwati</option>
 				<option value="Tsonga">Tsonga</option>
 				<option value="Venda">Venda</option>
-				<option value="SePedi">SePedi</option>	  
+				<option value="SePedi">SePedi</option>
 			</select>
 			<input type="number" class="form-control" name="Mark" placeholder="Mark" min="0" max="100">
 			</div>
 
-			
+
 			<div class="Drop-Down">
 			<select name="FAL" class="form-control">
 			  <option>Select First Additional Language</option>
@@ -47,7 +67,7 @@
 			</select>
 			<input type="number" class="form-control" name="Mark" placeholder="Mark" min="0" max="100">
 			</div>
-			
+
 			<div class="Drop-Down">
 				<select name="Mathematics" class="form-control">
 				  <option>Select a Mathematics Subject</option>
@@ -156,45 +176,12 @@
 				</select>
 				<input type="number" class="form-control" name="Mark" placeholder="Mark" min="0" max="100">
 			</div>
-			<!--This is the drop down for 4th subject choice -->
-			<div class="Drop-Down">
-				<select name="Subject4" class="form-control">
-					<option> Select A Subject</option>
-					<option value="Physical Science">Physical Science</option>
-					<option value="Accounting">Accounting</option>
-					<option value="Agricultural Management Practices">Agricultural Management Practices</option>
-					<option value="Agricultural Sciences">Agricultural Sciences</option>
-					<option value="Agricultural Technology">Agricultural Technology</option>
-					<option value="Business Studies">Business Studies</option>
-					<option value="Civil Technology">Civil Technology</option>
-					<option value="Computer Applications Technology">Computer Applications Technology</option>
-					<option value="Consumer Studies">Consumer Studies</option>
-					<option value="Dance Studies">Dance Studies</option>
-					<option value="Design">Design</option>
-					<option value="Dramatic Arts">Dramatic Arts</option>
-					<option value="Economics">Economics</option>
-					<option value="Electrical Technology">Electrical Technology</option>
-					<option value="Engineering Graphics & Design">Engineering Graphics & Design</option>
-					<option value="Geography">Geography</option>
-					<option value="History">History</option>
-					<option value="Hospitality">Hospitality Studies</option>
-					<option value="Information Technology">Information Technology</option>
-					<option value="Life Sciences">Life Sciences</option>
-					<option value="Mechanical Technology">Mechanical Technology</option>
-					<option value="Music">Music</option>
-					<option value="Physical Science">Physical Science</option>
-					<option value="Religion Studies">Religion Studies</option>
-					<option value="Tourism">Tourism</option>
-					<option value="Visual Arts">Visual Arts</option>
-				</select>
-				<input type="number" class="form-control" name="Mark" placeholder="Mark" min="0" max="100">
-			</div>
 
 			<div>
 				Life Orientation
 				<input type="number" class="form-control" name="Mark" min="0" max="100">
 			</div>
-			
+
 
 
 
