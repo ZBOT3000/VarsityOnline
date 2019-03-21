@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 06, 2019 at 04:37 PM
+-- Generation Time: Mar 19, 2019 at 12:32 PM
 -- Server version: 5.5.38-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.25
 
@@ -23,17 +23,16 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `DETAILS`
+-- Table structure for table `PERSONAL_DETAILS_PARENT/GUARDIAN`
 --
 
-CREATE TABLE IF NOT EXISTS `DETAILS` (
-  `ID_NUMBER` int(30) NOT NULL,
-  `COUNTRY` varchar(30) NOT NULL,
-  `ADDRESS` varchar(50) NOT NULL,
-  `PHONE_NO` int(30) NOT NULL,
-  `GENDER` varchar(10) NOT NULL,
-  `DATE_OF_BIRTH` date NOT NULL,
-  PRIMARY KEY (`ID_NUMBER`)
+CREATE TABLE IF NOT EXISTS `PERSONAL_DETAILS_PARENT/GUARDIAN` (
+  `NAME` varchar(50) NOT NULL,
+  `SURNAME` varchar(50) NOT NULL,
+  `GENDER` varchar(2) NOT NULL,
+  `EMAIL_ADDRESS` varchar(50) NOT NULL,
+  `CELL_NO` int(10) NOT NULL,
+  `TEL_NO` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
