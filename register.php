@@ -4,35 +4,29 @@ require "conn.php";
 $name = $_POST["name"];
 $surname=$_POST["surname"];
 
-$email = $_POST["email"];
+$email = $_POST["email1"];
 
 $password = $_POST["password1"];
 
-
-$mysql_qry="insert into register(EMAIL,password,name,surname) values('$email','$password','$name','$surname')";
+$mysql_qry="insert into register(email,username,password,name,surname) values('$email','a','$password','$name','$surname');";
 $result = mysqli_query($conn,$mysql_qry);
 
 $qry = "select USER_ID from register where name like '$name' and surname like '$surname' and   password like '$password';";
 $result2 = mysqli_query($conn,$qry);
-$output=array();
-while ($row=$result2->fetch_assoc())
-{
-  $output[]=$row;
+$row = $result2->fetch_assoc();
+$un = implode(" ",$row).$name;
 
-}
-if  ($result )
+
+$qr2 = "update register SET username ='$un' where name like '$name' and surname like '$surname' and   password like '$password';";
+$result3 = mysqli_query($conn,$qr2);
+if  ($result3)
 {
-	echo json_encode($output);
-	//header("Location: http://localhost/sd/demographics.html");
+
+	header("Location: http://localhost/sd/demographics.html");
 }
 else
 {
-	echo "Login unsuccessful";
-	//header("Location: http://localhost/sd/register.html");
+
+	header("Location: http://localhost/sd/register.html");
 }
-
-
-
-
-
  ?>
