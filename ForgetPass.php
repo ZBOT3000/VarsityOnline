@@ -11,12 +11,15 @@ if(isset($_POST["ForgotPass"]))
       $str = "76t3gyu567dsgsd765sfgfsgs324fbsgbisyg8w6w34gyvfbisfgb";
       $str = str_shuffle($str);
       $str = substr($str,0,10);
-      $url = "localhost/sd/resetPassword.php?token=$str&email=$email";
+      $url = "resetPassword.php?email=$email&token=$str";
       //mail($email,"Reset Password","To reset your password please visit your link: $url" , "From: bafanamngo@gmail.com\r\n");
 
       $connection->query("update user set token = '$str' where email = '$email'");
 
       echo "Please check your email";
+
+      header("Location: $url");
+
     } else
     {
       echo "please check your email!";

@@ -18,7 +18,7 @@ $un = implode(" ",$row).$name;
 
 
 $qr2 = "update register SET username ='$un' where name like '$name' and surname like '$surname' and   password like '$password';";
-$result3 = mysqli_query($conn,$qr2);
+$result3 = mysqli_query($conn,$qry);
 if  ($result3)
 {
 
