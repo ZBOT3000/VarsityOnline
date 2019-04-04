@@ -19,7 +19,7 @@ if(isset($_GET["email"]) && isset($_GET["token"]))
 
         $mysql_qry2="update REGISTER set password = '$password',token = null where email = '$email' ;";
         $result2 = mysqli_query($conn,$mysql_qry2);
-        $url = "newPassword.html?email=$email";
+        $url = "newPassword.php?email=$email";
 
         header("Location: $url");
 
