@@ -5,7 +5,7 @@ if(isset($_GET["email"]) && isset($_GET["token"]))
 
     $email = $_GET["email"];
     $token = $_GET["token"];
-    
+
     $mysql_qry="select * from REGISTER where email = '$email' and token = '$token';";
     $result = mysqli_query($conn,$mysql_qry);
 
@@ -16,18 +16,17 @@ if(isset($_GET["email"]) && isset($_GET["token"]))
         $str = str_shuffle($str);
         $str = substr($str,0,15);
         $password = $str;
-      
+        
         $mysql_qry2="update REGISTER set password = '$password',token = null where email = '$email' ;";
         $result2 = mysqli_query($conn,$mysql_qry2);
-        
+        $url = "newPassword.php?email=$email;
 
+        header("Location: $url");
 
-
-      echo "this is your new passowrd  is :$password";
     }else {
 
       header("Location: http://lbmsolutions.co.za/ForgetPass.php");
-      
+
     }
 }else
 {
