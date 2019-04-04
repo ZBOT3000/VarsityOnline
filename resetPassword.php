@@ -16,21 +16,23 @@ if(isset($_GET["email"]) && isset($_GET["token"]))
         $str = str_shuffle($str);
         $str = substr($str,0,15);
         $password = $str;
-        
+
         $mysql_qry2="update REGISTER set password = '$password',token = null where email = '$email' ;";
         $result2 = mysqli_query($conn,$mysql_qry2);
-        $url = "newPassword.php?email=$email;
+        $url = "newPassword.html?email=$email";
 
         header("Location: $url");
 
     }else {
 
-      header("Location: http://lbmsolutions.co.za/ForgetPass.php");
+      header("Location: lbmsolutions.co.za/ForgetPass.php");
 
     }
 }else
 {
 
-  echo "na nigga you fake";
+  echo "Please go to the following page to reset your password : https://vor.lbmsolutions.co.za/forgotPass.php";
 }
- ?>
+
+
+?>
