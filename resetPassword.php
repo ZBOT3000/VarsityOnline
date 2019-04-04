@@ -25,13 +25,13 @@ if(isset($_GET["email"]) && isset($_GET["token"]))
 
     }else {
 
-      header("Location: lbmsolutions.co.za/ForgetPass.php");
+      header("Location: http://lbmsolutions.co.za/ForgetPass.php");
 
     }
 }else
 {
 
-  echo "Please go to the following page to reset your password : https://vor.lbmsolutions.co.za/forgotPass.php";
+  echo "Please go to the following page to reset your password : http://vor.lbmsolutions.co.za/ForgetPass.php";
 }
 
 
