@@ -1,7 +1,19 @@
 <?php
+if(isset($_POST["Submit"]))
+{
+  require "conn.php";
+  $Password=$_POST['inputPassword1']
 
-require "conn.php";
- ?>
+  $mysql_qry2="update REGISTER set password = '$Password' where user_id = 25 ;";
+  $result2 = mysqli_query($conn,$mysql_qry2);
+  if($result)
+  {
+    echo "sucessfully Changed";
+  }else {
+    echo "unsucessful";
+  }
+}
+?>
 
  <!DOCTYPE html>
  <html>
@@ -57,7 +69,7 @@ require "conn.php";
             </div>
           </div>
           <div class="form-group row">
-            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+            <button type="submit" name="Submit" class="btn btn-primary mb-2">Submit</button>
           </div>
 
       </form>
