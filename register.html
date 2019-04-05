@@ -72,15 +72,18 @@ function closeNav() {
     <script type="text/javascript">
     var email1 = document.getElementById("email1"),
     email2 = document.getElementById("email2");
-    function validateEmail
+    function validateEmail ()
     {
         if (email1.value!=email2.value) {
-          email2.setCustomValidity("Emails dont Match");
+          email2.setCustomValidity("Emails Do Not Match");
 
         }else {
           email2.setCustomValidity('');
         }
     }
+
+    email1.onchange = validateEmail;
+    email2.onkeyup = validateEmail;
 
     </script>
 

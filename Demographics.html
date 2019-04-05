@@ -5,8 +5,9 @@
 
 <div id="mySidenav" class="sidenav">
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="Demographicstml" >Demographics</a>
-  <a href="Academics.html">Academics</a>
+  <a href="Demographics.html">Demographics</a>
+  <a href="newPassword.php">New Password</a>
+  <a  href="Academics.html">Academics</a>
 </div>
 
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
@@ -30,6 +31,7 @@ function closeNav() {
 	<h1>Personal Details</h1>
 
 	<div>
+<<<<<<< HEAD
 		<form  action="demographics.php"  method="post">
 			<input type="text" name="id_number" class="form-control" placeholder="ID Number"><br>
 			<input type="text" name="cell_number" class="form-control" placeholder="Cellphone Number"><br>
@@ -41,17 +43,38 @@ function closeNav() {
 			Date of Birth: <input type="date" class="form-control" name="DOB"><br>
 			<select name="race" class="form-control">
 				<option selected hidden>Select a Race</option>
+=======
+		<form>
+			<input type="text" name="ID Number" class="form-control" placeholder="ID Number"><br>
+			<input type="text" name="ID Number" class="form-control" placeholder="Cellphone Number"><br>
+			<select class="form-control" >
+				   <option>Select a Gender</option>
+					<option value="Male">Male</option>
+					<option vlaue="Female">Female</option>
+			</select><br>
+			<p>Date of Birth:</p>
+      <input type="date" class="form-control" name="DOB"><br>
+			<select class="form-control">
+				<option>Select a Race</option>
+>>>>>>> 2ad55121c140f2665c3900b14d40afdd1dce0555
 					<option value="Male">Black</option>
 					<option vlaue="Female">White</option>
 					<option value="Indian">Indian</option>
 					<option value="Coloured">Coloured</option>
 					<option value="Asian">Asian</option>
 			</select><br>
+<<<<<<< HEAD
 			Are you south african:
 			<input type="radio" name="citizen" value="Yes"> Yes
   			<input type="radio" name="citizen" value="No"> No
 
+=======
+			<h3>Are you south african:</h3>
+			<input type="radio" name="gender" value="Yes">Yes
+  		<input type="radio" name="gender" value="No">No<br>
+>>>>>>> 2ad55121c140f2665c3900b14d40afdd1dce0555
 
+      <input type="submit" class="form-control submit" value="SUBMIT">
 
 		</form>
 	</div>

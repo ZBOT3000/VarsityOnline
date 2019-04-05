@@ -1,32 +1,34 @@
 <?php
-if(isset($_GET["email"]) && isset($_GET["token"]))
+
+if(isset($_GET['email']) && isset($_GET['token']))
 {
-    $connection = mysqli_connect("localhost","root","","test");
+  require "functions.php";
+  require 'conn.php';
+  $email = $_GET["email"];
+  $token = $_GET['token'];
 
-    $email = $connection->real_escape_string($_GET["email"]);
-    $token = $connection->real_escape_string($_GET["token"]);
+  $mysql_qry="select * from REGISTER where
+  email = '$email' and token='$token' and token<>'' and tokenexpire > NOW();";
+  $result = mysqli_query($conn,$mysql_qry);
 
-    $data = $connection->query("select id from user where email = '$email' and token = '$token';");
+  if (mysqli_num_rows($result)>0)
+  {
+      $newPass = generateNewString();
+      $mysql_qry2="update REGISTER set password = '$newPass',token = '',
+                    tokenexpire= DATE_ADD( NOW() ,INTERVAL 5 MINUTE)
+                    where email = '$email';";
+      $result2 = mysqli_query($conn,$mysql_qry2);
 
-    if ($data->num_rows>0)
-    {
-      $str  = "de5r6tv7yb8nuy7t67r576vt87by95ex7cr6vt8yrtcfygvut7de5s4wex5cr6vt7b";
-      $str = str_shuffle($str);
-      $str = substr($str,0,15);
-      $password = $str;
-
-      $connection->query("update user set password = '$password' , token = '' where email = '$email' ;");
-
+      echo " <p> YOUR NEW PASSWORD IS: $newPass<br><a href='http://vor.lbmsolutions.co.za/login.html'>Click here to LogIn</a> </p>";
 
 
-      echo "this is your new passowrd  is :$password";
-    }else {
+  }else{
+    redirectToLogin();
+  }
 
-      echo "Please check your link";
-    }
-}else
-{
-
-  echo "na nigga you fake";
+}else {
+  redirectToLogin();
 }
+
+
  ?>

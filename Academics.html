@@ -5,8 +5,10 @@
 
 <div id="mySidenav" class="sidenav">
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="Demographics.html" >Demographics</a>
+  <a href="Demographics.html">Demographics</a>
+  <a href="newPassword.php">New Password</a>
   <a href="Academics.html">Academics</a>
+
 </div>
 
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
@@ -19,7 +21,7 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
-<!-- End of nagivation-->
+<!-- End of nagivation System-- >
 <head>
 	<title>Academics</title>
   <link rel="stylesheet" type="text/css" href="Academics.css">
@@ -29,13 +31,13 @@ function closeNav() {
 	<h1>Academics</h1>
 	<div class="LogIn-Form">
 		<form id="LogIn-Form"  method="post" action="Academics.php">
-			<h1>FILL IN THE DETAILS BELOW TO REGISTER</h1>
+			<h1>FILL IN YOUR ACADEMICS INFOMATION BELOW </h1>
 			<input type="text" name="School Name" class="form-control" placeholder="Enter your School Name" required><br>
 			<input type="text" name="Current Grade" class="form-control" placeholder="Enter your current Grade" required><br>
 			<div class="Drop-Down">
 				<select name="HL" class="form-control">
 				<option>Select Home Language</option>
-			  	<option value="English">English</option>
+			  <option value="English">English</option>
 				<option value="Afrikaans">Afrikaans</option>
 				<option value="Zulu">Zulu</option>
 				<option value="Xhosa">Xhosa</option>
@@ -47,7 +49,7 @@ function closeNav() {
 				<option value="Venda">Venda</option>
 				<option value="SePedi">SePedi</option>
 			</select>
-			<input type="number" class="form-control" name="Mark" placeholder="Mark" min="0" max="100">
+			<input type="number" class="form-control" name="HLMark" placeholder="HLMark" min="0" max="100">
 			</div>
 
 
@@ -66,7 +68,7 @@ function closeNav() {
 			  <option value="Venda">FAL Venda</option>
 			  <option value="SePedi">FAL SePedi</option>
 			</select>
-			<input type="number" class="form-control" name="Mark" placeholder="Mark" min="0" max="100">
+			<input type="number" class="form-control" name="FALMark" placeholder="FALMark" min="0" max="100">
 			</div>
 
 			<div class="Drop-Down">
@@ -75,7 +77,7 @@ function closeNav() {
 				  <option value="Mathematics">Mathematics</option>
 				  <option value="MathLit">Mathematics Literacy</option>
 			</select>
-			<input type="number" class="form-control" name="Mark" placeholder="Mark" min="0" max="100">
+			<input type="number" class="form-control" name="MathMark" placeholder="MathMark" min="0" max="100">
 			</div>
 			<!--This is the drop down for First subject choice -->
 			<div class="Drop-Down">
@@ -108,7 +110,7 @@ function closeNav() {
 					<option value="Tourism">Tourism</option>
 					<option value="Visual Arts">Visual Arts</option>
 				</select>
-				<input type="number" class="form-control" name="Mark" placeholder="Mark" min="0" max="100">
+				<input type="number" class="form-control" name="sub1Mark" placeholder="sub1Mark" min="0" max="100">
 			</div>
 			<!--This is the drop down for second subject choice -->
 			<div class="Drop-Down">
@@ -141,7 +143,7 @@ function closeNav() {
 					<option value="Tourism">Tourism</option>
 					<option value="Visual Arts">Visual Arts</option>
 				</select>
-				<input type="number" class="form-control" name="Mark" placeholder="Mark" min="0" max="100">
+				<input type="number" class="form-control" name="sub2Mark" placeholder="sub2Mark" min="0" max="100">
 			</div>
 			<!--This is the drop down for Third subject choice -->
 
@@ -175,13 +177,17 @@ function closeNav() {
 					<option value="Tourism">Tourism</option>
 					<option value="Visual Arts">Visual Arts</option>
 				</select>
-				<input type="number" class="form-control" name="Mark" placeholder="Mark" min="0" max="100">
+				<input type="number" class="form-control" name="sub3Mark" placeholder="sub3Mark" min="0" max="100">
 			</div>
 
 			<div>
-				Life Orientation
-				<input type="number" class="form-control" name="Mark" min="0" max="100">
+				<h2>Life Orientation</h2>
+				<input type="number" class="form-control" name="LOMark" min="0" max="100">
 			</div>
+
+      <div>
+         <input type="submit" name = "submit" class="form-control submit" value="SUBMIT">
+      </div>
 
 
 

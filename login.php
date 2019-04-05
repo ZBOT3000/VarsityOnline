@@ -8,13 +8,13 @@ $result = mysqli_query($conn,$mysql_qry);
 
 if ( mysqli_num_rows( $result ) > 0 )
 {
-	echo "Login Successful !!! WELCOME USER";
-	header("Location: http://localhost/sd/demographics.html");
+
+	header("Location: http://vor.lbmsolutions.co.za/Demographics.html");
 }
 else
 {
-	echo "Login unsuccessful";
-	header("Location: http://localhost/sd/login.html");
+
+	header("Location: http://vor.lbmsolutions.co.za/login.html");
 }
 
  ?>
