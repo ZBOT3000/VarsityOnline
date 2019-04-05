@@ -19,7 +19,7 @@ if(isset($_GET['email']) && isset($_GET['token']))
                     where email = '$email';";
       $result2 = mysqli_query($conn,$mysql_qry2);
 
-      echo "<p> YOUR NEW PASSWORD IS: $newPass<br><a href='http://vor.lbmsolutions.co.za/login.html'>Click here to LogIn</a> </p>";
+      echo " <p> YOUR NEW PASSWORD IS: $newPass<br><a href='http://vor.lbmsolutions.co.za/login.html'>Click here to LogIn</a> </p>";
 
 
   }else{

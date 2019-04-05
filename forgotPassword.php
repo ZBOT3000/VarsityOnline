@@ -42,7 +42,7 @@
             >http://lbmsolutions.co.za/resetPassword.php?email=$email&token=$token</a><br><br>
 
             Kind Regards<br>
-            VarsityOnlines
+            VarsityOnline
         ";
 
         if ($mail->send())
