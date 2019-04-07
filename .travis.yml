@@ -65,4 +65,5 @@ script:
       grunt jasmine
     fi
 
-
+after script:
+  -sbt coveralls
