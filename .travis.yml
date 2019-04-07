@@ -64,3 +64,6 @@ script:
     if [[ "$WP_TRAVISCI" == "travis:js-tests" ]] ; then
       grunt jasmine
     fi
+
+after success: 
+  -sbt coveralls
