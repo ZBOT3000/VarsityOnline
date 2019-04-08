@@ -20,7 +20,10 @@ if(isset($_POST['submit'])
   $LOMark = $_POST["LOMark"];
 
 
-  $mysql_qry="insert into CURRENT_ACADEMICS ('USER_ID', 'SCHOOL_NAME', 'CURRENT_GRADE', 'HOME_LAN', 'HOME_LAN_MARK', 'FA_LAN', 'FA_LAN_MARK', 'MATH_SUBJ', 'MATH_SUBJ_MARK', 'SUBJ1', 'SUBJ1_MARK', 'SUBJ2', 'SUBJ2_MARK', 'SUBJ3', 'SUBJ3_MARK', 'LO_MARK')VALUES ('25', '$schoolName', '$grade', '$HL', '$HLMark', '$FAL', '$FALMark', '$Mathematics', '$MathMark', '$Subject1', '$sub1Mark', '$Subject2', '$sub2Mark', '$Subject3', '$sub3Mark', '$LOMark');";
+  $mysql_qry="insert into CURRENT_ACADEMICS (USER_ID, SCHOOL_NAME, CURRENT_GRADE, HOME_LAN, HOME_LAN_MARK, FA_LAN, FA_LAN_MARK,
+  MATH_SUBJ, MATH_SUBJ_MARK, SUBJ1, SUBJ1_MARK, SUBJ2, SUBJ2_MARK, SUBJ3, SUBJ3_MARK, LO_MARK) values
+   ('25', '$schoolName', '$grade', '$HL', '$HLMark', '$FAL', '$FALMark', '$Mathematics', '$MathMark', '$Subject1', '$sub1Mark',
+   '$Subject2', '$sub2Mark', '$Subject3', '$sub3Mark', '$LOMark');";
   $result = mysqli_query($conn,$mysql_qry);
   if  ($result)
   {
