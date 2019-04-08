@@ -2,11 +2,10 @@
 if(isset($_POST["Submit"]))
 {
   require "conn.php";
-  $Password=$_POST['inputPassword1']
-
-  $mysql_qry2="update REGISTER set password = '$Password' where user_id = 25 ;";
+  $Password=$_POST['inputPassword1'];
+  $mysql_qry2="update REGISTER SET password = '$Password' WHERE user_id = 25;";
   $result2 = mysqli_query($conn,$mysql_qry2);
-  if($result)
+  if ($result2)
   {
     echo "sucessfully Changed";
   }else {
@@ -59,7 +58,7 @@ if(isset($_POST["Submit"]))
          <div class="form-group row">
            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
            <div class="col-sm-10">
-             <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+             <input type="password" class="form-control" name = "inputPassword1" id="inputPassword1" placeholder="Password">
            </div>
          </div>
           <div class="form-group row">

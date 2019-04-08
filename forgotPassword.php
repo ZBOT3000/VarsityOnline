@@ -38,8 +38,8 @@
             Inorder to reset your password please click on the link below:
 
             <a href=
-            'http://lbmsolutions.co.za/resetPassword.php?email=$email&token=$token'
-            >http://lbmsolutions.co.za/resetPassword.php?email=$email&token=$token</a><br><br>
+            'http://vor.lbmsolutions.co.za/resetPassword.php?email=$email&token=$token'
+            >http://vor.lbmsolutions.co.za/resetPassword.php?email=$email&token=$token</a><br><br>
 
             Kind Regards<br>
             VarsityOnline
