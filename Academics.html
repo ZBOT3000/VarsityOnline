@@ -31,19 +31,35 @@ function closeNav() {
 	<h1>Academics</h1>
 	<div class="LogIn-Form">
 		<form id="LogIn-Form"  method="post" action="Academics.php">
-			<h1>FILL IN YOUR ACADEMICS INFOMATION BELOW </h1>
-			<input type="text" name="School Name" class="form-control" placeholder="Enter your School Name" required><br>
-			<input type="text" name="Current Grade" class="form-control" placeholder="Enter your current Grade" required><br>
+			<h1>FILL IN YOUR ACADEMICS INFOMATION BELOW </h1><br>
+			<!-- <input type="text" name="SN" class="form-control" placeholder="Enter your School Name" required><br>-->
+			<div class="Drop-Down">
+				<select name="SN" class="form-control">
+				<option>Select a School</option>
+			  	<option value="St Benedicts">Bennies</option>
+				<option value="St Johns">ST Johns</option>
+			</select>
+
+			</div>
+
+			<div class="Drop-Down">
+				<select name="CG" class="form-control">
+				<option>Select a Grade</option>
+			  	<option value="11">11</option>
+				<option value="12">12</option>
+			</select>
+			</div>
+			<!--<input type="text" name="CG" class="form-control" placeholder="Enter your current Grade" required><br>-->
 
 			<div class="Drop-Down">
 				<select name="HL" class="form-control">
 				<option>Select Home Language</option>
-			  <option value="English">English</option>
+			  	<option value="English">English</option>
 				<option value="Afrikaans">Afrikaans</option>
 				<option value="Zulu">Zulu</option>
 				<option value="Xhosa">Xhosa</option>
-	   	  <option value="SeSotho">SeSotho</option>
-		    <option value="SeTswana">SeTswana</option>
+	   	  		<option value="SeSotho">SeSotho</option>
+		    	<option value="SeTswana">SeTswana</option>
 				<option value="Ndebele">Ndebele</option>
 				<option value="SeSwati">SeSwati</option>
 				<option value="Tsonga">Tsonga</option>
@@ -114,7 +130,7 @@ function closeNav() {
 				<input type="number" class="form-control" name="sub1Mark" placeholder="sub1Mark" min="0" max="100">
 			</div>
 			<!--This is the drop down for second subject choice -->
-			<div class="Drop-Down">
+			<div class="Drop-Down" name="Subject2"	>
 				<select name="Subject2" class="form-control">
 					<option> Select A Subject</option>
 					<option value="Physical Science">Physical Science</option>
