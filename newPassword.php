@@ -2,6 +2,7 @@
 if(isset($_POST["Submit"]))
 {
   require "conn.php";
+  session_start();
   $Password=$_POST['inputPassword1'];
   $mysql_qry2="update REGISTER SET password = '$Password' WHERE user_id = 25;";
   $result2 = mysqli_query($conn,$mysql_qry2);

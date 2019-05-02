@@ -1,6 +1,6 @@
 <?php
 require "conn.php";
-
+session_start();
 $id = $_POST["id_number"];
 $cell=$_POST["cell_number"];
 

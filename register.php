@@ -1,6 +1,6 @@
 <?php
 require "conn.php";
-
+session_start();
 $name = $_POST["name"];
 $surname=$_POST["surname"];
 
@@ -21,7 +21,7 @@ $qr2 = "update REGISTER SET username ='$un' where name like '$name' and surname 
 $result3 = mysqli_query($conn,$qr2);
 if  ($result)
 {
-
+	$_SESSION['username']=$un;
 	header("Location: http://vor.lbmsolutions.co.za/Demographics.html");
 }
 else

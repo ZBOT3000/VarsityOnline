@@ -1,5 +1,6 @@
 <?php
   require 'conn.php';
+  session_start();
   $schoolName = $_POST["SN"];
   $grade= $_POST["CG"];
   $HL =  $_POST["HL"];
