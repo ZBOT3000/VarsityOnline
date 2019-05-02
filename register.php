@@ -22,6 +22,9 @@ $result3 = mysqli_query($conn,$qr2);
 if  ($result)
 {
 	$_SESSION['username']=$un;
+	$str = $_SESSION['username'];
+  $str = preg_replace('/\D/', '', $str);
+  $_SESSION['user_id']=$str;
 	header("Location: http://vor.lbmsolutions.co.za/Demographics.html");
 
 else

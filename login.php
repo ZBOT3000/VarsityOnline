@@ -10,6 +10,9 @@ $result = mysqli_query($conn,$mysql_qry);
 if ( mysqli_num_rows( $result ) > 0 )
 {
 	$_SESSION['username']=$username;
+	$str = $_SESSION['username'];
+	$str = preg_replace('/\D/', '', $str);
+	$_SESSION['user_id']=$str;
 	header("Location: http://vor.lbmsolutions.co.za/Demographics.html");
 }
 else
