@@ -23,7 +23,7 @@ if  ($result)
 {
 	$_SESSION['username']=$un;
 	header("Location: http://vor.lbmsolutions.co.za/Demographics.html");
-}
+
 else
 {
 	header("Location: http://vor.lbmsolutions.co.za/register.html");
