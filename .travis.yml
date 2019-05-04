@@ -65,4 +65,4 @@ script:
       grunt jasmine
     fi
 
-after script: "sbt coveralls"
+after script:  - sh -c 'if [ &quot;$TRAVIS_PHP_VERSION&quot; != &quot;hhvm&quot; ]; then php vendor/bin/coveralls -v; fi;'
