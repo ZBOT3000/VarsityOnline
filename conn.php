@@ -1,3 +1,8 @@
+require 'coveralls'
+Coveralls.wear!
+
+
+
 <?php
 $db_name="f4367750_VarsityOnline";
 $mysql_username ="root";
