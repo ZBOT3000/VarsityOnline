@@ -1,16 +1,20 @@
 <?php
+session_start();
+echo $_SESSION['user_id'];
+
+
 if(isset($_POST["Submit"]))
 {
   require "conn.php";
-  session_start();
   $Password=$_POST['inputPassword1'];
-  $mysql_qry2="update REGISTER SET password = '$Password' WHERE user_id = 25;";
+  $ID=(int)$_SESSION['user_id'];
+  $mysql_qry2="update REGISTER SET password = '$Password' WHERE user_id = $ID;";
   $result2 = mysqli_query($conn,$mysql_qry2);
   if ($result2)
   {
-    echo "sucessfully Changed";
+  echo "  <h1 style='color:green'>Change Successful</h1> ";
   }else {
-    echo "unsucessful";
+    echo "  <h1 style='color:red'>Change Unseccessful</h1> ";
   }
 }
 ?>
@@ -22,9 +26,10 @@ if(isset($_POST["Submit"]))
 
  <div id="mySidenav" class="sidenav">
  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-   <a href="Demographics.html">Demographics</a>
-   <a href="Academics.html">Academics</a>
-   <a href="newPassword.php">New Password</a>
+  <a href="index.php">Dashboard</a>
+   <a href="Demographics.php">Demographics</a>
+   <a href="Academics.php">Academics</a>
+
  </div>
 
  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
