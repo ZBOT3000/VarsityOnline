@@ -27,6 +27,9 @@
  * @author Jim Jagielski (jimjag) <jimjag@gmail.com>
  * @author Andy Prevost (codeworxtech) <codeworxtech@users.sourceforge.net>
  */
+    function testing($a,$b){
+        return $a + $b;
+    }
 class POP3
 {
     /**
