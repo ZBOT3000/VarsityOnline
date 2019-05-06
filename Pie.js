@@ -30,10 +30,10 @@ function drawPieSlice(ctx,centerX, centerY, radius, startAngle, endAngle, color 
 //var Stuff = <?php echo json_encode($APSArray); ?>;
 
 var myVinyls = {
-    "Classical music": 10,
-    "Alternative rock": 14,
-    "Pop": 2,
-    "Jazz": 12
+    "Computer Science ": 40,
+    "Biological Science": 40,
+    "Mathematics of Finance": 42,
+    "": 12
 };
 
 var Piechart = function(options){
@@ -76,7 +76,7 @@ var myPiechart = new Piechart(
     {
         canvas:myCanvas,
         data:myVinyls ,
-        colors:["#fde23e","#f16e23", "#57d9ff","#937e88"]
+        colors:["green","red"]
     }
 );
 myPiechart.draw();
