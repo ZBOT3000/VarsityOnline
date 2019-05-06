@@ -11,7 +11,7 @@
 
 <div id="mySidenav" class="sidenav">
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.php">Dashboard</a>
+  <a href="Dashboard.php">Dashboard</a>
   <a href="Demographics.php">Demographics</a>
   <a href="newPassword.php">New Password</a>
 </div>

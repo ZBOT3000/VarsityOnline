@@ -25,10 +25,10 @@ if  ($result)
 	$str = $_SESSION['username'];
   $str = preg_replace('/\D/', '', $str);
   $_SESSION['user_id']=$str;
-	header("Location: http://vor.lbmsolutions.co.za/Demographics.html");
+	header("Location: http://vor.lbmsolutions.co.za/Demographics.php");
 }
 else
 {
-	header("Location: http://vor.lbmsolutions.co.za/register.html");
+	header("Location: http://vor.lbmsolutions.co.za/register.php");
 }
  ?>

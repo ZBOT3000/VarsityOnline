@@ -19,10 +19,10 @@ $result = mysqli_query($conn,$mysql_qry);
 if  ($result)
 {
    echo "YOU HAVE SUCCESSFULY CAPTURED YOUR PARENTAL DETAILS <br>";
-   echo "<p><a href='http://localhost/varsityonline/index.php'>CLICK HERE TO GO BACK</a></p>";
+   echo "<p><a href='http://vor.lbmsolutions.co.za/index.php'>CLICK HERE TO GO BACK</a></p>";
 }else
 {
     echo "SOME OF THE INFOMATION ENTERED WAS INCORRECT PLEASE RETRY AGAIN";
-    echo "<p><a href='http://localhost/varsityonline/ParentalDetail.php'>CLICK HERE TO GO BACK</a></p>";
+    echo "<p><a href='http://vor.lbmsolutions.co.za/ParentalDetail.php'>CLICK HERE TO GO BACK</a></p>";
 }
  ?>

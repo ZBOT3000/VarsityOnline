@@ -1,6 +1,5 @@
 <?php
 session_start();
-$_SESSION['username'] = "29joy";
 $str = $_SESSION['username'];
 $str = preg_replace('/\D/', '', $str);
 $_SESSION['user_id']=$str;
