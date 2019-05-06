@@ -28,12 +28,23 @@ function drawPieSlice(ctx,centerX, centerY, radius, startAngle, endAngle, color 
 }
 
 //var Stuff = <?php echo json_encode($APSArray); ?>;
+var aps = <?php session_start();
+           echo $_SESSION["APS"]; ?>;
 
 var myVinyls = {
     "Computer Science ": 40,
     "Biological Science": 40,
     "Mathematics of Finance": 42,
-    "": 12
+    "Astronomy":43,
+    "Nuclear Science": 43,
+    "Chemistry": 43,
+    "Chemical Engineering": 40,
+    "Civil Engineering": 43,
+    "Electrical Engineering": 36,
+    "Mechanical Engineering": 40,
+    "Mining Engineering": 40,
+    "Aeronautical Engineering": 40,
+    
 };
 
 var Piechart = function(options){
@@ -43,12 +54,9 @@ var Piechart = function(options){
     this.colors = options.colors;
  
     this.draw = function(){
-        var total_value = 0;
+        var total_value = 11;
         var color_index = 0;
-        for (var categ in this.options.data){
-            var val = this.options.data[categ];
-            total_value += val;
-        }
+        
  
         var start_angle = 0;
         for (categ in this.options.data){
@@ -62,11 +70,11 @@ var Piechart = function(options){
                 Math.min(this.canvas.width/2,this.canvas.height/2),
                 start_angle,
                 start_angle+slice_angle,
-                this.colors[color_index%this.colors.length]
+                
+                this.colors[color_index+1]
             );
  
             start_angle += slice_angle;
-            color_index++;
         }
  
     }
