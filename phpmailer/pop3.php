@@ -1,3 +1,5 @@
-    function testing($a,$b){
+<?php
+function testing($a,$b){
         return $a + $b;
     }
+?>
