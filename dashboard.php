@@ -17,8 +17,7 @@ if (isset($_SESSION['username']))
   $_SESSION["SUBJ2_MARK"] = "";
   $_SESSION["SUBJ3_MARK"] = "";
   $_SESSION["LO_MARK"] = "";
-
-  $_SESSION['APS'] =0;
+  $_SESSION['WITS-APS'] =0;
   $_SESSION["UJ-APS"]=0;
   $_SESSION["UP-APS"]=0;
 $str = $_SESSION['username'];
