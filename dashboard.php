@@ -572,10 +572,9 @@ if ( mysqli_num_rows( $result4 ) > 0 )
     <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
     <script src="vendor/chartjs/Chart.bundle.min.js"></script>
     <script src="vendor/select2/select2.min.js"></script>
-    <!-- pie chart -->
-    <script type="text/javascript" src="Pie.js"></script>
-    <script src="pie.min.js"></script>
 
+
+    <!-- pie chart -->
  				<script>
 				  function somefunc() {
 				    var formData = new FormData();
@@ -589,7 +588,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
             var b = document.getElementById("01");
 					  a.innerHTML = response[0].courses ;
             b.innerHTML = response[0].status;
-
+            
             var c = document.getElementById("10");
             var d = document.getElementById("11");
 					  c.innerHTML = response[1].courses ;
@@ -612,6 +611,10 @@ if ( mysqli_num_rows( $result4 ) > 0 )
 
     <!-- Main JS-->
     <script src="js/main.js"></script>
+
+    <!-- pie chart -->
+    <script type="text/javascript" src="Pie.js"></script>
+    <script src="pie.min.js"></script>
 
 
 </body>
