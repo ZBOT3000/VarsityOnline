@@ -6,7 +6,7 @@ class pop4Test extends TestCase{
   
  public function test_testing(){
    require_once('/home/travis/build/noreplysims/VarsityOnline/phpmailer/pop4.php');
-   $test=testing(4,10);
+   $test=testing(10,4);
  $this->assertEquals(14,$test, "correct!"); 
  }
  
