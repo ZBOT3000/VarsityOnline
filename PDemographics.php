@@ -14,10 +14,22 @@ if(!empty($id)||!empty($cell)||!empty($gender)||!empty($dob)||!empty($race)||!em
 {
 
 
-$mysql_qry="insert into demographics (USER_ID, ID_NUMBER, CELLPHONE, GENDER, DOB, CITIZEN, RACE, STATUS)
-VALUES ('$ID','$id_number', '$cell', '$gender', '$dob', '$race', '$citizen');";
-$result = mysqli_query($conn,$mysql_qry);
-header("Location: Dashboard.php");
+  $mysql_qry="insert into demographics (USER_ID, ID_NUMBER, CELLPHONE, GENDER, DOB, CITIZEN, RACE, STATUS)
+  VALUES ('$ID','$id_number', '$cell', '$gender', '$dob', '$race', '$citizen');";
+  $result = mysqli_query($conn,$mysql_qry);
+
+  if  ($result)
+  {
+    echo "YOU HAVE SUCCESSFULY CAPTURED YOUR Personal Details <br>";
+    echo "<p><a href='Dashboard.php'>CLICK HERE TO GO BACK</a></p>";
+    //echo "<p><a href='http://lamp.ms.wits.ac.za/~s1434995/VarsityOnline/Dashboard.php'>CLICK HERE TO GO BACK</a></p>";
+  }
+  else
+  {
+     echo "SOME OF THE INFOMATION ENTERED WAS INCORRECT PLEASE RETRY AGAIN";
+     echo "<p><a href='Demographics.php'>CLICK HERE TO GO BACK</a></p>";
+     //echo "<p><a href='http://lamp.ms.wits.ac.za/~s1434995/VarsityOnline/Demographics.php'>CLICK HERE TO GO BACK</a></p>";
+  }
 }
 else
 {
