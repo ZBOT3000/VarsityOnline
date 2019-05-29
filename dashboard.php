@@ -111,7 +111,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="au theme template">
+    <meta name="description" content="Varsity Online">
     <meta name="author" content="Varsity Online Team">
     <meta name="keywords" content="Varsity Online">
 
@@ -573,10 +573,8 @@ if ( mysqli_num_rows( $result4 ) > 0 )
     <script src="vendor/chartjs/Chart.bundle.min.js"></script>
     <script src="vendor/select2/select2.min.js"></script>
 
-
-    <!-- pie chart -->
- 				<script>
-				  function somefunc() {
+ 		<script>
+				    function somefunc() {
 				    var formData = new FormData();
 				    var httpReq = new XMLHttpRequest();
 				    httpReq.open("POST", "status.php", false);
