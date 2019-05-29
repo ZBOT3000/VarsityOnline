@@ -380,9 +380,9 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                         <div class="col-md-6 col-lg-4">
                             <!-- CHART PERCENT-->
                             <div class="chart-percent-2">
-                              <canvas id="myCanvas"></canvas>
+                              <div id="chartContainer" style="height: 100%; width: 100%;"></div>
                             </div>
-                            <!-- END CHART PERCENT-->
+
                         </div>
                     </div>
                 </div>
@@ -574,6 +574,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
     <script src="vendor/select2/select2.min.js"></script>
     <!-- pie chart -->
     <script type="text/javascript" src="Pie.js"></script>
+    <script src="pie.min.js"></script>
 
  				<script>
 				  function somefunc() {
