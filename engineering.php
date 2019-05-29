@@ -1,6 +1,6 @@
 <?php
 session_start();
-$ID = $_SESSION['user_id'];
+$ID = (int)$_SESSION['user_id'];
 
 
 
@@ -10,11 +10,11 @@ $ID = $_SESSION['user_id'];
   //  echo "Through";
     $opt1 = $_POST['opt1'];
 
-  $mysql_qry ="insert into schoolDetails (OPT1) VALUES ($opt1) WHERE USER_ID = '$ID';  ";
+  $mysql_qry ="update schoolDetails SET OPT1 = '$opt1' WHERE user_id = $ID;";
   $result = mysqli_query($conn,$mysql_qry);
   if ($result)
   {
-    //header('Location: Science.html');
+    header('Location: Dashboard.php');
     echo "<p>SUCCESSFULY LOADED</p>";
   }else {
     echo "  <h1 style='color:red'>Unseccessful </h1> ";
@@ -25,7 +25,7 @@ $ID = $_SESSION['user_id'];
    if($_POST['opt2'])
     {
       $opt2 = $_POST['opt2'];
-    $mysql_qry3 ="insert into schoolDetails (OPT2) VALUES ($opt2) WHERE USER_ID = '$ID';  ";
+    $mysql_qry3 ="update schoolDetails SET OPT1 = '$opt2' WHERE user_id = $ID;";
       $result3 = mysqli_query($conn,$mysql_qry3);
       if ($result3)
       {
@@ -41,7 +41,7 @@ $ID = $_SESSION['user_id'];
     if($_POST['opt3'])
      {
        $opt3 = $_POST['opt3'];
-     $mysql_qry4 ="insert into schoolDetails (OPT3) VALUES ($opt3) WHERE USER_ID = '$ID';  ";
+     $mysql_qry4 ="update schoolDetails SET OPT1 = '$opt3' WHERE user_id = $ID;";
        $result4 = mysqli_query($conn,$mysql_qry4);
        if ($result4)
        {

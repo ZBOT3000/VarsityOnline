@@ -1,11 +1,9 @@
 <?php
 session_start();
-#require 'conn.php';
-#$userid = $_GET["user_id"];
-#$courses = $_GET["courses"];
-#$staus = $_GET["status"];
-$conn = mysqli_connect('localhost', 's1434995' , 's1434995' , 'd1434995');
-$mysql_qry = "select * from COURSES where user_id like '12345' ;";
+
+$ID = (int)$_SESSION['user_id'];
+require "conn.php";
+$mysql_qry = "select * from COURSES where user_id like '$ID' ;";
 $result = mysqli_query($conn,$mysql_qry);
 $output_array = array();
 if ( mysqli_num_rows( $result ) > 0 )

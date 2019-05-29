@@ -5,12 +5,35 @@
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+<!--Navigation -->
+
+
+<div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Dashboard.php">Dashboard</a>
+  <a href="Demographics.php">Demographics</a>
+  <a href="newPassword.php">New Password</a>
+  <a href="Academics.php">Academics</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<!-- End of nagivation-->
   <head>
     <meta charset="utf-8">
     <title>Parental Details</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <!-- page css -->
+    <link rel="stylesheet" type="text/css" href="css/ParentalDetails.css">
   </head>
   <body>
 

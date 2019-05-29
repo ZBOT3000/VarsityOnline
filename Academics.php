@@ -72,7 +72,7 @@ function closeNav() {
 				<option value="Venda">Venda</option>
 				<option value="SePedi">SePedi</option>
 			</select>
-			<input type="number" class="form-control" name="HLMark" placeholder="HLMark" min="0" max="100">
+			<input type="text" class="form-control" name="HLMark" placeholder="HLMark" >
 			</div>
 
 
@@ -91,7 +91,7 @@ function closeNav() {
 			  <option value="Venda">FAL Venda</option>
 			  <option value="SePedi">FAL SePedi</option>
 			</select>
-			<input type="number" class="form-control" name="FALMark" placeholder="FALMark" min="0" max="100">
+			<input type="text" class="form-control" name="FALMark" placeholder="FALMark">
 			</div>
 
 			<div class="Drop-Down">
@@ -100,7 +100,7 @@ function closeNav() {
 				  <option value="Mathematics">Mathematics</option>
 				  <option value="MathLit">Mathematics Literacy</option>
 			</select>
-			<input type="number" class="form-control" name="MathMark" placeholder="MathMark" min="0" max="100">
+			<input type="text" class="form-control" name="MathMark" placeholder="MathMark">
 			</div>
 			<!--This is the drop down for First subject choice -->
 			<div class="Drop-Down">
@@ -133,7 +133,7 @@ function closeNav() {
 					<option value="Tourism">Tourism</option>
 					<option value="Visual Arts">Visual Arts</option>
 				</select>
-				<input type="number" class="form-control" name="sub1Mark" placeholder="sub1Mark" min="0" max="100">
+				<input type="text" class="form-control" name="sub1Mark" placeholder="sub1Mark">
 			</div>
 			<!--This is the drop down for second subject choice -->
 			<div class="Drop-Down" name="Subject2"	>
@@ -166,7 +166,7 @@ function closeNav() {
 					<option value="Tourism">Tourism</option>
 					<option value="Visual Arts">Visual Arts</option>
 				</select>
-				<input type="number" class="form-control" name="sub2Mark" placeholder="sub2Mark" min="0" max="100">
+				<input type="text" class="form-control" name="sub2Mark" placeholder="sub2Mark">
 			</div>
 			<!--This is the drop down for Third subject choice -->
 
@@ -200,12 +200,12 @@ function closeNav() {
 					<option value="Tourism">Tourism</option>
 					<option value="Visual Arts">Visual Arts</option>
 				</select>
-				<input type="number" class="form-control" name="sub3Mark" placeholder="sub3Mark" min="0" max="100">
+				<input type="text" class="form-control" name="sub3Mark" placeholder="sub3Mark">
 			</div>
 
 			<div>
 				<h2>Life Orientation</h2>
-				<input type="number" class="form-control" name="LOMark" min="0" max="100">
+				<input type="text" class="form-control" name="LOMark">
 			</div>
 
       <div>

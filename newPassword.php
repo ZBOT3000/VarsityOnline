@@ -8,7 +8,7 @@ if(isset($_POST["Submit"]))
   require "conn.php";
   $Password=$_POST['inputPassword1'];
   $ID=(int)$_SESSION['user_id'];
-  $mysql_qry2="update REGISTER SET password = '$Password' WHERE user_id = $ID;";
+  $mysql_qry2="update register SET password = '$Password' WHERE user_id = $ID;";
   $result2 = mysqli_query($conn,$mysql_qry2);
   if ($result2)
   {
@@ -26,7 +26,7 @@ if(isset($_POST["Submit"]))
 
  <div id="mySidenav" class="sidenav">
  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="Dashboard.php">Dashboard</a>
+  <a href="index.php">Dashboard</a>
    <a href="Demographics.php">Demographics</a>
    <a href="Academics.php">Academics</a>
 

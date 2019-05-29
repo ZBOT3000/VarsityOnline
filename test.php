@@ -1,22 +1,10 @@
 <?php
 session_start();
-require 'conn.php';
-$ID=(int)$_SESSION['user_id'];
-$mysql_qry="select status from current_academics where USER_ID like $ID;";
-
-$result = mysqli_query($conn,$mysql_qry);
-
-if ( mysqli_num_rows( $result ) > 0 )
-{
-  $row = $result->fetch_assoc();
-  $row = implode(" ",$row)." ";
-  echo $row;
-  $_SESSION['status'] = $row;
-}
-else
-{
-  echo "error";
-}
+$b = $_SESSION['user_id'];
+require 'functions.php';
+$bool = 1;
+$num = 3 + 4;
+$str = "A string here";
  ?>
 
 
@@ -28,16 +16,26 @@ else
     <title>TEST</title>
   </head>
   <body>
+    <p id="1"></p>
+    <p id="2"></p>
+    <p id="3"></p>
+    <script type="text/javascript">
+// boolean outputs "" if false, "1" if true
+var bool = "<?php echo $b ?>";
 
-    <h1 id="">
-      <?php
+// numeric value, both with and without quotes
+var num = <?php echo $num ?>; // 7
+var str_num = "<?php echo $num ?>"; // "7" (a string)
 
-      if (isset($_SESSION['status']))
-        {
-          echo $_SESSION['status'];
-        }
-      ?>
-    </h1>
+var str = "<?php echo $str ?>"; // "A string here"
 
+var a = document.getElementById("1");
+var b = document.getElementById("2");
+var c = document.getElementById("3");
+
+a.innerHTML = bool;
+b.innerHTML = num;
+c.innerHTML = str;
+</script>
   </body>
 </html>

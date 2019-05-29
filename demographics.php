@@ -1,13 +1,11 @@
 <?php
   session_start();
-  echo $_SESSION['user_id'];
 
  ?>
 
 <!DOCTYPE html>
 <html>
 <!--Navigation -->
-
 
 <div id="mySidenav" class="sidenav">
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>

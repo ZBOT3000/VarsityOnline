@@ -8,16 +8,16 @@ $email = $_POST["email1"];
 
 $password = $_POST["password1"];
 
-$mysql_qry="insert into REGISTER(email,username,password,name,surname) values('$email','a','$password','$name','$surname');";
+$mysql_qry="insert into register(email,username,password,name,surname) values('$email','a','$password','$name','$surname');";
 $result = mysqli_query($conn,$mysql_qry);
 
-$qry = "select USER_ID from REGISTER where name like '$name' and surname like '$surname' and   password like '$password';";
+$qry = "select USER_ID from register where name like '$name' and surname like '$surname' and   password like '$password';";
 $result2 = mysqli_query($conn,$qry);
 $row = $result2->fetch_assoc();
 $un = implode(" ",$row).$name;
 
 
-$qr2 = "update REGISTER SET username ='$un' where name like '$name' and surname like '$surname' and   password like '$password';";
+$qr2 = "update register SET username ='$un' where name like '$name' and surname like '$surname' and   password like '$password';";
 $result3 = mysqli_query($conn,$qr2);
 if  ($result)
 {
@@ -25,10 +25,10 @@ if  ($result)
 	$str = $_SESSION['username'];
   $str = preg_replace('/\D/', '', $str);
   $_SESSION['user_id']=$str;
-	header("Location: http://vor.lbmsolutions.co.za/Demographics.php");
+	header("Location: Dashboard.php");
 }
 else
 {
-	header("Location: http://vor.lbmsolutions.co.za/register.php");
+	header("Location: register.php");
 }
  ?>

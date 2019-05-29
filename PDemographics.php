@@ -10,18 +10,19 @@ $race = $_POST["race"];
 $citizen = $_POST["citizen"];
 $ID=(int)$_SESSION['user_id'];
 
-if(!empty($id)||!empty($cell)||!empty($gender)||!empty($dob)||!empty($race)||!empty($citizen)){
+if(!empty($id)||!empty($cell)||!empty($gender)||!empty($dob)||!empty($race)||!empty($citizen))
+{
 
 
 $mysql_qry="insert into demographics (USER_ID, ID_NUMBER, CELLPHONE, GENDER, DOB, CITIZEN)
 VALUES ('$ID', '29', '$cell', '$gender', '$dob', '$citizen');";
 $result = mysqli_query($conn,$mysql_qry);
-echo "yaaaaaaaaas";
-}else{
+header("Location: Dashboard.php");
+}
+else
+{
 
-	echo "All fields are required";
-	die();
-
+header("Location: Demographics.php");
 }
 
 
