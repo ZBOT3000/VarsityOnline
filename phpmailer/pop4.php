@@ -9,9 +9,10 @@ function testings($a,$b){
 	}
 	
 	else if($a=$b){
-		return $b;
+		return $a;
 	}
-	
+	else
+		return $b;
 }
 
 
