@@ -1,6 +1,6 @@
 <?php
 
-function testing($a,$b){
+function testings($a,$b){
 	if($a>$b){
 	 return $a;
 	}
