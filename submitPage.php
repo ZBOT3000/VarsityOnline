@@ -11,6 +11,7 @@ $gender = "";
 $dob = "";
 $citizen = "";
 //------ Parental details
+$guardian="";
 $Gname =  "";
 $Gsurname =  "";
 $Address =  "";
@@ -48,6 +49,7 @@ if ( mysqli_num_rows( $result2 ) > 0 )
   }
 
   //------ Parental details
+  $guardian = $row2[0]["Guardian"];
   $Gname = $rows2[0]["Gname"];
   $Gsurname = $rows2[0]["Gsurname"];
   $Address = $rows2[0]["Address"];
@@ -163,7 +165,7 @@ if ( mysqli_num_rows( $result3 ) > 0 )
                 <tbody>
                   <tr class="row100">
                     <td class="column100 column1" data-column="column1">Guardian Status</td>
-                    <td class="column100 column2" data-column="column2">8:00 AM</td>
+                    <td class="column100 column2" data-column="column2"><?php $guardian ?></td>
                   </tr>
 
                   <tr class="row100">
