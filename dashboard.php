@@ -112,8 +112,8 @@ if ( mysqli_num_rows( $result4 ) > 0 )
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="au theme template">
-    <meta name="author" content="Hau Nguyen">
-    <meta name="keywords" content="au theme template">
+    <meta name="author" content="Varsity Online Team">
+    <meta name="keywords" content="Varsity Online">
 
     <!-- Title Page-->
     <title>Dashboard</title>
@@ -588,7 +588,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
             var b = document.getElementById("01");
 					  a.innerHTML = response[0].courses ;
             b.innerHTML = response[0].status;
-            
+
             var c = document.getElementById("10");
             var d = document.getElementById("11");
 					  c.innerHTML = response[1].courses ;
