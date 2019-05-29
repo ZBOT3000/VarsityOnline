@@ -1,5 +1,7 @@
 <?php
 
+function testing($username,$_POST,$password,$mysql_qry,$result,$_SESSION,$str){
+	
 session_start();
 require 'conn.php';
 $username = $_POST["logUsername"];
@@ -17,6 +19,8 @@ if ( mysqli_num_rows( $result ) > 0 )
 else
 {
 	header("Location: login.php");
+}
+	
 }
 
  ?>
