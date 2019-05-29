@@ -30,6 +30,7 @@ if ( mysqli_num_rows( $result ) > 0 )
   $Cell = $rows[0]["CELLPHONE"];
   $gender = $rows[0]["GENDER"];
   $dob = $rows[0]["DOB"];
+  $race =$rows[0]["RACE"];
   $citizen = $rows[0]["CITIZEN"];
   if($citizen =="Yes")
   {
@@ -75,8 +76,14 @@ if ( mysqli_num_rows( $result3 ) > 0 )
 
 
 }
+$a = $_SESSION['AStatus'];
 
+if ($a == "Completed" )//and $_SESSION['Dstatus'] == "Completed" and $_SESSION['Parentalstatus'] == "Completed")
+{
+  $_SESSION['finish']=$_SESSION['finish']+10;
+}
 
+echo $_SESSION['finish'];//$_SESSION['finish'];
 
 
 
@@ -134,7 +141,7 @@ if ( mysqli_num_rows( $result3 ) > 0 )
 
                   <tr class="row100">
                     <td class="column100 column1" data-column="column1">Race</td>
-                    <td class="column100 column2" data-column="column2"><?php ?></td>
+                    <td class="column100 column2" data-column="column2"><?php echo $race ?></td>
                   </tr>
 
                   <tr class="row100">
@@ -260,7 +267,16 @@ if ( mysqli_num_rows( $result3 ) > 0 )
         </div>
       </div>
 
+      <form class="" action="finish.php" method="post">
+        <div>
+           <input type="submit" name = "submit" class="form-control submit" value="SUBMIT">
+      </div>
+      </form>
+
+
     </div>
+
+
 
 
     <script>
@@ -271,7 +287,6 @@ if ( mysqli_num_rows( $result3 ) > 0 )
         httpReq.onload = function() {
       //alert(this.responseText);
       response = JSON.parse(this.responseText);
-
         var a = document.getElementById("00");
         var b = document.getElementById("01");
         a.innerHTML = response[0].ID_NUMBER;

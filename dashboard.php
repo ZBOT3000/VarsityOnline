@@ -3,6 +3,8 @@ session_start();
 require 'functions.php';
 if (isset($_SESSION['username']))
 {
+  $_SESSION['finish']=1;
+
   $_SESSION["HOME_LAN"] = "GO TO THE HIGHSCHOOL INFO BAR";
   $_SESSION["FA_LAN"] = "- AND COMPLETE THE Academics SECTION";
   $_SESSION["MATH_SUBJ"] = "";
@@ -573,8 +575,8 @@ if ( mysqli_num_rows( $result4 ) > 0 )
     <script src="vendor/chartjs/Chart.bundle.min.js"></script>
     <script src="vendor/select2/select2.min.js"></script>
 
- 		<script>
-				    function somefunc() {
+    <script>
+				  function somefunc() {
 				    var formData = new FormData();
 				    var httpReq = new XMLHttpRequest();
 				    httpReq.open("POST", "status.php", false);
@@ -584,7 +586,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
 
 					  var a = document.getElementById("00");
             var b = document.getElementById("01");
-					  a.innerHTML = response[0].courses ;
+					  a.innerHTML = response[0][2] ;
             b.innerHTML = response[0].status;
 
             var c = document.getElementById("10");

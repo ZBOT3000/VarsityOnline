@@ -3,7 +3,7 @@ session_start();
 
 $ID = (int)$_SESSION['user_id'];
 require "conn.php";
-$mysql_qry = "select * from courses where user_id like '$ID' ;";
+$mysql_qry = "select * FROM courses WHERE user_id LIKE $ID ";
 $result = mysqli_query($conn,$mysql_qry);
 $output_array = array();
 if ( mysqli_num_rows( $result ) >0 )
