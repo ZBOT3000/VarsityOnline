@@ -4,7 +4,7 @@ require 'functions.php';
 if (isset($_SESSION['username']))
 {
   $_SESSION["HOME_LAN"] = "GO TO THE HIGHSCHOOL INFO BAR";
-  $_SESSION["FA_LAN"] = "AND COMPLETE THE Academics SECTION";
+  $_SESSION["FA_LAN"] = "- AND COMPLETE THE Academics SECTION";
   $_SESSION["MATH_SUBJ"] = "";
   $_SESSION["SUBJ1"]= "";;
   $_SESSION["SUBJ2"] = "";
@@ -19,6 +19,8 @@ if (isset($_SESSION['username']))
   $_SESSION["LO_MARK"] = "";
 
   $_SESSION['APS'] =0;
+  $_SESSION["UJ-APS"]=0;
+  $_SESSION["UP-APS"]=0;
 $str = $_SESSION['username'];
 $str = preg_replace('/\D/', '', $str);
 $_SESSION['user_id']=$str;
@@ -89,8 +91,12 @@ if ( mysqli_num_rows( $result4 ) > 0 )
   $_SESSION["SUBJ2_MARK"] = $rows[0]["SUBJ2_MARK"];
   $_SESSION["SUBJ3_MARK"] = $rows[0]["SUBJ3_MARK"];
   $_SESSION["LO_MARK"] = $rows[0]["LO_MARK"];
-  $_SESSION["APS"]=APS($_SESSION["FA_LAN_MARK"])+APS($_SESSION["SUBJ2_MARK"])+APS($_SESSION["SUBJ3_MARK"])+APS($_SESSION["SUBJ1_MARK"]);
-  $_SESSION["APS"] = $_SESSION["APS"]+APS_LO($_SESSION["LO_MARK"])+APS_EM($_SESSION["MATH_SUBJ_MARK"])+APS_EM($_SESSION["HOME_LAN_MARK"]);
+  $_SESSION["WITS-APS"]=APS($_SESSION["FA_LAN_MARK"])+APS($_SESSION["SUBJ2_MARK"])+APS($_SESSION["SUBJ3_MARK"])+APS($_SESSION["SUBJ1_MARK"]);
+  $_SESSION["WITS-APS"] = $_SESSION["WITS-APS"]+APS_LO($_SESSION["LO_MARK"])+APS_EM($_SESSION["MATH_SUBJ_MARK"])+APS_EM($_SESSION["HOME_LAN_MARK"]);
+  //UJ APS
+  $_SESSION["UJ-APS"] = +UJAPS($_SESSION["HOME_LAN_MARK"])+UJAPS($_SESSION["FA_LAN_MARK"])+UJAPS($_SESSION["MATH_SUBJ_MARK"])+UJAPS($_SESSION["SUBJ2_MARK"])+UJAPS($_SESSION["SUBJ3_MARK"])+UJAPS($_SESSION["SUBJ1_MARK"]);
+  //UP APS which is same as UJ
+  $_SESSION["UP-APS"] = $_SESSION["UJ-APS"];
 }
 
 
@@ -185,6 +191,13 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                 </ul>
                             </li>
 
+                            <!-- Academics Section -->
+                            <li class="has-sub">
+                              <a href="submitPage.php">
+                                <i class="fas fa-copy"></i>
+                                <span class="header3-sub-list list-unstyled"></span>Submit</a>
+                            </li>
+
                             <li class="has-sub">
                               <a href="LogOut.php">
                                 <i class="fas fa-copy"></i>
@@ -228,7 +241,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-lg-4">
-                          <!-- TOP CAMPAIGN-->
+                          <!-- APS Section-->
                           <div class="top-campaign">
                               <h3 class="title-3 m-b-30">APS SCORES</h3>
                               <div class="table-responsive">
@@ -236,7 +249,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                     <tbody>
                                         <tr>
                                           <th>
-                                            WITS APS
+                                            <a href="#">WITS APS</a>
                                           </th>
                                           <th>
                                             <?php
@@ -246,7 +259,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                         </tr>
                                         <tr>
                                           <th>
-                                            UJ APS
+                                            <a href="#">UJ APS</a>
                                           </th>
                                           <th>
                                             <?php
@@ -256,7 +269,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                         </tr>
                                         <tr>
                                           <th>
-                                            UP APS
+                                            <a href="#">UP APS</a>
                                           </th>
                                           <th>
                                             <?php
@@ -264,29 +277,13 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                              ?>
                                           </th>
                                         </tr>
-                                        <tr>
-                                          <th>
-                                            UNI4 APS
-                                          </th>
-                                          <th>
-                                            46
-                                          </th>
-                                        </tr>
-                                        <tr>
-                                          <th>
-                                            UNI5 APS
-                                          </th>
-                                          <th>
-                                            46
-                                          </th>
-                                        </tr>
-
                                     </tbody>
                                 </table>
                               </div>
                           </div>
-                          <!-- END TOP CAMPAIGN-->
+                          <!-- END APS Section-->
                       </div>
+                        <!-- Academics Section-->
                         <div class="col-md-6 col-lg-4">
                             <!-- TOP CAMPAIGN-->
                             <div class="top-campaign">
