@@ -10,12 +10,9 @@ $race = $_POST["race"];
 $citizen = $_POST["citizen"];
 $ID = (int)$_SESSION['user_id'];
 
-if(!empty($id)||!empty($cell)||!empty($gender)||!empty($dob)||!empty($race)||!empty($citizen))
-{
-
 
   $mysql_qry="insert into demographics (USER_ID, ID_NUMBER, CELLPHONE, GENDER, DOB, CITIZEN, RACE, STATUS)
-  VALUES ('$ID','$id_number', '$cell', '$gender', '$dob', '$race', '$citizen');";
+  VALUES ($ID,'$id_number', '$cell', '$gender', '$dob', '$race', '$citizen');";
   $result = mysqli_query($conn,$mysql_qry);
 
   if  ($result)
@@ -30,13 +27,6 @@ if(!empty($id)||!empty($cell)||!empty($gender)||!empty($dob)||!empty($race)||!em
      echo "<p><a href='Demographics.php'>CLICK HERE TO GO BACK</a></p>";
      //echo "<p><a href='http://lamp.ms.wits.ac.za/~s1434995/VarsityOnline/Demographics.php'>CLICK HERE TO GO BACK</a></p>";
   }
-}
-else
-{
-
-header("Location: Demographics.php");
-}
-
 
 
 
