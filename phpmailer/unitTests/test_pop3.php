@@ -6,7 +6,7 @@ class pop3Test extends TestCase{
   
  public function test_testing(){
    require_once('/home/travis/build/noreplysims/VarsityOnline/phpmailer/pop3.php');
-   $test=testing(10,4);
+   $test=testing(4,10);
  $this->assertEquals(14,$test, "correct!"); 
  }
  
