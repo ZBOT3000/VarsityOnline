@@ -232,53 +232,57 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                           <div class="top-campaign">
                               <h3 class="title-3 m-b-30">APS SCORES</h3>
                               <div class="table-responsive">
-                                  <table class="table table-top-campaign">
-                                      <tbody>
-                                          <tr>
-                                            <th>
-                                              WITS APS
-                                            </th>
-                                            <th>
-                                              <?php
-                                                echo $_SESSION["APS"];
-                                               ?>
-                                            </th>
-                                          </tr>
-                                          <tr>
-                                            <th>
-                                              UNI2 APS
-                                            </th>
-                                            <th>
-                                              46
-                                            </th>
-                                          </tr>
-                                          <tr>
-                                            <th>
-                                              UNI3 APS
-                                            </th>
-                                            <th>
-                                              46
-                                            </th>
-                                          </tr>
-                                          <tr>
-                                            <th>
-                                              UNI4 APS
-                                            </th>
-                                            <th>
-                                              46
-                                            </th>
-                                          </tr>
-                                          <tr>
-                                            <th>
-                                              UNI5 APS
-                                            </th>
-                                            <th>
-                                              46
-                                            </th>
-                                          </tr>
+                                <table class="table table-top-campaign">
+                                    <tbody>
+                                        <tr>
+                                          <th>
+                                            WITS APS
+                                          </th>
+                                          <th>
+                                            <?php
+                                              echo $_SESSION["WITS-APS"];
+                                             ?>
+                                          </th>
+                                        </tr>
+                                        <tr>
+                                          <th>
+                                            UJ APS
+                                          </th>
+                                          <th>
+                                            <?php
+                                            echo $_SESSION["UJ-APS"];
+                                            ?>
+                                          </th>
+                                        </tr>
+                                        <tr>
+                                          <th>
+                                            UP APS
+                                          </th>
+                                          <th>
+                                            <?php
+                                            echo $_SESSION["UP-APS"];
+                                             ?>
+                                          </th>
+                                        </tr>
+                                        <tr>
+                                          <th>
+                                            UNI4 APS
+                                          </th>
+                                          <th>
+                                            46
+                                          </th>
+                                        </tr>
+                                        <tr>
+                                          <th>
+                                            UNI5 APS
+                                          </th>
+                                          <th>
+                                            46
+                                          </th>
+                                        </tr>
 
-                                      </tbody>
-                                  </table>
+                                    </tbody>
+                                </table>
                               </div>
                           </div>
                           <!-- END TOP CAMPAIGN-->
