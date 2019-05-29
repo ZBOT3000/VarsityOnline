@@ -11,7 +11,7 @@ $citizen = $_POST["citizen"];
 $ID = (int)$_SESSION['user_id'];
 
 
-  $mysql_qry="insert into demographics (USER_ID, ID_NUMBER, CELLPHONE, GENDER, DOB, CITIZEN, RACE, STATUS)
+  $mysql_qry="insert into demographics (USER_ID, ID_NUMBER, CELLPHONE, GENDER, DOB, RACE ,CITIZEN)
   VALUES ($ID,'$id_number', '$cell', '$gender', '$dob', '$race', '$citizen');";
   $result = mysqli_query($conn,$mysql_qry);
 
