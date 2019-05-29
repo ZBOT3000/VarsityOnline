@@ -98,7 +98,9 @@ if ( mysqli_num_rows( $result4 ) > 0 )
   $_SESSION["UP-APS"] = $_SESSION["UJ-APS"];
 }
 
-
+$WitsAps = $_SESSION["WITS-APS"];
+$UJAps = $_SESSION["UJ-APS"];
+$UPAps = $_SESSION["UP-APS"];
 
 }else {
   header('Location: WelcomePage.html');
@@ -142,7 +144,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
 </head>
 
 <body class="animsition" onload="somefunc()">
-
+  <var> nums =1 </var>
 
     <div class="page-wrapper">
         <!-- HEADER DESKTOP-->
@@ -249,6 +251,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                         <tr>
                                           <th>
                                             <a href="#">WITS APS</a>
+
                                           </th>
                                           <th>
                                             <?php
@@ -258,7 +261,8 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                         </tr>
                                         <tr>
                                           <th>
-                                            <a href="#">UJ APS</a>
+                                            <a href="#" >UJ APS</a>
+
                                           </th>
                                           <th>
                                             <?php
@@ -268,7 +272,8 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                         </tr>
                                         <tr>
                                           <th>
-                                            <a href="#">UP APS</a>
+                                            <a href="#" > UP APS</a>
+
                                           </th>
                                           <th>
                                             <?php
@@ -380,7 +385,11 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                         <div class="col-md-6 col-lg-4">
                             <!-- CHART PERCENT-->
                             <div class="chart-percent-2">
+                              <script> function myFunction(){
+
+                              } </script>
                               <div id="chartContainer" style="height: 100%; width: 100%;"></div>
+
                             </div>
 
                         </div>
@@ -573,6 +582,12 @@ if ( mysqli_num_rows( $result4 ) > 0 )
     <script src="vendor/chartjs/Chart.bundle.min.js"></script>
     <script src="vendor/select2/select2.min.js"></script>
 
+    <script type="text/javascript">
+    var witsAps = <?php echo $WitsAps ?>;
+    var ujAps = <?php echo $UJAps ?>;
+    var upAps = <?php echo $UPAps ?>;
+    </script>
+
  		<script>
 				    function somefunc() {
 				    var formData = new FormData();
@@ -613,6 +628,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
     <!-- pie chart -->
     <script type="text/javascript" src="Pie.js"></script>
     <script src="pie.min.js"></script>
+
 
 
 </body>

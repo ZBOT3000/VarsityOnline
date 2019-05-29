@@ -1,3 +1,5 @@
+
+
 window.onload = function() {
 var data = [
           {label:  "Computer Science ", y: 40, exploded: true,},
@@ -14,27 +16,32 @@ var data = [
           {label:  "Aeronautical Engineering", y: 40,exploded: true,}
         ]
 
+
+
+  var Aps = witsAps;
+
+
 for(var i=0;i<data.length;i++){
-	if (data[i].y<42){
+	if (Aps<data[i].y){
     	data[i].color = "red";
     }
   	else{
       data[i].color = "green"
     }
 }
+
+
 var chart = new CanvasJS.Chart("chartContainer", {
-	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	theme: "light1",
 	exportEnabled: true,
 	animationEnabled: true,
 	title: {
-		text: "Wits Science Faculty"
+		text: "Science Faculty"
 	},
 	data: [{
 		type: "pie",
 		startAngle:90,
 		toolTipContent: "<b>{label}</b>: {y}",
-		indexLabelFontSize: 16,
-		indexLabel: "{label}",
 		dataPoints: data
 	}]
 });
