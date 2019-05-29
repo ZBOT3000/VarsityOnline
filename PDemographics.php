@@ -8,7 +8,7 @@ $gender = $_POST["gender"];
 $dob = $_POST["DOB"];
 $race = $_POST["race"];
 $citizen = $_POST["citizen"];
-$ID=(int)$_SESSION['user_id'];
+$ID = (int)$_SESSION['user_id'];
 
 if(!empty($id)||!empty($cell)||!empty($gender)||!empty($dob)||!empty($race)||!empty($citizen))
 {
