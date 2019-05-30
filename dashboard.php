@@ -3,8 +3,6 @@ session_start();
 require 'functions.php';
 if (isset($_SESSION['username']))
 {
-  $_SESSION['finish']=1;
-
   $_SESSION["HOME_LAN"] = "GO TO THE HIGHSCHOOL INFO BAR";
   $_SESSION["FA_LAN"] = "- AND COMPLETE THE Academics SECTION";
   $_SESSION["MATH_SUBJ"] = "";
@@ -100,9 +98,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
   $_SESSION["UP-APS"] = $_SESSION["UJ-APS"];
 }
 
-$WitsAps = $_SESSION["WITS-APS"];
-$UJAps = $_SESSION["UJ-APS"];
-$UPAps = $_SESSION["UP-APS"];
+
 
 }else {
   header('Location: WelcomePage.html');
@@ -115,9 +111,9 @@ $UPAps = $_SESSION["UP-APS"];
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Varsity Online">
-    <meta name="author" content="Varsity Online Team">
-    <meta name="keywords" content="Varsity Online">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
 
     <!-- Title Page-->
     <title>Dashboard</title>
@@ -146,7 +142,7 @@ $UPAps = $_SESSION["UP-APS"];
 </head>
 
 <body class="animsition" onload="somefunc()">
-  <var> nums =1 </var>
+
 
     <div class="page-wrapper">
         <!-- HEADER DESKTOP-->
@@ -253,7 +249,6 @@ $UPAps = $_SESSION["UP-APS"];
                                         <tr>
                                           <th>
                                             <a href="#">WITS APS</a>
-
                                           </th>
                                           <th>
                                             <?php
@@ -263,8 +258,7 @@ $UPAps = $_SESSION["UP-APS"];
                                         </tr>
                                         <tr>
                                           <th>
-                                            <a href="#" >UJ APS</a>
-
+                                            <a href="#">UJ APS</a>
                                           </th>
                                           <th>
                                             <?php
@@ -274,8 +268,7 @@ $UPAps = $_SESSION["UP-APS"];
                                         </tr>
                                         <tr>
                                           <th>
-                                            <a href="#" > UP APS</a>
-
+                                            <a href="#">UP APS</a>
                                           </th>
                                           <th>
                                             <?php
@@ -387,13 +380,9 @@ $UPAps = $_SESSION["UP-APS"];
                         <div class="col-md-6 col-lg-4">
                             <!-- CHART PERCENT-->
                             <div class="chart-percent-2">
-                              <script> function myFunction(){
-
-                              } </script>
-                              <div id="chartContainer" style="height: 100%; width: 100%;"></div>
-
+                              <canvas id="myCanvas"></canvas>
                             </div>
-
+                            <!-- END CHART PERCENT-->
                         </div>
                     </div>
                 </div>
@@ -583,20 +572,11 @@ $UPAps = $_SESSION["UP-APS"];
     <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
     <script src="vendor/chartjs/Chart.bundle.min.js"></script>
     <script src="vendor/select2/select2.min.js"></script>
+    <!-- pie chart -->
+    <script type="text/javascript" src="Pie.js"></script>
 
-<<<<<<< HEAD
-    <script>
+ 				<script>
 				  function somefunc() {
-=======
-    <script type="text/javascript">
-    var witsAps = <?php echo $WitsAps ?>;
-    var ujAps = <?php echo $UJAps ?>;
-    var upAps = <?php echo $UPAps ?>;
-    </script>
-
- 		<script>
-				    function somefunc() {
->>>>>>> d5fd068240ea826b928893c18a261cc5c18be816
 				    var formData = new FormData();
 				    var httpReq = new XMLHttpRequest();
 				    httpReq.open("POST", "status.php", false);
@@ -606,7 +586,7 @@ $UPAps = $_SESSION["UP-APS"];
 
 					  var a = document.getElementById("00");
             var b = document.getElementById("01");
-					  a.innerHTML = response[0][2] ;
+					  a.innerHTML = response[0].courses ;
             b.innerHTML = response[0].status;
 
             var c = document.getElementById("10");
@@ -631,11 +611,6 @@ $UPAps = $_SESSION["UP-APS"];
 
     <!-- Main JS-->
     <script src="js/main.js"></script>
-
-    <!-- pie chart -->
-    <script type="text/javascript" src="Pie.js"></script>
-    <script src="pie.min.js"></script>
-
 
 
 </body>
