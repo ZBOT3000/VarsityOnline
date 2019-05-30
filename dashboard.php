@@ -98,7 +98,9 @@ if ( mysqli_num_rows( $result4 ) > 0 )
   $_SESSION["UP-APS"] = $_SESSION["UJ-APS"];
 }
 
-
+$WitsAps = $_SESSION["WITS-APS"];
+$UJAps = $_SESSION["UJ-APS"];
+$UPAps = $_SESSION["UP-APS"];
 
 }else {
   header('Location: WelcomePage.html');
@@ -155,7 +157,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                         </a>
 
                     </div>
-                    
+
                     <h2>
                     <div class="header__navbar">
 
@@ -204,7 +206,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                   <li>
                                       <a href="wishliststatus.html">Show WishList</a>
                                   </li>
-                                  
+
                                 </ul>
                             </li>
 
@@ -275,7 +277,13 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                     <tbody>
                                         <tr>
                                           <th>
-                                            <a href="#">WITS APS</a>
+                                            <a href="#" id="witsa">WITS APS</a>
+                                              <script>
+                                                var elm=document.querySelector("#witsa");
+                                                elm.addEventListener("click", function (){
+                                                var num=1;
+                                              });
+                                              </script>
                                           </th>
                                           <th>
                                             <?php
@@ -285,7 +293,13 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                         </tr>
                                         <tr>
                                           <th>
-                                            <a href="#">UJ APS</a>
+                                            <a href="#" id="uja">UJ APS</a>
+                                            <script>
+                                              var elm=document.querySelector("#uja");
+                                              elm.addEventListener("click", function (){
+                                              var num=2;
+                                            });
+                                            </script>
                                           </th>
                                           <th>
                                             <?php
@@ -295,7 +309,8 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                         </tr>
                                         <tr>
                                           <th>
-                                            <a href="#">UP APS</a>
+                                            <a href="#" id="upa">UP APS</a>
+
                                           </th>
                                           <th>
                                             <?php
@@ -408,6 +423,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                             <!-- CHART PERCENT-->
                             <div class="chart-percent-2">
                               <canvas id="myCanvas"></canvas>
+                              <div id="chartContainer" style="height: 300px; width: 100%;"></div>
                             </div>
                             <!-- END CHART PERCENT-->
                         </div>
@@ -601,8 +617,20 @@ if ( mysqli_num_rows( $result4 ) > 0 )
     <script src="vendor/select2/select2.min.js"></script>
     <!-- pie chart -->
     <script type="text/javascript" src="Pie.js"></script>
+    <script src="pie.min.js"></script>
 
  				<script>
+        var witsAps = <?php echo $WitsAps ?>;
+        var ujAps = <?php echo $UJAps ?>;
+        var upAps = <?php echo $UPAps ?>;
+        var num;
+
+        var elm=document.querySelector("#upa");
+          elm.addEventListener("click", function (){
+          var APS = upAps;
+        });
+
+
 				  function somefunc() {
 				    var formData = new FormData();
 				    var httpReq = new XMLHttpRequest();

@@ -16,9 +16,17 @@ var data = [
           {label:  "Aeronautical Engineering", y: 40,exploded: true,}
         ]
 
-
-
+var ac = num;
+if(ac==1){
   var Aps = witsAps;
+}else if(ac==2){
+  var Aps = ujAps;
+} else if(ac==3){
+  var Aps = upAps;
+}else {
+  var Aps = witsAps;
+}
+
 
 
 for(var i=0;i<data.length;i++){
