@@ -5,11 +5,11 @@ use PHPUnit\DbUnit\TestCaseTrait;
 /**
  * 
  */
-class HelloWorldTest extends \PHPUnit_Framework_TestCase{
+class HelloWorldTest extends TestCase{
   protected $hello;
   
   public function setUp(){//this part of the code initiates the hello variable
-    $this->hello = new \MS35\WitsSoftwareDesign\HelloWorld();
+    $this->hello = new \noreplysims\VarsityOnline\HelloWorld();
   }
   /**
    * @covers ::world
