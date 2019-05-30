@@ -3,10 +3,11 @@
 <html>
 <body>
 
-<form action="uploadDoc.php" method="POST" enctype="multipart/form-data">
+<form enctype="multipart/form-data" action="uploadDoc.php" method="post" >
+    <input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
     Select file to upload:
-    <input type="file" name="file" id="fileToUpload">
-    <input type="submit" value="Upload" name="submit">
+    <input  name="file" type="file" >
+    <input type="submit" value="Send File">
 </form>
 
 </body>
