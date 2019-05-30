@@ -151,9 +151,12 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                 <div class="header3-wrap">
                     <div class="header__logo">
                         <a href="#">
-                            <h1><a href="Dashboard.php" style="color:white;" >Varsity Online</a></h1>
+                            <h1><a href="dashboard.php" style="color:white;" >Varsity Online</a></h1>
                         </a>
+
                     </div>
+                    
+                    <h2>
                     <div class="header__navbar">
 
                       <!-- individual users -->
@@ -182,15 +185,38 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                       <a href="Academics.php">Academics</a>
                                   </li>
                                   <li>
-                                      <a href="School.html">Faculty</a>
+                                      <a href="school.html">Faculty</a>
                                   </li>
                                   <li>
                                     <a href="test.php">test</a>
                                   </li>
                                 </ul>
                             </li>
+                            <!-- WISH LIST-->
+                            <li class="has-sub">
+                              <a href="#">
+                                <i class="fas fa-copy"></i>
+                                <span class="header3-sub-list list-unstyled"></span>WishList</a>
+                                <ul class ="header3-sub-list list-unstyled">
+                                  <li>
+                                      <a href="wishlist.html">Add To WishList</a>
+                                  </li>
+                                  <li>
+                                      <a href="wishliststatus.html">Show WishList</a>
+                                  </li>
+                                  
+                                </ul>
+                            </li>
 
-                            <!-- Academics Section -->
+                            <!--Upload Documents -->
+
+                            <li class="has-sub">
+                              <a href="uploadDoc.html">
+                                <i class="fas fa-copy"></i>
+                                <span class="header3-sub-list list-unstyled"></span>Upload Documents</a>
+                            </li>
+
+                            <!-- Log Sessions -->
                             <li class="has-sub">
                               <a href="submitPage.php">
                                 <i class="fas fa-copy"></i>
@@ -204,6 +230,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                             </li>
                         </ul>
                     </div>
+                  </h2>
                 </div>
             </div>
         </header>
@@ -542,7 +569,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                     <div class="row">
                         <div class="col-md-12">
                             <div class="copyright">
-                                <p>Copyright © 2019 LBMSolutions. All rights reserved.</p>
+                                <p>Copyright © 2019 VarsityOnline. All rights reserved.</p>
                             </div>
                         </div>
                     </div>
