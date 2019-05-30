@@ -155,7 +155,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                         </a>
 
                     </div>
-                    
+
                     <h2>
                     <div class="header__navbar">
 
@@ -204,7 +204,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                   <li>
                                       <a href="wishliststatus.html">Show WishList</a>
                                   </li>
-                                  
+
                                 </ul>
                             </li>
 
@@ -216,7 +216,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                 <span class="header3-sub-list list-unstyled"></span>Upload Documents</a>
                             </li>
 
-                            <!-- Log Sessions -->
+                            <!-- submit Sessions -->
                             <li class="has-sub">
                               <a href="submitPage.php">
                                 <i class="fas fa-copy"></i>
