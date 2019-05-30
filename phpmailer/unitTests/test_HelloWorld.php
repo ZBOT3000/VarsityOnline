@@ -3,7 +3,7 @@
 use PHPUnit\Framework\TestCase;
 use PHPUnit\DbUnit\TestCaseTrait;
 /**
- * 
+ * @coversDefaultClass \noreplysims\VarsityOnline\HelloWorld
  */
 class HelloWorldTest extends TestCase{
   protected $hello;
