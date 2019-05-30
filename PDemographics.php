@@ -19,6 +19,7 @@ $ID = (int)$_SESSION['user_id'];
   {
     echo "YOU HAVE SUCCESSFULY CAPTURED YOUR Personal Details <br>";
     echo "<p><a href='Dashboard.php'>CLICK HERE TO GO BACK</a></p>";
+    $_SESSION['finish']=$_SESSION['finish']+1;
     //echo "<p><a href='http://lamp.ms.wits.ac.za/~s1434995/VarsityOnline/Dashboard.php'>CLICK HERE TO GO BACK</a></p>";
   }
   else

@@ -20,6 +20,7 @@ if  ($result)
 {
    echo "YOU HAVE SUCCESSFULY CAPTURED YOUR PARENTAL DETAILS <br>";
    echo "<p><a href='Dashboard.php'>CLICK HERE TO GO BACK</a></p>";
+   $_SESSION['finish']=$_SESSION['finish']+1;
 }else
 {
     echo "SOME OF THE INFOMATION ENTERED WAS INCORRECT PLEASE RETRY AGAIN";

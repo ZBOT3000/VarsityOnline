@@ -13,6 +13,7 @@
 
   function UJAPS($mark)
   {
+    $total =0 ;
     if ($mark >= 80 and $mark <101)
     {
       $total = 7 ;
@@ -31,7 +32,7 @@
     }
 
 
-  return $total;
+    return $total;
   }
   function APS ($mark) {
     $total = 0;

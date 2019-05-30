@@ -218,7 +218,7 @@ $UPAps = $_SESSION["UP-APS"];
                                 <span class="header3-sub-list list-unstyled"></span>Upload Documents</a>
                             </li>
 
-                            <!-- Log Sessions -->
+                            <!-- submit Sessions -->
                             <li class="has-sub">
                               <a href="submitPage.php">
                                 <i class="fas fa-copy"></i>

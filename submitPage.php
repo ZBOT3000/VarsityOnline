@@ -80,10 +80,10 @@ $a = $_SESSION['AStatus'];
 
 if ($a == "Completed" )//and $_SESSION['Dstatus'] == "Completed" and $_SESSION['Parentalstatus'] == "Completed")
 {
-  $_SESSION['finish']=$_SESSION['finish']+10;
+  $_SESSION['finish']= 10;
 }
 
-echo $_SESSION['finish'];//$_SESSION['finish'];
+  echo $_SESSION['finish'];   //$_SESSION['finish'];
 
 
 
