@@ -1,8 +1,9 @@
 <?php
-/**
- * @coversDefaultClass \Rovholo\datalabel\login
- */
-class loginTest extends PHPUnit_Framework_TestCase{
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+#require_once('locallib.php');
+
+class loginTest extends TestCase{
   protected $result;
   
   public function setUp(){//this part of the code initiates the hello variable
