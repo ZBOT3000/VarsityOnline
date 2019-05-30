@@ -1,46 +1,5 @@
 <?php
-/*
-$host = "lamp.ms.wits.ac.za/~s1434995"; 
-$port = 22; 
-$user = "s1434995"; 
-$pass = "s1434995"; 
-  
-$connection = ssh2_connect($host, $port); 
-$passtrue = ssh2_auth_password($connection, 's1434995', 's1434995'); 
-if ($passtrue) 
-{ 
-echo "conected"; 
-} 
 
-else 
-{ 
-echo "no conected"; 
-} 
-		*/
-
-
-//$uploaddir = '/home/s1434995/public_html/VarsityOnline/StudentFiles/';
-//$uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
-//$file_tem_Loc = $_FILES['file']['tmp_name'];
-	
-	//move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile);
-
-	//$connection = ssh2_connect('lamp.ms.wits.ac.za', 22);
-    //ssh2_auth_password($connection, 's1434995', 's1434995');
-
-   //// ssh2_scp_send($connection, $file_tem_Loc, $uploadfile, 0644);
-
-//echo '<pre>';
-//if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
-  //  echo "File is valid, and was successfully uploaded.\n";
-//} else {
- //   echo "Possible file upload attack!\n";
-//}
-
-//echo 'Here is some more debugging info:';
-//print_r($_FILES);
-
-//print "</pre>";
 
 
 	if(isset($_FILES['file'])){
@@ -74,21 +33,27 @@ echo "no conected";
 							//check if file was loaded to servre
 								if(move_uploaded_file($file_tmp, $file_destination)){
 
-									echo "Success";
+									//echo "Success";
+									header('Location: dashboard.php');
 								}
 						}
 							else{
-								echo "File Too Large";
+								echo "ERROR: File Too Large";
+								echo "<p><a href='uploadDoc.html'>Go back</a></p>";
+								echo "And Reload page";
 							}
 				}
 				else
 				{
 					echo "File Upload Error";
+					echo "<p><a href='uploadDoc.html'>Go back</a></p>";
+
 				}
 		}
 		else{
 
-			echo "File Type Not allowed";
+			echo "<h1>File Type Not allowed</h1>";
+			echo "<p><a href='uploadDoc.html'>Go back</a></p>";
 		}
 		//print_r();
 		
@@ -100,6 +65,12 @@ echo "no conected";
 		
 		
 	
+	}
+	else{
+			echo "<h1>ERROR: NO FILE</h1>";
+			echo "<p><a href='uploadDoc.html'>Go back</a></p>";
+
+
 	}
 ?>
 
