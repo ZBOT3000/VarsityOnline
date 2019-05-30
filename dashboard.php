@@ -422,7 +422,7 @@ $UPAps = $_SESSION["UP-APS"];
                         <div class="col-md-6 col-lg-4">
                             <!-- CHART PERCENT-->
                             <div class="chart-percent-2">
-                              <canvas id="myCanvas"></canvas>
+                              
                               <div id="chartContainer" style="height: 300px; width: 100%;"></div>
                             </div>
                             <!-- END CHART PERCENT-->
