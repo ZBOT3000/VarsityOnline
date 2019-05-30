@@ -7,7 +7,7 @@ class loginTest extends TestCase{
   protected $result;
   
   public function setUp(){//this part of the code initiates the hello variable
-    $this->result = new \noreplysims\VarsityOnline\Plogin.php;
+    $this->result = require_once('/home/travis/build/noreplysims/VarsityOnline/Plogin.php');
     $link = mysqli_connect('localhost', 's1434995' , 's1434995' , 'd1434995');
     mysqli_query($link,"CREATE TABLE users (user_id int NOT NULL,user_name varchar(255),password varchar(255))");
     mysqli_query($link,"INSERT INTO users (user_id,user_name,password) values('1','user','name')");
