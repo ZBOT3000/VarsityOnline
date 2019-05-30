@@ -3,7 +3,7 @@ session_start();
 require 'conn.php';
 $a = $_SESSION['finish'];
 
-
+$id = $_SESSION['user_id'];
 if ($a <3)
 {
   echo "PLEASE GO BACK AND COMPLETE THE APPLICATION COMPLETELY";
