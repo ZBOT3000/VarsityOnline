@@ -16,6 +16,7 @@ $Gname =  "";
 $Gsurname =  "";
 $Address =  "";
 $Address2 =  "";
+$race ="";
 $state = "";
 $City = "";
 $Zip  = "";
@@ -76,14 +77,8 @@ if ( mysqli_num_rows( $result3 ) > 0 )
 
 
 }
-$a = $_SESSION['AStatus'];
 
-if ($a == "Completed" )//and $_SESSION['Dstatus'] == "Completed" and $_SESSION['Parentalstatus'] == "Completed")
-{
-  $_SESSION['finish']= 10;
-}
-
-  echo $_SESSION['finish'];   //$_SESSION['finish'];
+echo $_SESSION['finish'];
 
 
 

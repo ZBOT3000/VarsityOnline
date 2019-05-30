@@ -36,7 +36,7 @@
   else
   {
     	echo "SOME OF THE INFOMATION ENTERED WAS INCORRECT PLEASE RETRY AGAIN";
-      echo "<p><a href='http://lamp.ms.wits.ac.za/~s1434995/VarsityOnline/Academics.php'>CLICK HERE TO GO BACK</a></p>";
+      echo "<p><a href='Academics.php'>CLICK HERE TO GO BACK</a></p>";
   }
 
  ?>
