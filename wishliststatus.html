@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <script>
+  function somefunc(){
+    var formData = new FormData();
+    var httpReq = new XMLHttpRequest();
+    httpReq.open("POST", "wishliststatus.php", false);
+    httpReq.onload = function() {
+        //alert(this.responseText);
+        response = JSON.parse(this.responseText);
+	
+        for(var i = 0; i < response.length; i++) {
+       
+          var node = document.createElement("div");
+          node.innerHTML = response[i].course;
+          document.body.appendChild(node);
+        }
+    };
+    httpReq.send(formData);
+  }
+  </script>
+  <style>
+    div {
+     border-left: 6px solid red;
+     background-color: lightgrey;
+     width: 600px;
+     height: 50px;
+     margin: auto;
+     border: 1px solid black;
+    }
+    body {
+      background: #2d343d;
+      background-image:
+      radial-gradient(white,silver);
+	
+   }
+  </style>
+  <body onload="somefunc()">
+  </body>
+</html>
