@@ -1,5 +1,5 @@
 <?php
-namespace MS35\WitsSoftwareDesign;
+namespace noreplysims\VarsityOnline;
 class HelloWorld{
   public function world(){
     return 'world';
