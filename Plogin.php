@@ -5,6 +5,7 @@ $username = $_POST["logUsername"];
 $password = $_POST["logPassword"];
 $_SESSION['finish'] = 0;
 $mysql_qry="select * from register where username like '$username' and password like '$password' ;";
+$un = "";
 
 $result = mysqli_query($conn,$mysql_qry);
 
@@ -19,10 +20,17 @@ if ( mysqli_num_rows( $result ) > 0 )
 	$result2 = mysqli_query($conn,$mysql_qry2);
 	if ( mysqli_num_rows( $result2 ) > 0 )
 	{
-		
+
+		$row = $result2->fetch_assoc();
+		$un = implode(" ",$row);
+		echo $un;
+		$_SESSION['finish'] = $un;
+		header("Location: Dashboard.php");
+	} else {
+		header("Location: Dashboard.php");
 	}
 
-	header("Location: Dashboard.php");
+
 }
 else
 {
