@@ -30,7 +30,7 @@ $ID = (int)$_SESSION['user_id'];
    if($_POST['opt2'])
     {
       $opt2 = $_POST['opt2'];
-    $mysql_qry3 ="update schoolDetails SET OPT1 = '$opt2' WHERE user_id = $ID;";
+    $mysql_qry3 ="update schoolDetails SET OPT2 = '$opt2' WHERE user_id = $ID;";
       $result3 = mysqli_query($conn,$mysql_qry3);
       $mysql_qryb ="insert into COURSES (user_id,courses)VALUES ($ID, '$opt2');";
       $resultb = mysqli_query($conn,$mysql_qryb);
@@ -48,7 +48,7 @@ $ID = (int)$_SESSION['user_id'];
     if($_POST['opt3'])
      {
        $opt3 = $_POST['opt3'];
-     $mysql_qry4 ="update schoolDetails SET OPT1 = '$opt3' WHERE user_id = $ID;";
+     $mysql_qry4 ="update schoolDetails SET OPT3 = '$opt3' WHERE user_id = $ID;";
        $result4 = mysqli_query($conn,$mysql_qry4);
 
        $mysql_qryc ="insert into COURSES (user_id,courses)VALUES ($ID, '$opt1');";

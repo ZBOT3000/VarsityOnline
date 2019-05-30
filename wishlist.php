@@ -1,6 +1,6 @@
 <?php
-require "conn.php";
 session_start();
+require "conn.php";
 $Course = $_POST["Course"];
 $id = (int)$_SESSION['user_id'];
 $mysql_ins="insert into wishlist values('$id','$Course');";
