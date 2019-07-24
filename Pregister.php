@@ -25,7 +25,7 @@ if  ($result)
 	$str = $_SESSION['username'];
   $str = preg_replace('/\D/', '', $str);
   $_SESSION['user_id']=$str;
-	header("Location: Dashboard.php");
+	header("Location: dashboard.php");
 }
 else
 {
