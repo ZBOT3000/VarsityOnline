@@ -624,7 +624,7 @@ $UPAps = $_SESSION["UP-APS"];
         var ujAps = <?php echo $UJAps ?>;
         var upAps = <?php echo $UPAps ?>;
         var num;
-
+        
         var elm=document.querySelector("#upa");
           elm.addEventListener("click", function (){
           var APS = upAps;
