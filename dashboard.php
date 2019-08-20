@@ -633,9 +633,7 @@ $UPAps = $_SESSION["UP-APS"];
     <!-- pie chart -->
     <script type="text/javascript" src="Pie.js"></script>
 
-<<<<<<< HEAD
     <script src="pie.min.js"></script>
-=======
  				<script>
         var witsAps = <?php echo $WitsAps ?>;
         var ujAps = <?php echo $UJAps ?>;
@@ -694,7 +692,6 @@ $UPAps = $_SESSION["UP-APS"];
 				    httpReq.send(formData);
 
 				  }</script>
->>>>>>> 2fb865499c01f5268cb2421aa3b70e4bb4af0850
 
     <!-- Main JS-->
     <script src="js/main.js"></script>
