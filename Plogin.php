@@ -24,10 +24,10 @@ if ( mysqli_num_rows( $result ) > 0 )
 		$un = implode(" ",$row);
 		echo $un;
 		$_SESSION['finish'] = $un;
-		header("Location: Dashboard.php");
+		header("Location: dashboard.php");
 	} else {
 		$_SESSION['finish'] = 0;
-		header("Location: Dashboard.php");
+		header("Location: dashboard.php");
 
 	}
 

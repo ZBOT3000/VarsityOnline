@@ -422,6 +422,10 @@ $UPAps = $_SESSION["UP-APS"];
                         <div class="col-md-6 col-lg-4">
                             <!-- CHART PERCENT-->
                             <div class="chart-percent-2">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 60853110cb6f08d179a881a45c1907ec6549eea2
                               <div id="chartContainer" style="height: 300px; width: 100%;"></div>
                             </div>
                             <!-- END CHART PERCENT-->
