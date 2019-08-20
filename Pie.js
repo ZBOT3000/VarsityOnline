@@ -23,9 +23,9 @@ var data = [
     var Aps = ujAps;
   } else if(ac==3){
     var Aps = upAps;
-  }else {
-    var Aps = witsAps;
   }
+
+
 
 
 
@@ -54,7 +54,12 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	}]
 });
 
+  chart.render();
+  re();
 
-chart.render();
+}
 
+function re(){
+  document.Location.reload();
+  window.reload();
 }

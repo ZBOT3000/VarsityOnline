@@ -292,8 +292,8 @@ $UPAps = $_SESSION["UP-APS"];
                                           </th>
                                         </tr>
                                         <tr>
-                                          <th>
-                                            <a href="#" id="uja">UJ APS</a>
+                                          <th s>
+                                            <a href="#" id="uja" (click)="ujLoad()">UJ APS</a>
                                             <script>
                                               var elm=document.querySelector("#uja");
                                               elm.addEventListener("click", function (){
@@ -422,10 +422,6 @@ $UPAps = $_SESSION["UP-APS"];
                         <div class="col-md-6 col-lg-4">
                             <!-- CHART PERCENT-->
                             <div class="chart-percent-2">
-<<<<<<< HEAD
-=======
-
->>>>>>> 60853110cb6f08d179a881a45c1907ec6549eea2
                               <div id="chartContainer" style="height: 300px; width: 100%;"></div>
                             </div>
                             <!-- END CHART PERCENT-->
@@ -626,7 +622,21 @@ $UPAps = $_SESSION["UP-APS"];
         var witsAps = <?php echo $WitsAps ?>;
         var ujAps = <?php echo $UJAps ?>;
         var upAps = <?php echo $UPAps ?>;
-        var num;
+        var num=1;
+
+        function ujLoad(){
+          num=2;
+          document.canvas.window.reload();
+        }
+
+        function witsLoad(){
+          num=1;
+        }
+
+        function upLoad(){
+          num=3;
+
+        }
 
         var elm=document.querySelector("#upa");
           elm.addEventListener("click", function (){
