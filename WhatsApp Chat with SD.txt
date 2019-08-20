@@ -1,0 +1,949 @@
+2/13/19, 07:52 - Messages to this group are now secured with end-to-end encryption. Tap for more info.
+2/13/19, 07:51 - Ag created group "SD "
+2/13/19, 07:51 - Ag added you
+2/13/19, 07:51 - Ag changed the subject from "SD " to "SD"
+2/13/19, 07:52 - Ag changed this group's icon
+2/13/19, 08:00 - Lungile: R we in cb215
+2/13/19, 08:09 - Ag: Yes
+2/18/19, 13:02 - Khanyisile Sixhaxa: Apparently we had to sign a form showing whose in our group
+2/18/19, 13:04 - Joy: Ohh... Then we have to speak to Terence during The lab... And we haven't confirmed which project we are doing
+2/18/19, 13:08 - Ag: Where is everyone?
+2/18/19, 13:08 - Khanyisile Sixhaxa: I'm in msl
+2/18/19, 13:08 - Joy: I'm by FNB
+2/18/19, 13:09 - Ag: I'm on my way to campus. Can we try going to him now?
+2/18/19, 13:09 - Khanyisile Sixhaxa: Sure or during the lab is still fine
+2/18/19, 13:11 - Joy: I say during the lab time.. Then everyone will be here
+2/18/19, 13:16 - Ag: Cool
+2/18/19, 13:19 - Fentse: During labs
+2/18/19, 13:46 - Ag: He said we must send him an Email
+2/18/19, 14:13 - Khanyisile Sixhaxa: Okay, so you'll to send it neh
+2/18/19, 22:49 - Joy: Could everyone please send their name and student number so I can email Terence
+2/18/19, 22:49 - Ag: 1422811 : Mtuthuko Mngomezulu
+2/18/19, 22:50 - Fentse: 1390445 : Refentse Bane
+2/18/19, 23:15 - Lungile: 1434995 - lungile Mngomezulu
+2/18/19, 23:15 - Khanyisile Sixhaxa: 1590202 : Khanyisile Sixhaxa
+2/18/19, 23:17 - Joy: Thanks 😁 😁 😁
+2/21/19, 10:10 - Khanyisile Sixhaxa: Hi guys, I was thinking we should set up a meeting w Terence and ask him what he expects from our project and stuff like that
+2/21/19, 10:12 - Lungile: yebo yes
+2/21/19, 11:10 - Joy: I'mma send him an email today and ask to to see him on Monday at 10am😁
+2/21/19, 11:16 - Khanyisile Sixhaxa: Sure will all of us be available?
+2/21/19, 11:21 - Ag: Yeah
+2/21/19, 12:01 - Lungile: Im not avaliable
+2/21/19, 12:10 - Ag: <Media omitted>
+2/21/19, 13:21 - Khanyisile Sixhaxa: When will be available?
+2/21/19, 19:16 - Lungile: Wait nvm im available from 10-11
+2/21/19, 19:17 - Lungile: But i got class at 11:15
+2/21/19, 19:29 - Khanyisile Sixhaxa: I think we'll be done by then
+2/21/19, 19:29 - Lungile: Awe set it up
+2/21/19, 19:30 - Joy: I sent him an email... Waiting for a response
+2/21/19, 19:31 - Ag: Hopefully he's free
+2/24/19, 17:38 - Fentse: Yo howzit guy. We good for tomorrow?
+2/24/19, 17:38 - Fentse: *guys
+2/24/19, 17:38 - Ag: Joy,?
+2/24/19, 17:38 - Joy: Terence has not responded yet
+2/25/19, 08:54 - Joy: <Media omitted>
+2/25/19, 08:55 - Ag: <Media omitted>
+2/25/19, 14:23 - Joy: Ag where you at
+2/26/19, 15:43 - Joy: Good day everyone
+2/26/19, 15:43 - Joy: Daily Scrum meeting check in..
+2/26/19, 16:04 - Ag: Joy
+2/26/19, 16:05 - Ag: ✅Checking in
+2/26/19, 16:12 - Lungile: Wasssup 👀👀
+2/26/19, 17:01 - Joy: Basically we got to talk if there is any progress today...
+
+What task have been done... What task need tk be done... And where we need help
+2/26/19, 17:02 - Joy: Task as in small task for the days ahead
+2/26/19, 17:02 - Lungile: Can yesterdays notes plse be posted
+2/26/19, 17:04 - Khanyisile Sixhaxa: I'll type them out neatly into taiga and share them w you guys if that's fine
+2/26/19, 17:04 - Lungile: Thanks
+2/26/19, 17:32 - Joy: Great... Also imma send the taks here...
+2/26/19, 17:32 - Joy: - Lungile talks to pravesh about lamp
+- Khanyi taiga
+- Fentse Travis
+- Meeting Monday at 2.and Thursday at 12:30
+- Google Api learning - everyone
+2/26/19, 20:19 - Khanyisile Sixhaxa: So do we use the email as the key or we provide them with a key?
+2/26/19, 20:38 - Ag: We can add that too.
+"Forgot ID or Password"
+2/26/19, 20:39 - Khanyisile Sixhaxa: Cool
+2/26/19, 20:28 - Ag: You're asking in terms of?
+2/26/19, 20:31 - Khanyisile Sixhaxa: Ohh nevermind. you know how wits sends you a student number when you apply, but it wouldn't make sense if we gave them a "student" if we can use the email, the varsities will do that right?
+2/26/19, 20:32 - Lungile: Yeah we create a temp id
+2/26/19, 20:32 - Khanyisile Sixhaxa: Ohhh okay and they use that to login
+2/26/19, 20:35 - Khanyisile Sixhaxa: So do they get this temp id after confirming their email?
+2/26/19, 20:36 - Khanyisile Sixhaxa: And if we add that temp id do we also add for the case where they forget their temp id?
+2/26/19, 20:42 - Lungile: https://developers.google.com/identity/sign-in/web/sign-in
+2/26/19, 20:52 - Ag: 🔥👊🏾
+2/27/19, 12:00 - Fentse: Yo whats good yall
+Daily Scrum meeting checkin: I'm going to be pushing some of that Travis-CI stuff
+2/27/19, 12:03 - Joy: I'm going to look into the Google Api and see what is what..
+2/27/19, 15:25 - Ag: Scrum daily check in:✅
+Joy can you send the entire Sprints document please.
+And also can we talk about the documentation process Dr T spoke about.
+2/27/19, 15:45 - Joy: Which document
+2/27/19, 15:57 - Khanyisile Sixhaxa: Daily scrum check in: I've started working on the user stories and will show you guys when I'm done. Do you want a picture of the things we wrote down on monday meanwhile.
+2/27/19, 16:01 - Joy: Sure... Please do send a pic
+2/27/19, 16:10 - Ag: Please
+2/27/19, 16:10 - Ag: Documentation for the app
+2/27/19, 16:10 - Ag: System*
+2/27/19, 16:12 - Joy: It's with khanyi
+2/27/19, 16:49 - Fentse: Were you guys able to see my Travis-CI request in github?
+2/27/19, 17:08 - Fentse: Also if you guys know of some proper Youtube vidz for JavaScript...
+2/27/19, 18:04 - Khanyisile Sixhaxa: <Media omitted>
+2/27/19, 18:04 - Khanyisile Sixhaxa: <Media omitted>
+2/27/19, 19:09 - Ag: Lungi how did the meeting with Pravesh go?
+2/27/19, 20:22 - Lungile: I went n he was in a meeting i will be with him tomorrow at lunch so he said but you pravesh is shaky
+2/27/19, 20:25 - Ag: Ok, we need to start on the front pagr
+2/27/19, 20:40 - Lungile: Awe
+2/28/19, 11:59 - Joy: Hey everyone... Aren't we suppose to meet today
+2/28/19, 12:00 - Ag: You have the notes
+2/28/19, 12:01 - Khanyisile Sixhaxa: Yeah half 12 right?
+2/28/19, 12:01 - Joy: Great...
+2/28/19, 12:01 - Ag: I have maths though
+2/28/19, 12:07 - Ag: <Media omitted>
+2/28/19, 12:10 - Ag: <Media omitted>
+2/28/19, 12:12 - Joy: <Media omitted>
+3/4/19, 11:05 - Ag: <Media omitted>
+3/4/19, 11:06 - Khanyisile Sixhaxa: Let's just meet today because our schedules clash
+3/4/19, 11:06 - Joy: <Media omitted>
+3/4/19, 11:07 - Ag: <Media omitted>
+3/4/19, 11:08 - Fentse: 💯
+3/4/19, 11:09 - Khanyisile Sixhaxa: Time?
+3/4/19, 11:09 - Joy: 12 till 13??
+3/4/19, 11:10 - Khanyisile Sixhaxa: No problem
+3/4/19, 11:11 - Fentse: Fede
+3/4/19, 11:16 - Lungile: I cant i have made plans
+3/4/19, 11:16 - Lungile: R we not meeting during the lab
+3/4/19, 11:16 - Joy: Then we can meet at 14:15
+3/4/19, 11:16 - Joy: In the labs
+3/4/19, 11:17 - Lungile: Yeah
+3/4/19, 11:17 - Khanyisile Sixhaxa: Cool
+3/4/19, 11:17 - Ag: <Media omitted>
+3/4/19, 11:17 - Khanyisile Sixhaxa: Or at those tables in msb
+3/4/19, 11:18 - Joy: Lungi can't make it at one... Hence we moved it to normal time
+3/4/19, 13:42 - Joy: I'mma be a bit late
+3/4/19, 13:45 - Ag: Ok
+3/4/19, 13:51 - Lungile: Awe
+3/4/19, 14:08 - Khanyisile Sixhaxa: I'm waiting outside msl w lungi
+3/4/19, 14:08 - Ag: On my way
+3/4/19, 14:21 - Ag: I'm with Fentse siyeza
+3/4/19, 14:21 - Lungile: ??
+3/4/19, 14:52 - Lungile: username and password:s1434995
+3/4/19, 14:52 - Lungile: database:d1434995
+3/4/19, 17:05 - Ag: <Media omitted>
+3/4/19, 17:17 - Khanyisile Sixhaxa: That was quick, connections coming through
+3/4/19, 17:17 - Khanyisile Sixhaxa: Even giving advice out advice
+3/4/19, 17:38 - Ag: <Media omitted>
+3/5/19, 10:16 - Joy: Don't forget the meeting at 12:30
+3/5/19, 10:32 - Lungile: Where??
+3/5/19, 10:33 - Joy: Msl
+3/5/19, 10:38 - Lungile: Awe
+3/5/19, 12:05 - Ag: Guys I'm going to be a bit late.
+3/5/19, 12:11 - Lungile: Im at msl
+3/5/19, 12:29 - Khanyisile Sixhaxa: The labs are busy so the tut rooms?
+3/5/19, 12:40 - Joy: I'm coming
+3/5/19, 12:41 - Ag: On my way too
+3/5/19, 14:12 - Ag: <Media omitted>
+3/5/19, 14:36 - Lungile: Mysql database
+File manager
+Phpmyadmin
+Remote mysql intrustions
+Ssh access
+Maybe cron jobs ability idk sometimes u need it
+3/5/19, 15:08 - Ag: Is that all?
+3/5/19, 15:08 - Ag: I need to send an email to him
+3/5/19, 15:12 - Lungile: Thats all i can think of
+3/5/19, 15:12 - Lungile: For now
+3/5/19, 15:25 - Ag: <Media omitted>
+3/5/19, 15:32 - Lungile: <Media omitted>
+3/5/19, 15:33 - Ag: <Media omitted>
+3/5/19, 15:37 - Ag: <Media omitted>
+3/5/19, 15:37 - Ag: <Media omitted>
+3/5/19, 15:56 - Khanyisile Sixhaxa: ac.za is better
+3/5/19, 15:56 - Ag: 👌🏾
+3/5/19, 15:57 - Khanyisile Sixhaxa: Yes I think that's all
+3/5/19, 15:58 - Ag: Ok im sending the email
+3/5/19, 16:02 - Khanyisile Sixhaxa: Yasss
+3/5/19, 17:55 - Lungile: <Media omitted>
+3/5/19, 17:57 - Lungile: Ag plse all us to upload
+3/5/19, 17:58 - Ag: <Media omitted>
+3/5/19, 17:59 - Lungile: Fam it isnt disables
+3/5/19, 18:04 - Lungile: Can u give us all admin access like this thing is a pain
+3/5/19, 18:08 - Ag: Famo which one is this?
+3/5/19, 18:18 - Lungile: Okay awe i uploaded
+3/5/19, 18:21 - Ag: 🧘🏾‍♂You have problems
+3/5/19, 20:58 - Joy: I can't see the file. Hey
+3/5/19, 21:01 - Ag: I also can't see it
+3/5/19, 21:02 - Lungile: <Media omitted>
+3/5/19, 21:12 - Ag: Do a push request
+3/5/19, 21:13 - Lungile: how
+3/5/19, 21:16 - Lungile: https://github.com/Lungilemngo/VarsityOnline
+3/5/19, 21:16 - Ag: You did a pull request
+3/5/19, 21:17 - Ag: <Media omitted>
+3/5/19, 21:18 - Joy: 👍🏾
+3/5/19, 21:20 - Ag: <Media omitted>
+3/5/19, 21:22 - Lungile: make us admins i dont get this pull shiid mina i just wanna upload
+3/5/19, 21:22 - Ag: <Media omitted>
+3/5/19, 21:24 - Lungile: i need push acees
+3/5/19, 21:28 - Ag: Try it now
+3/5/19, 21:28 - Lungile: okay awe
+3/5/19, 21:31 - Lungile: check
+3/5/19, 21:32 - Joy: It's there now... 😁👍🏾
+3/5/19, 21:32 - Ag: <Media omitted>
+3/5/19, 21:34 - Lungile: okay awe joy i kinda started the css but that was just for the layout wena youll change they style n the color and dont forget to do the registration page ill create another registration screen which is kinda different from this one
+3/5/19, 21:40 - Joy: So you doing a second registration page...
+3/5/19, 21:50 - Lungile: Its a different style
+3/6/19, 08:33 - Ag: <Media omitted>
+3/6/19, 08:59 - Fentse: Heavy restrictions
+3/6/19, 09:02 - Ag: Yeap, when you have access to a part of Hybrid that's how it will be.
+3/6/19, 15:47 - Ag: lamp.ms.wits.ac.za/phpmyadmin
+3/6/19, 16:03 - Fentse: <Media omitted>
+3/6/19, 16:18 - Ag: <Media omitted>
+3/6/19, 16:40 - Joy: Alright I will do that
+3/6/19, 16:41 - Ag: <Media omitted>
+3/6/19, 16:44 - Fentse: iFresh kau💯
+3/6/19, 16:56 - Joy: Chilled
+3/6/19, 18:40 - Lungile: Yebo
+3/6/19, 18:47 - Khanyisile Sixhaxa: 👍🏽
+3/6/19, 18:54 - Joy: Email sent
+3/6/19, 19:04 - Fentse: Si'grand bafwethu?
+3/6/19, 19:05 - Ag: Are these all tables
+3/6/19, 19:06 - Khanyisile Sixhaxa: No, not all of them. I'll do the rest tonight
+3/6/19, 19:10 - Ag: Ok
+3/6/19, 21:35 - Lungile: The guys doing the db for the password can we create a salting algorithm then also using mysql encryption
+3/6/19, 21:49 - Khanyisile Sixhaxa: What is salting?
+3/6/19, 21:51 - Lungile: Its a way to make a password stronger 
+
+Eg 
+
+Password: test123
+Salted password :funtest124fun
+3/6/19, 21:52 - Lungile: This is a very very simple explaination hope it helps
+3/6/19, 21:52 - Fentse: We'll look into it
+3/6/19, 21:52 - Lungile: Okay awe
+3/6/19, 21:52 - Lungile: Its pretty easy to do wont take u longer than 15 min
+3/6/19, 21:53 - Khanyisile Sixhaxa: oh yeah I get it
+3/6/19, 21:54 - Ag: <Media omitted>
+3/6/19, 21:55 - Lungile: Yeah things like dat
+3/6/19, 21:55 - Fentse: Fede bafwethu
+3/6/19, 21:56 - Lungile: I dont think its too much extra work
+3/6/19, 21:56 - Ag: <Media omitted>
+3/7/19, 07:47 - Joy: Sorry guys... My wifi was acting up last night... Hence the lack of communication... Also I couldn't edit the css file... Bit I will do that after class
+3/7/19, 11:02 - Joy: <Media omitted>
+3/7/19, 11:09 - Ag: <Media omitted>
+3/7/19, 11:50 - Khanyisile Sixhaxa: Everyone has to be on taiga guysings
+3/7/19, 11:52 - Joy: I will email him again
+3/7/19, 11:52 - Joy: So we all need accounts on taiga?
+3/7/19, 11:55 - Khanyisile Sixhaxa: Yess so we can all be able to view and edit tasks
+3/7/19, 11:55 - Joy: Alright
+3/7/19, 12:04 - Joy: I linked my github and taiga accounts..
+3/7/19, 12:04 - Lungile: How do u do dat
+3/7/19, 12:05 - Joy: When you sign up for taiga just sign up using github... It's an option on the bottom of the screen
+3/7/19, 12:16 - Khanyisile Sixhaxa: Just sign into taiga using github
+3/7/19, 12:25 - Lungile: Okay awe
+3/7/19, 12:25 - Joy: Well I'm connect... so you can do the things now
+3/7/19, 12:25 - Joy: <Media omitted>
+3/7/19, 12:29 - Ag: <Media omitted>
+3/7/19, 12:52 - Khanyisile Sixhaxa: I'm gonna need the emails you use for your account to invite you
+3/7/19, 12:52 - Joy: 1316769@students.wits.ac.za
+3/7/19, 12:58 - Joy: Aren't we supposed to make a new branch on github... Or should we just keep committing to the master branch?
+3/7/19, 13:00 - Fentse: Good point. It seems i cant pull Lungile's code
+3/7/19, 13:00 - Ag: 1422811@students.wits.ac.za
+3/7/19, 13:03 - Khanyisile Sixhaxa: Apparently there's a max of three members so I think that's fine
+3/7/19, 13:03 - Lungile: 1434995@students.wits.ac.za
+3/7/19, 13:03 - Joy: Alright cool
+3/7/19, 13:35 - Joy: Currently busy with the login page...
+3/7/19, 13:36 - Joy: Then also... on taiga we need to rate the different task (user stories) according to ux, front and back plus design...
+3/7/19, 13:38 - Ag: I'm currently busy with the server(The VM)
+3/7/19, 13:38 - Joy: Alright... Cool
+3/7/19, 16:52 - Fentse: Yo for the Register.html page,the password part is missing. I'll commit a template of the salt algorithm on github then yall will just fill in the blanks
+3/7/19, 16:54 - Ag: Awe
+3/7/19, 16:56 - Fentse: Also User_ID(student no.)
+3/7/19, 17:04 - Lungile: just added the password, we dont need to add a student number
+3/7/19, 17:04 - Fentse: Fede I'll change the code
+3/7/19, 17:06 - Lungile: how do i get on to this travis thingy
+3/7/19, 17:11 - Fentse: <Media omitted>
+3/7/19, 17:30 - Joy: ???
+3/7/19, 17:33 - Lungile: im also confused
+3/7/19, 17:36 - Fentse: The way you're able to see if your commit builds is by either going to pull request(like how i showed you on the vid) or going to the actual site
+3/7/19, 17:41 - Joy: <Media omitted>
+3/7/19, 17:47 - Fentse: Travis builds your project and runs tests to check for errors
+3/7/19, 17:47 - Joy: How though?
+3/7/19, 17:50 - Fentse: When you run your build,Travis clones your github repo into a new environment,and carries out a series of tasks to build and test code
+3/7/19, 17:52 - Joy: Is it an automatic thing... Or did you set the task for it to build
+3/7/19, 18:00 - Lungile: what needs to go in the wiki
+3/7/19, 18:02 - Fentse: Need to define the build
+3/7/19, 18:20 - Joy: Good Q
+3/7/19, 18:20 - Joy: Can you do it
+3/7/19, 20:00 - Lungile: how do i run the log in html on github
+3/7/19, 21:14 - Joy: 🤷🏾‍♂
+3/7/19, 22:32 - Lungile: Does the travis thing do it
+3/7/19, 22:33 - Ag: Guys the server is giving me headaches ey
+3/7/19, 22:46 - Khanyisile Sixhaxa: What's wrong w it?
+3/7/19, 22:47 - Ag: Lamp😭
+3/7/19, 22:49 - Khanyisile Sixhaxa: Should we document it as an issue?
+3/7/19, 23:05 - Ag: Yes please. But I will run it again tomorrow
+3/7/19, 23:05 - Fentse: I'll explain the travis thing to you guys tomorrow
+3/7/19, 23:27 - Ag: <Media omitted>
+3/7/19, 23:29 - Fentse: Fede pusha boy
+3/7/19, 23:29 - Ag: <Media omitted>
+3/7/19, 23:31 - Lungile: Okay awe famo what wiĺl we put on home
+3/7/19, 23:34 - Ag: <Media omitted>
+3/8/19, 19:24 - Ag: <Media omitted>
+3/8/19, 20:12 - Joy: Awes gee
+3/8/19, 20:22 - Ag: Just finishing up with the Php
+3/8/19, 20:27 - Joy: Great... I will check on everything a bit later
+3/8/19, 20:33 - Ag: You can't access it remotely
+3/8/19, 20:44 - Joy: Then tomorrow I will go to school and do everything there
+3/8/19, 21:29 - Ag: <Media omitted>
+3/8/19, 21:42 - Joy: 🕺🏽🕺🏽🕺🏽
+3/8/19, 21:45 - Lungile: Lovely fam
+3/8/19, 22:13 - Ag: This message was deleted
+3/8/19, 22:14 - Ag: I'm trying to make a domain but I think shun blocked it
+3/8/19, 22:21 - Ag: <Media omitted>
+3/9/19, 02:55 - Ag: <Media omitted>
+3/9/19, 02:55 - Ag: 💪🏾
+3/9/19, 02:56 - Joy: 😁
+3/9/19, 02:57 - Ag: I've been working on it ey
+3/9/19, 03:18 - Joy: You can go to sleep now bro... You did the most
+3/9/19, 03:18 - Joy: Much appreciated
+3/9/19, 04:01 - Ag: Can't it's refusing to ssh
+3/10/19, 15:20 - Lungile: <Media omitted>
+3/10/19, 15:21 - Joy: <Media omitted>
+3/10/19, 15:23 - Lungile: Okay awe ill start having a look at it after the chelsea game
+3/10/19, 15:24 - Joy: Alright
+3/10/19, 15:25 - Lungile: How are the user stories?
+3/10/19, 15:25 - Joy: I will send you snaps of taiga soon
+3/10/19, 15:26 - Ag: Guys so I sent an email to shun such that I can regain access to the server but I haven't got a response yet
+3/10/19, 15:27 - Lungile: Thank u as soon as everyone has a chance just look the rubric
+3/10/19, 15:28 - Ag: Ok
+3/10/19, 17:42 - Fentse: Proof of daily scrum. He wants it documented or his gonna legit check our phones?
+3/10/19, 17:42 - Ag: That's what I was wondering
+3/10/19, 17:44 - Fentse: It would be unprofessional for him to check out our phones. Maybe if we could save our convos on a pdf or jpg or something
+3/10/19, 22:57 - Ag: Who can get to school tomorrow morning?
+3/10/19, 22:58 - Khanyisile Sixhaxa: No problem, I have a test from 8-10 tho
+3/10/19, 22:59 - Ag: Ok we can do the server documentation
+3/10/19, 23:00 - Ag: Fentse are you available in the morning
+3/10/19, 23:00 - Joy: I will be tutoring from 8 till 9:45... So I will be at school all day
+3/10/19, 23:00 - Ag: Sweet
+3/10/19, 23:07 - Fentse: Yea from 10 bro
+3/10/19, 23:07 - Ag: Can you make it 8?
+3/10/19, 23:08 - Fentse: I'll try 9
+3/10/19, 23:11 - Ag: Awe
+3/10/19, 23:12 - Ag: <Media omitted>
+3/10/19, 23:14 - Joy: To what color
+3/10/19, 23:22 - Ag: Change it?
+3/10/19, 23:23 - Joy: You want the color to change right... The background color
+3/10/19, 23:25 - Ag: Yeap
+3/10/19, 23:29 - Joy: To what color... Grey and white?
+3/10/19, 23:48 - Ag: Yeap. I'll do it though
+3/10/19, 23:49 - Joy: Alright cool
+3/11/19, 08:37 - Lungile: Ofentse
+3/11/19, 08:38 - Lungile: How far r u
+3/11/19, 08:49 - Ag: Lungi where are you?
+3/11/19, 08:52 - Fentse: Yo guys I'm running abit late. Where will i find you guys?
+3/11/19, 08:52 - Ag: Msl
+3/11/19, 08:52 - Fentse: Which lab?
+3/11/19, 08:52 - Ag: I'll tell you, not sure which one is booked
+3/11/19, 08:57 - Ag: Lungi where are you?
+3/11/19, 09:29 - Lungile: Mal
+3/11/19, 09:29 - Joy: Msl...
+3/11/19, 09:31 - Ag: Lab?
+3/11/19, 09:31 - Lungile: 5
+3/11/19, 09:31 - Ag: Tutoring?
+3/11/19, 09:46 - Khanyisile Sixhaxa: I'm done where's everyone
+3/11/19, 09:47 - Lungile: Qhere r yall??
+3/11/19, 09:55 - Joy: .........
+3/11/19, 09:55 - Khanyisile Sixhaxa: Hawu
+3/11/19, 13:18 - Joy: Everything good..?
+3/11/19, 21:02 - Lungile: http://vor.lbmsolutions.co.za/WelcomePage.html
+3/11/19, 21:02 - Lungile: we will use this domain name until we get our stuff right with shaan
+3/11/19, 21:02 - Lungile: im currently in the process of setting up a ftp account so we can upload files and edit database
+3/11/19, 21:04 - Ag: 🔥🔥🔥🙏🏾
+3/11/19, 21:06 - Ag: I was actually just about to find an online domain
+3/11/19, 21:06 - Ag: Maybe a.io
+3/11/19, 21:07 - Lungile: Ow if u feel thats better we can also do that no problem i dont mind
+3/11/19, 21:07 - Ag: You've already set it up though
+3/11/19, 21:08 - Lungile: Okay we will stick to mine then
+3/11/19, 21:32 - Lungile: Ive just set up the FTP Account
+3/11/19, 21:32 - Lungile: do you guys know how to use something like filezilla??
+3/11/19, 21:33 - Ag: Nope
+3/11/19, 21:33 - Lungile: have you ever used ftp??
+3/11/19, 21:34 - Lungile: its like something that allows you to upload files online its like sort of shh without the root access
+3/11/19, 21:35 - Ag: I know ftp
+3/11/19, 21:35 - Lungile: what do you use to ftp
+3/11/19, 21:36 - Ag: Never used it, but I know it
+3/11/19, 21:37 - Lungile: okay ill show yall tomorrow during the tut rather than me lecture yall
+3/11/19, 21:38 - Ag: You talking about our scrum meeting?
+3/11/19, 21:39 - Lungile: nah im saying ill show you how to set up ftp and how to use it so we can start creating stuff
+3/11/19, 21:41 - Ag: Ok sweet
+3/11/19, 21:42 - Joy: Yeah
+3/12/19, 05:25 - Ag: Joy can you please set up a meeting with Terence.
+3/12/19, 06:02 - Joy: I will do that
+3/12/19, 09:23 - Joy: <Media omitted>
+3/12/19, 09:47 - Ag: 👌🏾
+3/12/19, 10:52 - Khanyisile Sixhaxa: Okay
+3/12/19, 12:00 - Khanyisile Sixhaxa: What time are we meeting again today?
+3/12/19, 12:01 - Joy: 🤷🏾‍♂
+3/12/19, 12:02 - Ag: It's always 12%30
+3/12/19, 12:03 - Khanyisile Sixhaxa: Okay
+3/12/19, 12:19 - Fentse: Same place
+3/12/19, 12:20 - Ag: I think that'd be good
+3/12/19, 12:27 - Khanyisile Sixhaxa: Hons lab?
+3/12/19, 12:34 - Khanyisile Sixhaxa: Oh apparently the stands
+3/12/19, 21:15 - Fentse: <Media omitted>
+3/13/19, 11:52 - Joy: Let's meet around 12:15
+3/13/19, 11:53 - Lungile: Awe
+3/13/19, 11:53 - Fentse: Where?
+3/13/19, 11:53 - Fentse: Outside Msl?
+3/13/19, 11:53 - Joy: Yeah
+3/13/19, 12:02 - Khanyisile Sixhaxa: Oryt
+3/13/19, 12:07 - Ag: 👌🏾
+3/13/19, 12:19 - Khanyisile Sixhaxa: I'm passing ccdu guys sorry
+3/13/19, 12:34 - Joy: <Media omitted>
+3/14/19, 19:23 - Ag: Good news
+3/14/19, 19:24 - Ag: <Media omitted>
+3/14/19, 19:29 - Fentse: 💯
+3/14/19, 19:29 - Ag: Bro can you come to school now?
+3/14/19, 19:34 - Fentse: Eish nah unfortunately i can't. I'm abit preoccupied.
+3/14/19, 19:34 - Ag: Ok
+3/14/19, 20:02 - Ag: So I need to create accounts for Fentse and Khanyi on MySQL right
+3/14/19, 20:04 - Khanyisile Sixhaxa: Right
+3/14/19, 20:04 - Ag: Ok let me do that now
+3/14/19, 20:31 - Ag: <Media omitted>
+3/14/19, 20:36 - Ag: <Media omitted>
+3/14/19, 23:30 - Ag: <Media omitted>
+3/14/19, 23:33 - Khanyisile Sixhaxa: So what should we avoid doing?
+3/14/19, 23:34 - Ag: Deleting the the entire sql
+3/14/19, 23:34 - Khanyisile Sixhaxa: Okay
+3/14/19, 23:37 - Ag: Can you try to ssh into the server from where you are now?
+3/14/19, 23:37 - Khanyisile Sixhaxa: Lemme try
+3/14/19, 23:38 - Ag: ssh student@146.141.21.137
+3/14/19, 23:38 - Ag: password : s1422811
+3/14/19, 23:41 - Ag: <Media omitted>
+3/14/19, 23:42 - Khanyisile Sixhaxa: <Media omitted>
+3/14/19, 23:43 - Ag: I guess you can only connect when you're at school 🤦🏿‍♂
+3/14/19, 23:55 - Khanyisile Sixhaxa: Eish ja neh
+3/14/19, 23:55 - Ag: Yeah I'm still at school so it makes sense
+3/15/19, 18:39 - Ag: Domain name created:
+
+Varsityonline.ga
+3/15/19, 18:40 - Lungile: Awe awe
+3/15/19, 18:40 - Lungile: Is this on ur server
+3/15/19, 18:40 - Ag: Redirected to the page
+3/15/19, 18:41 - Lungile: Where u get the domain?
+3/15/19, 18:42 - Ag: Freedom
+3/15/19, 18:42 - Lungile: Awe
+3/16/19, 21:51 - Ag: Varsityonline.ga fully operational
+3/18/19, 13:29 - Ag: Guys I'm gonna be a bit late
+3/19/19, 12:25 - Joy: Good people... Meeting?
+3/19/19, 12:27 - Fentse: Fede im this side already
+3/19/19, 12:27 - Joy: Same
+3/19/19, 12:28 - Fentse: Give me 10,lemme just commit this work
+3/19/19, 12:28 - Ag: I'm also here
+3/19/19, 12:30 - Joy: As I wait outside
+3/20/19, 23:20 - Fentse: Yo guys. Unfortunately i wont be able to pull thru for the entire meeting tomorrow cause at 10 i have to bounce. But I'll continuing doing the tasks on my side
+3/20/19, 23:23 - Lungile: Guys can we all bring R20 tomorrow for snacks then one person in the morning going past pick n pay buy snacks
+3/20/19, 23:39 - Ag: Why not chips
+3/21/19, 09:12 - Khanyisile Sixhaxa: Where are we meeting up?
+3/21/19, 09:13 - Lungile: Msl
+3/21/19, 09:13 - Khanyisile Sixhaxa: 6?
+3/21/19, 09:23 - Lungile: Nah outside
+3/21/19, 09:46 - Ag: What time?
+3/21/19, 09:57 - Joy: I'm on my way
+3/21/19, 10:05 - Lungile: We said 10
+3/21/19, 10:06 - Joy: Where yall at
+3/21/19, 10:06 - Lungile: Im driving in
+3/21/19, 10:07 - Joy: Me I'm busy waiting
+3/21/19, 10:09 - Ag: I'm coming
+3/21/19, 10:15 - Khanyisile Sixhaxa: I'm on the way
+3/26/19, 22:27 - Lungile: Daily scrum meeting
+3/26/19, 22:34 - Lungile: - i have fixed login ,it is working perfectly now
+- the register page is also working n mapping is fine plus it also generates a user name ( username= user_id+name)
+- forget password is working on my end now all thats left is *Ag plse can u allow the server to send mail and receive mail*, i also have created a token system to generate tokens for each password reset and token will be in the *register table* 
+-the dashboard for the pie chart etc is almost done but its looking *niiiiiiiiice*
+- *Joy where is my css???*
+- ofentse can u please add user_id as a foreign key to all tables some have others dont
+-Html for the parental details and others i have also done then 
+
+*LETS KEEP PUSHING*
+*SEE U GENTS THURSDAY AGAIN*
+3/26/19, 22:51 - Fentse: Ayt I'll push the User_Id thing. But wait when did yall decide yall were gonna link up again this Thursday?
+3/26/19, 22:52 - Lungile: last week thursday
+3/26/19, 22:54 - Fentse: I'm not in Braam tho. Only coming back when school starts
+3/26/19, 22:56 - Lungile: okay awe
+3/26/19, 22:56 - Lungile: we will meet monday then
+3/26/19, 23:02 - Fentse: Fede no stress outie.
+3/26/19, 23:02 - Lungile: awe sweet
+3/27/19, 02:01 - Ag: I'm not sure if we have permission for that, but I'll get on it when I get back.
+3/27/19, 08:23 - Joy: Ey... Lungile thanks for the amazing work... You are a 🌟...
+Sorry I haven't pushed css, I have been caught up by other things...
+And I'm nearly done with my end of the architecture...
+
+I will complete all css and push em tonight
+3/27/19, 08:27 - Khanyisile Sixhaxa: Thanks Lungi. I'm almost done w the architecture. Also I wanna start doing some html or css stuff
+3/27/19, 08:29 - Ag: Did you test it on the server?
+3/27/19, 08:31 - Lungile: No i haven't 8 just did my server
+3/27/19, 08:31 - Ag: Ok, when are we meeting again?
+3/27/19, 08:32 - Lungile: Monday
+3/27/19, 08:33 - Ag: Ok. Uhm guys next week I'm gonna be  not available on whatsapp that much, even the week after. I've got 5 test in total just in the period of those 2 weeks
+3/27/19, 08:34 - Joy: So not tomorrow?
+3/27/19, 08:34 - Ag: Hau Joy didn't we decide to meet Monday because it was just gonna be the 3 of us.
+3/27/19, 08:34 - Lungile: I wanted tomorrow
+3/27/19, 08:34 - Ag: I'm still at home
+3/27/19, 08:35 - Joy: We actually decided tomorrow... But Monday is cool... Since most of yall ain't around
+3/27/19, 20:49 - Khanyisile Sixhaxa: 081 577 7697 add me on these numbers
+3/30/19, 10:35 - Ag's security code changed. Tap for more info.
+3/30/19, 22:54 - Ag added Khanyi SD
+4/1/19, 14:15 - Khanyi SD: where’s everyone?
+4/1/19, 14:15 - Fentse: Coming
+4/1/19, 14:18 - Ag: Coming. Gonna be a bit late though
+4/1/19, 14:23 - Lungile: On my way running late
+4/1/19, 18:16 - Khanyi SD: <Media omitted>
+4/2/19, 08:31 - Joy: What time are we meeting today
+4/2/19, 09:44 - Fentse: We always link up at 12:30 on a Tuesday
+4/2/19, 09:44 - Joy: Great... Let's all not be late please
+4/2/19, 09:50 - Ag: 🌚
+4/2/19, 09:51 - Lungile: guys im not coming 2day i got some family emergency
+4/2/19, 09:55 - Joy: Sorry man...
+4/2/19, 09:55 - Joy: I'm serious hey
+4/2/19, 09:55 - Ag: I'm already here what are you on about
+4/2/19, 09:55 - Lungile: eish hade gents shiid got serious on my side
+4/2/19, 09:56 - Joy: It's all good... Just sort things out on your side...
+4/2/19, 10:05 - Ag: Hope everything get better my boy
+4/2/19, 10:05 - Khanyisile Sixhaxa left
+4/2/19, 12:18 - Khanyi SD: yo I’m gonna be a bit late
+4/2/19, 12:20 - Khanyi SD: I have to be at my place they wanna fix the door real quick
+4/2/19, 12:22 - Ag: 🌚
+4/2/19, 12:25 - Ag: Where are the rest?
+4/2/19, 12:26 - Ag: I'm at MSL waiting for you guys
+4/2/19, 12:27 - Joy: On my way
+4/2/19, 12:28 - Fentse: Same
+4/2/19, 12:33 - Joy: Where are you
+4/2/19, 12:34 - Ag: Inside
+4/4/19, 10:10 - Lungile: Hello hello
+4/4/19, 10:10 - Lungile: Good luck for Fla
+4/4/19, 11:58 - Lungile: Joy i uploaded a few new pages that need css its the newPassword page and i also did the php for it
+4/4/19, 11:58 - Lungile: AG can you please upload the php for Academics and Demographics
+4/4/19, 12:02 - Joy: Alright will ger on it tonight
+4/4/19, 12:07 - Ag: Joy is the meeting set?
+4/4/19, 12:07 - Ag: Ja I will, just have alot mfana
+4/4/19, 12:07 - Joy: Yeah... Friday at 12:15
+4/4/19, 12:07 - Ag: We have class mos at 12%30
+4/4/19, 12:08 - Joy: I know... That meeting is meant to start at 12:15... We should be done by 12:30
+4/4/19, 12:09 - Ag: Ok
+4/4/19, 21:11 - Fentse: Hey everybody,howzit going. Guys no lie,i have hit a brick wall with Travis. All the dudes i know of seem to have the same prob too. I asked this other homie and he says he's gonna check his out and get back to me(not promising). If yall know of anyone who got Travis going...
+4/5/19, 08:45 - Joy: Don't forget... We have a meeting at 12:15,with Terence..
+4/5/19, 08:45 - Ag: Not sure if I'm gonna make it ey
+4/5/19, 08:45 - Joy: Is the pup done though?
+4/5/19, 08:45 - Joy: Php *
+4/5/19, 08:46 - Ag: Only one
+4/5/19, 08:46 - Joy: 🙆🏾‍♂🙆🏾‍♂🙆🏾‍♂🙆🏾‍♂
+4/5/19, 08:46 - Ag: I told you this yesterday though
+4/5/19, 08:47 - Lungile: Im busy with academics as we speak
+4/5/19, 08:47 - Joy: Thanks lungile...
+4/5/19, 08:49 - Ag: 🙏🏾
+4/5/19, 11:52 - Khanyi SD: Where are we meeting up?
+4/5/19, 11:52 - Ag: Good luck champs💪🏾
+4/5/19, 11:53 - Joy: In msl
+4/5/19, 11:57 - Fentse: Im at CGV but im heading your way
+4/5/19, 11:57 - Joy: Awes
+4/5/19, 12:02 - Joy: Come to ug floor
+4/5/19, 12:04 - Fentse: Ayt give me a min
+4/5/19, 12:07 - Khanyi SD: Where in msl
+4/5/19, 12:08 - Fentse: Come thru to MSB ug
+4/6/19, 17:52 - Fentse: <Media omitted>
+4/6/19, 17:57 - Ag: ?
+4/6/19, 17:57 - Fentse: Travis works nigga
+4/6/19, 17:58 - Ag: That's been there
+4/6/19, 17:58 - Fentse: Nah nigga shii was red
+4/6/19, 19:10 - Joy: Awes bro
+4/7/19, 21:35 - Lungile: HI GUYS how r we feeling 4 tomorrow
+4/7/19, 21:37 - Lungile: Can we please go first i need to be home by 3pm
+4/7/19, 21:38 - Joy: I'm pretty chilled about it... The architecture is done from my end...
+4/7/19, 21:38 - Lungile: Have we looked at the rubric
+4/7/19, 21:38 - Lungile: Btw did we get that clover thing working
+4/7/19, 21:38 - Joy: Yeah... That's where I worked from
+4/7/19, 21:38 - Joy: Khanyi was doing it... So 🤷🏾‍♂
+4/7/19, 21:41 - Lungile: Ofentse were u able to get the table working
+4/7/19, 22:25 - Fentse: Tomorrow morning.
+4/7/19, 22:26 - Lungile: Okay
+4/7/19, 23:01 - Khanyi SD: Clover?
+4/7/19, 23:01 - Joy: Coveralls
+4/7/19, 23:02 - Ag: The milk?
+4/7/19, 23:02 - Khanyi SD: yeah coveralls are set
+4/8/19, 04:00 - Lungile: Did u also get the badge??
+4/8/19, 12:04 - Khanyi SD: I’ve been tryna work on that, fentse is gonna help
+4/8/19, 12:08 - Ag: Pull requests in Travis?
+4/8/19, 12:08 - Ag: On*
+4/8/19, 12:23 - Joy: Guys we need to make minutes for the meetings we had...
+4/8/19, 12:40 - Lungile: Yho
+4/8/19, 12:41 - Joy: <Media omitted>
+4/8/19, 12:43 - Ag: Ukuphi 🌚
+4/8/19, 12:43 - Joy: On my way to school
+4/8/19, 12:43 - Lungile: Just type it
+4/8/19, 12:44 - Joy: I will type some at during lunch
+4/8/19, 13:26 - Khanyi SD: We got the badge on there
+4/8/19, 13:26 - Ag: Can I see
+4/8/19, 13:26 - Khanyi SD: But now the internet is down and I didn’t bring my laptop. I wanted to organize the diagram accordingly in the wiki
+4/9/19, 09:57 - Joy: Good people... I will be late today... Got a bit of a situation I'm trying to solve
+4/9/19, 10:14 - Ag: Where are we meeting
+4/9/19, 10:47 - Lungile: Outside msl
+4/9/19, 10:50 - Ag: We're meeting at 12:30
+4/9/19, 12:24 - Joy: Where everyone at
+4/9/19, 12:27 - Ag: Passing great hall
+4/9/19, 12:34 - Lungile: When u get outside msl tell me
+4/9/19, 12:40 - Joy: We have been outside
+4/14/19, 12:05 - Joy: Hey guys. M I won't be available tomorrow for SD...
+4/14/19, 12:09 - Lungile: Same with me
+4/14/19, 12:15 - Ag: Are you still in hospital
+4/14/19, 12:27 - Lungile: Nah im at home but i have to go back tomorrow at 2pm for the cleaning of the top wisdoms
+4/14/19, 12:38 - Ag: Did they take it out?
+4/14/19, 12:38 - Lungile: Surgery is on Thursday
+4/14/19, 12:39 - Lungile: I just had to remove the gum on top of my tooth first and clean out the bacteria
+4/14/19, 12:40 - Ag: Damn, and my wisdoms haven't started coming out 😩
+4/15/19, 10:42 - Ag: Khanyi Fentse, where are we meeting
+4/15/19, 10:42 - Khanyi SD: msl is still fine
+4/15/19, 12:53 - Ag: How are we gonna have a meeting without our scrum master ❓
+4/15/19, 12:53 - Fentse: Yea we can't have it without the scrum master
+4/15/19, 12:54 - Joy: <Media omitted>
+4/15/19, 12:55 - Fentse: Fede phanda sbali. Ag temp scrum master😂
+4/15/19, 12:56 - Ag: So if everything is in tiaga then let's work, we'll record the meeting this as a meeting 🤷🏾‍♂
+4/15/19, 13:00 - Joy: <Media omitted>
+4/15/19, 13:06 - Ag: Fentse is gonna be there
+4/15/19, 14:07 - Khanyi SD: terence is not here today
+4/15/19, 14:08 - Ag: Let's span
+4/16/19, 12:24 - Fentse: Won't be able to make it to the meeting today
+4/16/19, 12:26 - Ag: Me too gents.
+4/16/19, 12:30 - Joy: Me niether... Still at work..
+4/16/19, 12:30 - Joy: Let's postponedl
+4/16/19, 12:36 - Ag: For when?
+4/16/19, 12:51 - Joy: 🤷🏾‍♂
+4/16/19, 12:53 - Ag: When is the next sprint review
+4/16/19, 13:08 - Khanyi SD: may
+4/16/19, 13:08 - Khanyi SD: 1st week
+4/16/19, 13:08 - Ag: Ok
+4/23/19, 10:22 - Khanyi SD: hey guys i can’t come to today’s meeting i have an orthodontist appointment
+4/23/19, 10:26 - Joy: Who can make it to today's meeting?
+4/23/19, 10:47 - Lungile: Me
+4/23/19, 10:49 - Joy: Ag, fentse?
+4/23/19, 10:49 - Fentse: I can pull thru but imma be abit late
+4/23/19, 12:24 - Ag: Ey bro I just woke up ey, I'm sorry I was cross nighting
+4/23/19, 12:40 - Joy: We shall meet later then
+4/24/19, 20:13 - Lungile: up which chapter is the test
+4/24/19, 20:37 - Ag: 4
+4/24/19, 20:42 - Lungile: awe
+4/30/19, 11:46 - Joy: Hope we haven't forgotten about our meeting
+4/30/19, 11:57 - Lungile: I have a tut test😂😂
+4/30/19, 12:06 - Khanyi SD: we haven’t
+4/30/19, 12:14 - Joy: As I wait for yall
+4/30/19, 12:12 - Lungile: You'll fill me in😂😂
+4/30/19, 12:18 - Joy: ???
+4/30/19, 12:30 - Khanyi SD: on my way
+4/30/19, 12:30 - Fentse: Give me 5min
+4/30/19, 12:46 - Khanyi SD: wya
+4/30/19, 12:50 - Ag: 😳I just woke up.
+I'm sorry 🙏
+4/30/19, 12:52 - Khanyi SD: joy bruh you were right
+4/30/19, 12:56 - Joy: I know 😶😶
+4/30/19, 13:03 - Ag: P
+4/30/19, 13:03 - Ag: ?
+4/30/19, 13:03 - Ag: ?
+5/1/19, 20:37 - Lungile: Scrum meeting
+5/1/19, 20:37 - Lungile: How far is everyone
+5/1/19, 21:19 - Ag: Did you open ssh?
+5/1/19, 21:20 - Lungile: I'll do it tomorrow i opened direct ftp
+5/1/19, 21:23 - Ag: Ok
+5/1/19, 21:36 - Joy: <Media omitted>
+5/1/19, 21:40 - Lungile: No one was given that task you'll have to do it
+5/2/19, 00:23 - Khanyi SD: i still have to push some more
+5/2/19, 06:16 - Lungile: Khanyi we gotta speak today
+5/2/19, 06:30 - Khanyi SD: okay what time
+5/2/19, 07:10 - Lungile: Are u going to ml
+5/2/19, 07:11 - Khanyi SD: i don’t do ml
+5/2/19, 12:25 - Fentse: <Media omitted>
+5/2/19, 12:27 - Lungile: Use s1434995
+5/2/19, 12:35 - Fentse: Im already in your server,i just don't have "privileges" to create a new database
+5/2/19, 13:23 - Lungile: Idk i don't have those privileges
+5/2/19, 13:23 - Ag: On your server
+5/2/19, 13:23 - Lungile: This isn't my thing
+5/2/19, 13:24 - Ag: Why do you want to create a new data base?
+Just create tables
+5/2/19, 13:28 - Fentse: I need a database for atleast Wits which stores info about faculties,course,aps scores for Joy's piechart
+5/2/19, 13:29 - Ag: But you can do all of that using tables.
+
+Because lamp won't allow you to create a new database
+5/2/19, 13:32 - Fentse: Well now that i know,lamp can't. But it is possible to create multiple databases under one server
+5/2/19, 13:32 - Lungile: Nah just tablea
+5/2/19, 13:33 - Ag: Yes it is possible, but you don't have root privileges, only Pravesh can do that.
+5/2/19, 22:45 - Joy: <Media omitted>
+5/2/19, 22:45 - Joy: <Media omitted>
+5/2/19, 22:47 - Fentse: This
+5/2/19, 22:47 - Lungile: Agreed
+5/2/19, 22:48 - Joy: Ayt cool
+5/2/19, 22:49 - Fentse: So whats left to do in terms of tasks?
+5/2/19, 22:50 - Joy: APS calculator... I know...
+
+And I still got all the php for this pie chart to complete...
+5/3/19, 07:42 - Lungile: The parents details must be done and the varsity selector must be done
+5/4/19, 15:43 - Lungile: hi guys is our artitecture stuff right and user stories and acceptance test and who is doing coveralls
+5/5/19, 17:45 - Lungile: hi guys can we meet at 9am tomorrow
+5/5/19, 17:52 - Joy: Sure
+5/5/19, 17:52 - Khanyi SD: i have a 8am i’ll be there after the lecture?
+5/5/19, 17:52 - Lungile: awe awe
+5/6/19, 08:12 - Fentse: Hey guys. Gonna be abit late. Which lab are we gonna meet at?
+5/6/19, 08:17 - Lungile: Im in msl already working
+5/6/19, 08:17 - Lungile: Plse can we be prompt
+5/6/19, 08:17 - Joy: I'm coming
+5/6/19, 08:19 - Lungile: Awe
+5/6/19, 08:21 - Fentse: Which lab?
+5/6/19, 08:36 - Lungile: Laptop station
+5/6/19, 08:47 - Ag: This message was deleted
+5/6/19, 08:47 - Ag: W-Route
+5/6/19, 08:48 - Lungile: Where is everyone
+5/6/19, 08:49 - Khanyi SD: in my lecture
+5/6/19, 08:52 - Ag: .
+5/6/19, 09:00 - Joy: I'm in the laptop area
+5/6/19, 09:48 - Lungile: Where r u
+5/6/19, 09:49 - Fentse: On my way
+5/7/19, 13:05 - Khanyi SD: it there a meeting today?
+5/7/19, 13:05 - Khanyi SD: is*
+5/7/19, 14:40 - Joy: I ain't coming in today
+5/13/19, 10:51 - Lungile: Scrum meeting
+5/13/19, 10:52 - Lungile: Can you we meet at 12
+5/13/19, 10:54 - Joy: For how long?
+5/13/19, 10:54 - Lungile: An hour
+5/13/19, 10:55 - Fentse: Why dont we have it during the lab?
+5/13/19, 10:55 - Joy: There is no lab...
+5/13/19, 10:55 - Fentse: I know hence I'm saying that time slot,cause we usually have a sprint then.
+5/13/19, 10:56 - Joy: Alright... I agree
+5/13/19, 11:31 - Khanyi SD: so it’s at 2?
+5/13/19, 11:31 - Lungile: No sd lab 2day
+5/13/19, 11:33 - Joy: But we are meeting at 2 as a group
+5/13/19, 11:38 - Khanyi SD: yeahhh
+5/13/19, 11:59 - Lungile: Where is everyone
+5/13/19, 11:59 - Lungile: No wait i wanted us to meet at 12 as a group
+5/13/19, 12:00 - Joy: Well I'm guessing most of us ain't on campus yet... Hence why we said 2
+5/13/19, 12:00 - Lungile: Okay i wont be there
+5/13/19, 12:00 - Joy: We will video call you
+5/13/19, 12:01 - Lungile: I'll be driving
+5/13/19, 12:01 - Joy: 🙆🏾‍♂🙆🏾‍♂🙆🏾‍♂
+5/13/19, 14:18 - Khanyi SD: joy wya
+5/14/19, 12:28 - Khanyi SD: we meeting up today right
+5/14/19, 12:38 - Joy: I just got out the shower
+5/14/19, 12:44 - Khanyi SD: the others?
+5/14/19, 12:50 - Lungile: Im at school n u guys
+5/14/19, 12:51 - Khanyi SD: i’m at lab6
+5/14/19, 12:51 - Lungile: Okay meet at lunch then plse
+5/14/19, 12:51 - Khanyi SD: yess please
+5/14/19, 12:51 - Lungile: Awe
+5/14/19, 13:02 - Khanyi SD: where
+5/14/19, 13:28 - Ag: ????
+5/14/19, 13:28 - Khanyi SD: msl
+5/14/19, 13:28 - Ag: Where in MSL??
+5/14/19, 13:29 - Khanyi SD: outside
+5/14/19, 13:32 - Ag: Ok ill be there now now
+5/14/19, 13:32 - Fentse: Bafwethu im going to get grub. Yall niggas taking forever
+5/14/19, 14:16 - Lungile: Where is everyone
+5/14/19, 14:17 - Khanyi SD: outside msl
+5/16/19, 14:18 - Fentse: This message was deleted
+5/21/19, 08:56 - Joy: <Media omitted>
+5/21/19, 08:56 - Ag: When this week?
+5/21/19, 08:57 - Joy: That's what we must tell him
+5/21/19, 08:59 - Lungile: Tomorrow earlier the better
+5/21/19, 08:59 - Ag: Friday
+5/21/19, 09:00 - Lungile: Nah fam thats late wec would have missed 2 weeks already🤦🏽‍♀
+5/21/19, 09:00 - Joy: I saw tomorrow around 12...
+5/21/19, 09:01 - Ag: Which days and times did he post
+5/21/19, 09:01 - Ag: But still, tomorrow
+5/21/19, 09:01 - Joy: He didn't post days... He just said he was able to meet this week
+5/21/19, 09:02 - Lungile: Tomorrow at 11
+5/21/19, 09:03 - Ag: <Media omitted>
+5/21/19, 09:04 - Lungile: Bra we have missed a week already n it's a 15 min meeting what r u complaining about i
+5/21/19, 09:04 - Ag: Rather go on Thursday
+5/21/19, 09:05 - Khanyi SD: bathong wena
+5/21/19, 09:05 - Khanyi SD: hosane hle
+5/21/19, 09:05 - Ag: <Media omitted>
+5/21/19, 09:06 - Joy: Did th missing pages that had to be done been completed???
+5/21/19, 09:07 - Lungile: I havent done any sd
+5/21/19, 09:07 - Ag: I haven't done any SD either
+5/21/19, 09:10 - Joy: 🙆🏾‍♂🙆🏾‍♂🙆🏾‍♂
+5/21/19, 09:10 - Joy: Alright... I guess we will present what we have thus far...
+5/21/19, 09:11 - Lungile: Awe
+5/21/19, 09:44 - Fentse: Friday bafwethu
+5/21/19, 09:51 - Lungile: Wait so you guys are saying that we get our meetin with tarrence friday then we do all that work n submit monday 🤦🏽‍♀🤦🏽‍♀🤦🏽‍♀
+5/21/19, 10:20 - Joy: 🙆🏾‍♂🙆🏾‍♂🙆🏾‍♂
+5/21/19, 10:20 - Khanyi SD: isn’t the last sprint on the 30th and 31st?
+5/21/19, 10:20 - Khanyi SD: you choose which day you wanna go
+5/21/19, 10:22 - Joy: This is a group thing we need to all agree hey
+5/21/19, 10:22 - Fentse: Yea didnt he push it back?
+5/21/19, 15:38 - Lungile: So when r  we going
+5/21/19, 18:30 - Joy: 🤷🏾‍♂
+5/21/19, 18:35 - Ag: Hau you said tomorrow angisho
+5/21/19, 18:35 - Joy: We didn't confirm... Ankere people were complaining...
+5/21/19, 18:36 - Lungile: Email n ask terrence
+5/21/19, 18:37 - Joy: Ayt
+5/22/19, 08:42 - Joy: Terance is free at 11
+5/22/19, 08:44 - Lungile: Awe all meet at 10:45 then
+5/22/19, 08:55 - Khanyi SD: sho
+5/22/19, 09:32 - Ag: Joy has CSS that haf done finished ?
+5/22/19, 09:40 - Joy: ???
+5/22/19, 09:40 - Lungile: The css for the 2 pages
+5/22/19, 09:41 - Joy: Which 2??
+5/22/19, 10:42 - Fentse: Give me 10
+5/22/19, 10:42 - Fentse: Be there in 10
+5/22/19, 10:43 - Joy: Find me by the benches
+5/22/19, 10:51 - Joy: We're yall at
+5/22/19, 10:51 - Joy: Where*
+5/22/19, 10:51 - Khanyi SD: i’m here
+5/22/19, 11:00 - Fentse: 5
+5/22/19, 11:00 - Fentse: Min
+5/24/19, 15:05 - Ag: Joy please book
+5/24/19, 15:24 - Joy: For Thursday right
+5/24/19, 15:26 - Ag: Ja
+5/24/19, 15:27 - Ag: Around lunch time please
+5/24/19, 15:28 - Joy: I'mma do it when i get to my place...
+5/24/19, 15:32 - Ag: Thank you
+5/24/19, 16:51 - Joy: <Media omitted>
+5/24/19, 16:52 - Lungile: Awe can we meet on the 29th
+5/24/19, 16:53 - Joy: I agree
+5/24/19, 17:01 - Khanyi SD: sho
+5/24/19, 17:04 - Ag: 👊🏾
+5/26/19, 18:10 - Lungile: Are we still meeting up tomorrow
+5/26/19, 18:10 - Lungile: May we plse meet up i need help with diagrams
+5/26/19, 18:36 - Joy: Yeah
+5/27/19, 10:59 - Khanyi SD: where’s everyone
+5/27/19, 11:00 - Joy: We at FNB
+5/27/19, 11:00 - Khanyi SD: okay 👌
+5/27/19, 11:10 - Lungile: Fnb tut room 159
+5/27/19, 11:14 - Lungile: Scrum meeting
+5/27/19, 11:14 - Lungile: Fix user acceptance tests
+5/27/19, 11:50 - Khanyi SD: <Media omitted>
+5/27/19, 11:51 - Khanyi SD: <Media omitted>
+5/27/19, 11:51 - Khanyi SD: <Media omitted>
+5/27/19, 11:51 - Khanyi SD: <Media omitted>
+5/27/19, 11:52 - Khanyi SD: <Media omitted>
+5/27/19, 11:52 - Khanyi SD: <Media omitted>
+5/27/19, 11:54 - Ag: @27815777697 you're the one👊🏾
+5/27/19, 11:54 - Khanyi SD: <Media omitted>
+5/27/19, 11:54 - Khanyi SD: <Media omitted>
+5/27/19, 11:54 - Khanyi SD: <Media omitted>
+5/27/19, 11:54 - Khanyi SD: <Media omitted>
+5/27/19, 11:54 - Khanyi SD: <Media omitted>
+5/27/19, 11:54 - Khanyi SD: <Media omitted>
+5/27/19, 11:54 - Khanyi SD: <Media omitted>
+5/27/19, 11:54 - Khanyi SD: <Media omitted>
+5/27/19, 12:48 - Fentse: Yall still at FnB?
+5/27/19, 12:48 - Khanyi SD: yass
+5/27/19, 12:49 - Ag: Yrt
+5/27/19, 12:49 - Ag: Yet
+5/27/19, 16:52 - Khanyi SD: <Media omitted>
+5/27/19, 16:52 - Khanyi SD: <Media omitted>
+5/27/19, 16:56 - Fentse: Thanks💯
+5/27/19, 16:58 - Khanyi SD: components can be connected to one another using that interface thingy and the boxes don’t need it
+5/27/19, 16:59 - Fentse: 🤙🏽
+5/27/19, 18:20 - Khanyi SD: <Media omitted>
+5/27/19, 18:20 - Khanyi SD: <Media omitted>
+5/27/19, 18:20 - Khanyi SD: <Media omitted>
+5/27/19, 18:25 - Fentse: That is for which question?
+5/27/19, 18:41 - Khanyi SD: <Media omitted>
+5/27/19, 18:41 - Khanyi SD: uml component diagram for our system
+5/27/19, 18:41 - Khanyi SD: uml deployment diagram for our system
+5/27/19, 18:42 - Khanyi SD: uml class diagram
+5/27/19, 18:42 - Fentse: Thanks Khanyi💯
+5/27/19, 18:55 - Khanyi SD: sho sho
+5/27/19, 18:56 - Khanyi SD: joy we moved to msl walk in centre
+5/27/19, 22:50 - Fentse: Who thinks Terrence could ask about Pub-Sub?
+5/28/19, 16:17 - Lungile: Daily srcum meeting
+5/28/19, 16:17 - Lungile: Good day guys I'll be coding today in msl SD if u guys free come join other see yall tomorrow morning at 9:30
+5/29/19, 09:01 - Fentse: Running abit late. I'll be there around half 10
+5/29/19, 09:08 - Lungile: Awe
+5/29/19, 09:08 - Lungile: Im also on my way
+5/29/19, 09:20 - Joy: Same
+5/29/19, 09:47 - Lungile: awe where is everyone
+5/29/19, 09:51 - Lungile: This message was deleted
+5/29/19, 09:54 - Lungile: i dont have my phone ill be in msl
+5/29/19, 10:26 - Joy: <Media omitted>
+5/29/19, 16:40 - Khanyi SD: where y’all at rn? i just finished writing imma go get something to eat
+5/29/19, 16:46 - Ag: 153
+5/29/19, 16:57 - Lungile: fnb 153
+5/30/19, 01:00 - Khanyi SD: https://github.com/MS35/WitsSoftwareDesign/wiki
+5/30/19, 01:00 - Khanyi SD: github template
+5/30/19, 01:18 - Lungile: What am i supposed to be checking again
+5/30/19, 01:20 - Joy: Check if we got all our wiki stuff correct... Like diagrams... Formats... Listings etc
+5/30/19, 01:21 - Lungile: Awe
+5/30/19, 01:32 - Joy: I'm going to put an issue on github for the pie chart change... When its meant to change to different varsities APS
+5/30/19, 01:35 - Lungile: joy you got to fix the component diagram bra you still havent fixed it from sprint 2
+5/30/19, 01:38 - Lungile: fentse can you please upload the things said in the sprints for the wiki
+5/30/19, 01:40 - Joy: Fixing it now...
+5/30/19, 01:40 - Joy: Push my workings on to git
+5/30/19, 07:21 - Fentse: fede
+5/30/19, 09:24 - Fentse: For Sprint 4 please someone write the tasks for each User Story. Not too sure who did what
+5/30/19, 10:37 - Fentse: Ni vaar?
+5/30/19, 10:47 - Ag: WALKIN CENTRE
+5/30/19, 21:15 - Fentse: S/O for the work team. Hades we took a hit for that Test development stuff.
+6/8/19, 12:48 - Ag: <Media omitted>
+6/8/19, 17:04 - Ag: Guys who's mark shows for the SD project
+7/21/19, 18:54 - Lungile: Hello guys can we meet up tomorrow at lunch
+7/21/19, 19:00 - Joy: I think we can... But I'm only landing at school at 13:30
+7/21/19, 19:03 - Khanyi SD: No problem
+7/21/19, 19:04 - Lungile: Sweet 13:30 it is
+7/22/19, 12:44 - Ag: Where are we meeting up?
+7/22/19, 12:50 - Lungile: Msl
+7/22/19, 12:54 - Joy: Ayt
+7/22/19, 13:28 - Joy: I'm outside msl
+7/22/19, 13:28 - Khanyi SD: I’m at lab 6
+7/22/19, 13:29 - Joy: I'm in the sun... It's cold in there
+7/22/19, 13:33 - Lungile: Im outside with mona in da sun
+7/22/19, 13:34 - Khanyi SD: I’m coming
+7/22/19, 13:34 - Ag: Where?
+7/22/19, 13:37 - Ag: Where
+7/22/19, 13:37 - Joy: <Media omitted>
+7/22/19, 13:39 - Ag: <Media omitted>
+7/22/19, 13:40 - Joy: Walk to the stands.... You will see me on your way
+7/23/19, 21:01 - Joy: List of things that need to be sorted... The pie chart change... The upload documents page needs to work... The pages after you select courses and after adding academic details should go back straight to the dashboard... The bottom of th dashboard...
+7/24/19, 12:35 - Lungile: Ag - upload Documents
+Lungi- bottom of dash and select courses
+Joy- upload Documents
+Fentse-COVERALLS AND TAIGA ETC
+7/24/19, 12:36 - Ag: Upload documents only needs styling to be done, which was joys work in the first place remember
+7/24/19, 12:36 - Lungile: Doesnt matter now its yours 🤦🏽‍♀
+7/24/19, 12:37 - Lungile: Joy is fixing the pie chart
+7/24/19, 12:37 - Joy: Nope it wasn't... It was all your job...
+7/24/19, 12:42 - Joy: And why am I on upload documents
+7/24/19, 12:45 - Lungile: Ow not upload i meant pie chart
+7/24/19, 16:13 - Ag: <Media omitted>
+7/24/19, 16:20 - Joy: I see...
+7/24/19, 16:27 - Ag: Even the other ones, there's no consistency.
+
+Also Lungi encryption for password.
+7/24/19, 16:29 - Ag: <Media omitted>
+7/26/19, 02:39 - Khanyi SD left
+7/30/19, 10:13 - Joy: Terence is free until 12
+7/30/19, 10:14 - Lungile: So can we go to terrence at 11 plse
+7/30/19, 10:17 - Fentse: Fede
+7/30/19, 10:47 - Lungile: Where is everyone
+7/30/19, 10:47 - Fentse: On the way. We'll link up outside MSL
+7/30/19, 10:48 - Lungile: Hala when yall outside
+7/30/19, 10:48 - Fentse: Fede
+7/30/19, 10:51 - Joy: I'm coming
+7/30/19, 10:53 - Ag: On my way
+7/30/19, 11:01 - Joy: Levaar... I'm outside msl
+7/30/19, 11:02 - Lungile: Im on my way
+7/30/19, 11:02 - Fentse: Amic deck
+7/30/19, 11:02 - Fentse: Give me a min cuh
+7/30/19, 11:07 - Fentse: Le Vaar?
+7/30/19, 11:07 - Fentse: Ke mo MSL
+8/2/19, 14:31 - Fentse: Lungi send your student no.
+8/14/19, 13:40 - Joy: Hey people... Can we do the changes and meet some time before Tuesday... So we can meet Terence on Tuesday and get the next set of things to do
+8/20/19, 11:24 - Fentse: Gents retrospective is today?
+8/20/19, 11:26 - Joy: Yeah...
+8/20/19, 11:26 - Joy: So we all need to be there
+8/20/19, 11:26 - Ag: 😭I'm in bed.
+And it's gonna take me years to get there
+8/20/19, 11:27 - Joy: Try be there by 2:30
+8/20/19, 11:28 - Lungile: Damn n has everyone done their part
+8/20/19, 11:31 - Ag: Just tell Terence I'm sick, he has to understand, and please make a VN.
+8/20/19, 14:11 - Joy: Where is everyone?
+8/20/19, 14:13 - Lungile: <Media omitted>
+8/20/19, 14:14 - Joy: 🙄
