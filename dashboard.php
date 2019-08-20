@@ -540,45 +540,61 @@ $UPAps = $_SESSION["UP-APS"];
                 </div>
             </section>
             <!-- END DATA TABLE-->
-
+            <p></p>
 
             <!-- UNIVERSITY APPLICATION STATUS-->
-            <section>
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-12">
-                      <h3 class="title-5 m-b-35">UNIVERSITY APPLICATION Report</h3>
-                      <table class="table table-data2">
-                          <thead>
-                              <tr>
-                                  <th>Course</th>
-                                  <th>Status</th>
-                                  <th></th>
-                              </tr>
-                          </thead>
-                            <p></p>
-                          <tbody>
-                            <tr class="tr-shadow">
-                            	<td ><p id= "00" ></p></td>
-                              <td><p id = "01" class="status--process"></p></td>
-                            </tr>
-                            <tr class="tr-shadow">
-                            	<td ><p id= "10" ></p></td>
-                              <td><p id = "11" class="status--process"></p></td>
-                            </tr>
-                            <tr class="tr-shadow">
-                            	<td ><p id= "20" ></p></td>
-                              <td><p id = "21" class="status--process"></p></td>
-                            </tr>
-
-                          </tbody>
-                      </table>
-
-
-                  </div>
-                </div>
-              </div>
-            </section>
+            <section class="p-t-20">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="title-5 m-b-35"> UNIVERSITY APPLICATION REPORT </h3>
+                            <div class="table-data__tool">
+                                  <div class="table-data__tool-left">
+                                      <div class="rs-select2--light rs-select2--md">
+                                          <select class="js-select2" name="property">
+                                              <option selected="selected">Select University</option>
+                                              <option value="">Wits</option>
+                                              <option value="">UJ</option>
+                                              <option value="">UP</option>
+                                              <option value="">UCT</option>
+                                          </select>
+                                          <div class="dropDownSelect2"></div>
+                                      </div>
+                                      <button class="btn au-btn--green ">Change</button>
+                                  </div>
+                              </div>
+                                <div class="table-responsive table-responsive-data2">
+                                  <table class="table table-data2">
+                                    <thead>
+                                        <tr>
+                                            <th>Choice</th>
+                                            <th>Course</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr class="spacer"></tr>
+                                      <tr class="tr-shadow">
+                                          <td>1st</td>
+                                          <td>Computer Science</td>
+                                          <td>Incompleted</td>
+                                      </tr>
+                                      <tr class="tr-shadow">
+                                          <td>2nd</td>
+                                          <td>Computational and applied Mathematics</td>
+                                          <td>Completed</td>
+                                      </tr>
+                                      <tr class="tr-shadow">
+                                          <td>3rd</td>
+                                          <td>Mathematics of Finance</td>
+                                          <td>Incompleted</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
             <!-- COPYRIGHT-->
             <section class="p-t-60 p-b-20">
                 <div class="container">
@@ -617,52 +633,8 @@ $UPAps = $_SESSION["UP-APS"];
     <script src="vendor/select2/select2.min.js"></script>
     <!-- pie chart -->
     <script type="text/javascript" src="Pie.js"></script>
+
     <script src="pie.min.js"></script>
-
- 				<script>
-        var witsAps = <?php echo $WitsAps ?>;
-        var ujAps = <?php echo $UJAps ?>;
-        var upAps = <?php echo $UPAps ?>;
-        var num;
-
-        var elm=document.querySelector("#upa");
-          elm.addEventListener("click", function (){
-          var APS = upAps;
-        });
-
-
-				  function somefunc() {
-				    var formData = new FormData();
-				    var httpReq = new XMLHttpRequest();
-				    httpReq.open("POST", "status.php", false);
-				    httpReq.onload = function() {
-					//alert(this.responseText);
-					response = JSON.parse(this.responseText);
-
-					  var a = document.getElementById("00");
-            var b = document.getElementById("01");
-					  a.innerHTML = response[0].courses ;
-            b.innerHTML = response[0].status;
-
-            var c = document.getElementById("10");
-            var d = document.getElementById("11");
-					  c.innerHTML = response[1].courses ;
-            d.innerHTML = response[1].status;
-
-            var e = document.getElementById("20");
-            var f = document.getElementById("21");
-					  e.innerHTML = response[2].courses ;
-            f.innerHTML = response[2].status;
-            if (a.val()=='accepted')
-            {
-              document.write(a.fontcolor( "green"));
-            }
-
-
-				    };
-				    httpReq.send(formData);
-
-				  }</script>
 
     <!-- Main JS-->
     <script src="js/main.js"></script>
