@@ -292,8 +292,8 @@ $UPAps = $_SESSION["UP-APS"];
                                           </th>
                                         </tr>
                                         <tr>
-                                          <th>
-                                            <a href="#" id="uja">UJ APS</a>
+                                          <th s>
+                                            <a href="#" id="uja" (click)="ujLoad()">UJ APS</a>
                                             <script>
                                               var elm=document.querySelector("#uja");
                                               elm.addEventListener("click", function (){
@@ -422,7 +422,6 @@ $UPAps = $_SESSION["UP-APS"];
                         <div class="col-md-6 col-lg-4">
                             <!-- CHART PERCENT-->
                             <div class="chart-percent-2">
-
                               <div id="chartContainer" style="height: 300px; width: 100%;"></div>
                             </div>
                             <!-- END CHART PERCENT-->
@@ -634,7 +633,68 @@ $UPAps = $_SESSION["UP-APS"];
     <!-- pie chart -->
     <script type="text/javascript" src="Pie.js"></script>
 
+<<<<<<< HEAD
     <script src="pie.min.js"></script>
+=======
+ 				<script>
+        var witsAps = <?php echo $WitsAps ?>;
+        var ujAps = <?php echo $UJAps ?>;
+        var upAps = <?php echo $UPAps ?>;
+        var num=1;
+
+        function ujLoad(){
+          num=2;
+          document.canvas.window.reload();
+        }
+
+        function witsLoad(){
+          num=1;
+        }
+
+        function upLoad(){
+          num=3;
+
+        }
+
+        var elm=document.querySelector("#upa");
+          elm.addEventListener("click", function (){
+          var APS = upAps;
+        });
+
+
+				  function somefunc() {
+				    var formData = new FormData();
+				    var httpReq = new XMLHttpRequest();
+				    httpReq.open("POST", "status.php", false);
+				    httpReq.onload = function() {
+					//alert(this.responseText);
+					response = JSON.parse(this.responseText);
+
+					  var a = document.getElementById("00");
+            var b = document.getElementById("01");
+					  a.innerHTML = response[0].courses ;
+            b.innerHTML = response[0].status;
+
+            var c = document.getElementById("10");
+            var d = document.getElementById("11");
+					  c.innerHTML = response[1].courses ;
+            d.innerHTML = response[1].status;
+
+            var e = document.getElementById("20");
+            var f = document.getElementById("21");
+					  e.innerHTML = response[2].courses ;
+            f.innerHTML = response[2].status;
+            if (a.val()=='accepted')
+            {
+              document.write(a.fontcolor( "green"));
+            }
+
+
+				    };
+				    httpReq.send(formData);
+
+				  }</script>
+>>>>>>> 2fb865499c01f5268cb2421aa3b70e4bb4af0850
 
     <!-- Main JS-->
     <script src="js/main.js"></script>

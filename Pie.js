@@ -16,16 +16,16 @@ var data = [
           {label:  "Aeronautical Engineering", y: 40,exploded: true,}
         ]
 
-var ac = num;
-if(ac==1){
-  var Aps = witsAps;
-}else if(ac==2){
-  var Aps = ujAps;
-} else if(ac==3){
-  var Aps = upAps;
-}else {
-  var Aps = witsAps;
-}
+  var ac = num;
+  if(ac==1){
+    var Aps = witsAps;
+  }else if(ac==2){
+    var Aps = ujAps;
+  } else if(ac==3){
+    var Aps = upAps;
+  }
+
+
 
 
 
@@ -54,7 +54,12 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	}]
 });
 
+  chart.render();
+  re();
 
-chart.render();
+}
 
+function re(){
+  document.Location.reload();
+  window.reload();
 }
