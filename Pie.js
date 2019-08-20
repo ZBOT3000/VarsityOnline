@@ -15,7 +15,7 @@ var data = [
           {label:  "Mining Engineering", y: 40,exploded: true},
           {label:  "Aeronautical Engineering", y: 40,exploded: true,}
         ]
-function getAps(){
+
   var ac = num;
   if(ac==1){
     var Aps = witsAps;
@@ -26,7 +26,7 @@ function getAps(){
   }else {
     var Aps = witsAps;
   }
-}
+
 
 
 for(var i=0;i<data.length;i++){
