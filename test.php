@@ -51,3 +51,79 @@ if ($result)
            }</script>
    </body>
  </html>
+
+ <h2>
+ <div class="header__navbar">
+
+   <!-- individual users -->
+     <ul class="list-unstyled">
+         <li class="has-sub">
+             <a href="#">
+                 <i class="fas fa-copy"></i>
+                 <span class="bot-line"></span>Personal Details</a>
+             <ul class="header3-sub-list list-unstyled">
+                 <li>
+                     <a href="Demographics.php">Demographics</a>
+                 </li>
+                 <li>
+                     <a href="ParentalDetail.php">Parental Details</a>
+                 </li>
+             </ul>
+         </li>
+
+         <!-- Academics Section -->
+         <li class="has-sub">
+           <a href="#">
+             <i class="fas fa-copy"></i>
+             <span class="header3-sub-list list-unstyled"></span>High School Info</a>
+             <ul class ="header3-sub-list list-unstyled">
+               <li>
+                   <a href="Academics.php">Academics</a>
+               </li>
+               <li>
+                   <a href="school.html">Faculty</a>
+               </li>
+               <li>
+                 <a href="test.php">test</a>
+               </li>
+             </ul>
+         </li>
+         <!-- WISH LIST-->
+         <li class="has-sub">
+           <a href="#">
+             <i class="fas fa-copy"></i>
+             <span class="header3-sub-list list-unstyled"></span>WishList</a>
+             <ul class ="header3-sub-list list-unstyled">
+               <li>
+                   <a href="wishlist.html">Add To WishList</a>
+               </li>
+               <li>
+                   <a href="wishliststatus.html">Show WishList</a>
+               </li>
+
+             </ul>
+         </li>
+
+         <!--Upload Documents -->
+
+         <li class="has-sub">
+           <a href="uploadDoc.html">
+             <i class="fas fa-copy"></i>
+             <span class="header3-sub-list list-unstyled"></span>Upload Documents</a>
+         </li>
+
+         <!-- submit Sessions -->
+         <li class="has-sub">
+           <a href="submitPage.php">
+             <i class="fas fa-copy"></i>
+             <span class="header3-sub-list list-unstyled"></span>Submit</a>
+         </li>
+
+         <li class="has-sub">
+           <a href="LogOut.php">
+             <i class="fas fa-copy"></i>
+             <span class="header3-sub-list list-unstyled"></span>Log out</a>
+         </li>
+     </ul>
+ </div>
+</h2>

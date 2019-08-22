@@ -147,42 +147,33 @@ $UPAps = $_SESSION["UP-APS"];
 
 
     <div class="page-wrapper">
-        <!-- HEADER DESKTOP-->
-        <header class="header-desktop3 d-none d-lg-block">
-            <div class="section__content section__content--p35">
-                <div class="header3-wrap">
-                    <div class="header__logo">
-                        <a href="#">
-                            <h1><a href="dashboard.php" style="color:white;" >Varsity Online</a></h1>
-                        </a>
+      <!-- HEADER DESKTOP-->
+      <header class="header-desktop3 d-none d-lg-block">
+          <div class="section__content section__content--p35">
+              <div class="header3-wrap">
+                  <div class="header__logo">
+                      <a href="#">
+                          <h1><a href="dashboard.php" style="color:white;" >Varsity Online</a></h1>
+                      </a>
 
-                    </div>
+                  </div>
 
-                    <h2>
-                    <div class="header__navbar">
+                  <h2>
+                  <div class="header__navbar">
 
-                      <!-- individual users -->
-                        <ul class="list-unstyled">
-                            <li class="has-sub">
-                                <a href="#">
-                                    <i class="fas fa-copy"></i>
-                                    <span class="bot-line"></span>Personal Details</a>
-                                <ul class="header3-sub-list list-unstyled">
-                                    <li>
-                                        <a href="Demographics.php">Demographics</a>
-                                    </li>
-                                    <li>
-                                        <a href="ParentalDetail.php">Parental Details</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <!-- Academics Section -->
-                            <li class="has-sub">
+                    <!-- individual users -->
+                      <ul class="list-unstyled">
+                          <li class="has-sub">
                               <a href="#">
-                                <i class="fas fa-copy"></i>
-                                <span class="header3-sub-list list-unstyled"></span>High School Info</a>
-                                <ul class ="header3-sub-list list-unstyled">
+                                  <i class="fas fa-copy"></i>
+                                  <span class="bot-line"></span>Personal Details</a>
+                              <ul class="header3-sub-list list-unstyled">
+                                  <li>
+                                      <a href="Demographics.php">Demographics</a>
+                                  </li>
+                                  <li>
+                                      <a href="ParentalDetail.php">Parental Details</a>
+                                  </li>
                                   <li>
                                       <a href="Academics.php">Academics</a>
                                   </li>
@@ -192,51 +183,52 @@ $UPAps = $_SESSION["UP-APS"];
                                   <li>
                                     <a href="test.php">test</a>
                                   </li>
-                                </ul>
-                            </li>
-                            <!-- WISH LIST-->
-                            <li class="has-sub">
-                              <a href="#">
-                                <i class="fas fa-copy"></i>
-                                <span class="header3-sub-list list-unstyled"></span>WishList</a>
-                                <ul class ="header3-sub-list list-unstyled">
-                                  <li>
-                                      <a href="wishlist.html">Add To WishList</a>
-                                  </li>
-                                  <li>
-                                      <a href="wishliststatus.html">Show WishList</a>
-                                  </li>
+                              </ul>
+                          </li>
 
-                                </ul>
-                            </li>
 
-                            <!--Upload Documents -->
+                          <!--APPLICATION-->
 
-                            <li class="has-sub">
-                              <a href="uploadDoc.html">
-                                <i class="fas fa-copy"></i>
-                                <span class="header3-sub-list list-unstyled"></span>Upload Documents</a>
-                            </li>
+                          <li class="has-sub">
+                            <a href="uploadDoc.html">
+                              <i class="fas fa-copy"></i>
+                              <span class="header3-sub-list list-unstyled"></span>Application</a>
+                              <ul class ="header3-sub-list list-unstyled">
+                                <li>
+                                    <a href="wishlist.html">Add To WishList</a>
+                                </li>
+                                <li>
+                                    <a href="wishliststatus.html">Show WishList</a>
+                                </li>
+                                <li>
+                                    <a href="school.html">Faculty</a>
+                                </li>
+                                <li>
+                                  <a href="#"></a>
+                                </li>
 
-                            <!-- submit Sessions -->
-                            <li class="has-sub">
-                              <a href="submitPage.php">
-                                <i class="fas fa-copy"></i>
-                                <span class="header3-sub-list list-unstyled"></span>Submit</a>
-                            </li>
+                              </ul>
+                          </li>
 
-                            <li class="has-sub">
-                              <a href="LogOut.php">
-                                <i class="fas fa-copy"></i>
-                                <span class="header3-sub-list list-unstyled"></span>Log out</a>
-                            </li>
-                        </ul>
-                    </div>
-                  </h2>
-                </div>
-            </div>
-        </header>
-        <!-- END HEADER DESKTOP-->
+                          <!-- submit Sessions -->
+                          <li class="has-sub">
+                            <a href="submitPage.php">
+                              <i class="fas fa-copy"></i>
+                              <span class="header3-sub-list list-unstyled"></span>Submit</a>
+                          </li>
+
+                          <li class="has-sub">
+                            <a href="LogOut.php">
+                              <i class="fas fa-copy"></i>
+                              <span class="header3-sub-list list-unstyled"></span>Log out</a>
+                          </li>
+                      </ul>
+                  </div>
+                </h2>
+              </div>
+          </div>
+      </header>
+      <!-- END HEADER DESKTOP-->
 
         <!-- PAGE CONTENT-->
 
