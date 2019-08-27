@@ -101,6 +101,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
 $WitsAps = $_SESSION["WITS-APS"];
 $UJAps = $_SESSION["UJ-APS"];
 $UPAps = $_SESSION["UP-APS"];
+$_SESSION["appStatus"] = "wits_application";
 
 }else {
   header('Location: WelcomePage.html');
@@ -201,12 +202,8 @@ $UPAps = $_SESSION["UP-APS"];
                                     <a href="wishliststatus.html">Show WishList</a>
                                 </li>
                                 <li>
-                                    <a href="school.html">Faculty</a>
+                                    <a href="witsApplication.php">Wits Application</a>
                                 </li>
-                                <li>
-                                  <a href="#"></a>
-                                </li>
-
                               </ul>
                           </li>
 
@@ -542,16 +539,16 @@ $UPAps = $_SESSION["UP-APS"];
                             <div class="table-data__tool">
                                   <div class="table-data__tool-left">
                                       <div class="rs-select2--light rs-select2--md">
-                                          <select class="js-select2" name="property">
+                                          <select class="js-select2" name="ApplicationStatus">
                                               <option selected="selected">Select University</option>
-                                              <option value="">Wits</option>
-                                              <option value="">UJ</option>
-                                              <option value="">UP</option>
-                                              <option value="">UCT</option>
+                                              <option value="wits_application">Wits</option>
+                                              <option value="uj">UJ</option>
+                                              <option value="up">UP</option>
+                                              <option value="uct">UCT</option>
                                           </select>
                                           <div class="dropDownSelect2"></div>
                                       </div>
-                                      <button class="btn au-btn--green ">Change</button>
+                                      <button onclick="appStatusProcess()" class="btn au-btn--green ">Change</button>
                                   </div>
                               </div>
                                 <div class="table-responsive table-responsive-data2">
@@ -567,18 +564,35 @@ $UPAps = $_SESSION["UP-APS"];
                                       <tr class="spacer"></tr>
                                       <tr class="tr-shadow">
                                           <td>1st</td>
-                                          <td>Computer Science</td>
-                                          <td>Incompleted</td>
+                                          <td id ="1choice">
+                                          <?php require 'conn.php';
+                                          $c1 = $_SESSION["appStatus"];
+                                          $mysql_qry = "select COURSE1 FROM $c1 WHERE USER_ID = '$ID'; ";
+                                          $result2 = mysqli_query($conn,$mysql_qry);
+                                          $row = $result2->fetch_assoc();
+                                          $un = implode(" ",$row);
+                                          echo $un?></td>
+                                          <td>pending</td>
                                       </tr>
                                       <tr class="tr-shadow">
                                           <td>2nd</td>
-                                          <td>Computational and applied Mathematics</td>
-                                          <td>Completed</td>
+                                          <td id ="1choice"><?php require 'conn.php';
+                                          $mysql_qry = "select COURSE2 FROM $c1 WHERE USER_ID = '$ID'; ";
+                                          $result2 = mysqli_query($conn,$mysql_qry);
+                                          $row = $result2->fetch_assoc();
+                                          $un = implode(" ",$row);
+                                          echo $un?></td>
+                                          <td>Pending</td>
                                       </tr>
                                       <tr class="tr-shadow">
                                           <td>3rd</td>
-                                          <td>Mathematics of Finance</td>
-                                          <td>Incompleted</td>
+                                          <td id ="1choice"><?php require 'conn.php';
+                                          $mysql_qry = "select COURSE3 FROM $c1 WHERE USER_ID = '$ID'; ";
+                                          $result2 = mysqli_query($conn,$mysql_qry);
+                                          $row = $result2->fetch_assoc();
+                                          $un = implode(" ",$row);
+                                          echo $un?></td>
+                                          <td>Pending</td>
                                       </tr>
                                     </tbody>
                                   </table>
@@ -684,6 +698,24 @@ $UPAps = $_SESSION["UP-APS"];
 				    httpReq.send(formData);
 
 				  }</script>
+
+    <script>
+    document.getElementById("ApplicationStatus").addEventListener("click", appStatusProcess);
+
+    function appStatusProcess()
+    {
+
+      if (document.getElementById("appStatusProcess").value == "wits_application")
+      {
+        <?php
+        $_SESSION["appStatus"] = "wits_application";
+         ?>
+      } else if (document.getElementById("appStatusProcess").value == "uj")
+      {
+        document.getElementById("1choice").style.color = "red";
+      }
+    }
+    </script>
 
     <!-- Main JS-->
     <script src="js/main.js"></script>
