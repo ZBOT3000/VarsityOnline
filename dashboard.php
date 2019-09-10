@@ -541,7 +541,7 @@ $_SESSION["appStatus"] = "wits_application";
                                           <select class="js-select2" name="ApplicationStatus">
                                               <option selected="selected">Select University</option>
                                               <option value="wits_application">Wits</option>
-                                              <option value="uj">UJ</option>
+                                              <option value="UJ_Application">UJ</option>
                                               <option value="up">UP</option>
                                               <option value="uct">UCT</option>
                                           </select>
@@ -709,8 +709,13 @@ $_SESSION["appStatus"] = "wits_application";
         <?php
         $_SESSION["appStatus"] = "wits_application";
          ?>
-      } else if (document.getElementById("appStatusProcess").value == "uj")
+      } else if (document.getElementById("appStatusProcess").value == "UJ_Application")
       {
+        <?php
+        $_SESSION["appStatus"] = "uj_application";
+         ?>
+
+      }else{
         document.getElementById("1choice").style.color = "red";
       }
     }
