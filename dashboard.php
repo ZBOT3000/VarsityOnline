@@ -34,8 +34,7 @@ $result2 = mysqli_query($conn,$mysql_qry2);
 $result3 = mysqli_query($conn,$mysql_qry3);
 
 
-  if ( mysqli_num_rows( $result ) > 0 )
-  {
+  if ( mysqli_num_rows( $result ) > 0 ){
     $row = $result->fetch_assoc();
     $row = implode(" ",$row)." ";
     $_SESSION['AStatus'] = $row;
