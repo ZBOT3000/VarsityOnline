@@ -54,12 +54,13 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	}]
 });
 
-  chart.render();
-  re();
-
-}
-
 function re(){
   document.Location.reload();
-  window.reload();
+  var ac = num;
+  chart.render();
+}
+
+  re();
+
+
 }
