@@ -20,36 +20,36 @@ session_start();
   			<div class="Drop-Down">
   				<select name="firstChoice" class="select-box">
     				<option>Select your first Choice</option>
-            <option value="General">BSc-General</option>
-            <option value="Biological Science">BSc-Biological Science</option>
-            <option value="Archaeology and Geography">BSc-Archaeology and Geography</option>
-            <option value="Geological Sciences">BSc-Geological Sciences</option>
-            <option value="Acturial Sciences">BSc-Acturial Sciences</option>
-            <option value="Computer Science">BSc-Computer Science</option>
-            <option value="Mathematics of Finance">BSc-Mathematics of Finance</option>
-            <option value="Mathematical Science">BSc-Mathematical Science</option>
-            <option value="Astronomy and Astrophysics">BSc-Astronomy and Astrophysics</option>
-            <option value="Chemistry with Chemical Engineering">BSc-Chemistry with Chemical Engineering</option>
-            <option value="Nuclear Science and Engineering">BSc-Nuclear Science and Engineering</option>
-            <option value="Physical Science">BSc-Physical Science</option>
+            <option value="BSc-General">BSc-General</option>
+            <option value="BSc-Biological Science">BSc-Biological Science</option>
+            <option value="BSc-Archaeology and Geography">BSc-Archaeology and Geography</option>
+            <option value="BSc-Geological Sciences">BSc-Geological Sciences</option>
+            <option value="BSc-Acturial Sciences">BSc-Acturial Sciences</option>
+            <option value="BSc-Computer Science">BSc-Computer Science</option>
+            <option value="BSc-Mathematics of Finance">BSc-Mathematics of Finance</option>
+            <option value="BSc-Mathematical Science">BSc-Mathematical Science</option>
+            <option value="BSc-Astronomy and Astrophysics">BSc-Astronomy and Astrophysics</option>
+            <option value="BSc-Chemistry with Chemical Engineering">BSc-Chemistry with Chemical Engineering</option>
+            <option value="BSc-Nuclear Science and Engineering">BSc-Nuclear Science and Engineering</option>
+            <option value="BSc-Physical Science">BSc-Physical Science</option>
   		     </select>
 
   			</div>
         <div class="Drop-Down">
           <select name="secondChoice" class="select-box">
             <option>Select your first Choice</option>
-            <option value="General">BSc-General</option>
-            <option value="Biological Science">BSc-Biological Science</option>
-            <option value="Archaeology and Geography">BSc-Archaeology and Geography</option>
-            <option value="Geological Sciences">BSc-Geological Sciences</option>
-            <option value="Acturial Sciences">BSc-Acturial Sciences</option>
-            <option value="Computer Science">BSc-Computer Science</option>
-            <option value="Mathematics of Finance">BSc-Mathematics of Finance</option>
-            <option value="Mathematical Science">BSc-Mathematical Science</option>
-            <option value="Astronomy and Astrophysics">BSc-Astronomy and Astrophysics</option>
-            <option value="Chemistry with Chemical Engineering">BSc-Chemistry with Chemical Engineering</option>
-            <option value="Nuclear Science and Engineering">BSc-Nuclear Science and Engineering</option>
-            <option value="Physical Science">BSc-Physical Science</option>
+            <option value="BSc-General">BSc-General</option>
+            <option value="BSc-Biological Science">BSc-Biological Science</option>
+            <option value="BSc-Archaeology and Geography">BSc-Archaeology and Geography</option>
+            <option value="BSc-Geological Sciences">BSc-Geological Sciences</option>
+            <option value="BSc-Acturial Sciences">BSc-Acturial Sciences</option>
+            <option value="BSc-Computer Science">BSc-Computer Science</option>
+            <option value="BSc-Mathematics of Finance">BSc-Mathematics of Finance</option>
+            <option value="BSc-Mathematical Science">BSc-Mathematical Science</option>
+            <option value="BSc-Astronomy and Astrophysics">BSc-Astronomy and Astrophysics</option>
+            <option value="BSc-Chemistry with Chemical Engineering">BSc-Chemistry with Chemical Engineering</option>
+            <option value="BSc-Nuclear Science and Engineering">BSc-Nuclear Science and Engineering</option>
+            <option value="BSc-Physical Science">BSc-Physical Science</option>
            </select>
 
         </div>
@@ -57,18 +57,18 @@ session_start();
         <div class="Drop-Down">
           <select name="ThirdChoice" class="select-box">
             <option>Select your first Choice</option>
-            <option value="General">BSc-General</option>
-            <option value="Biological Science">BSc-Biological Science</option>
-            <option value="Archaeology and Geography">BSc-Archaeology and Geography</option>
-            <option value="Geological Sciences">BSc-Geological Sciences</option>
-            <option value="Acturial Sciences">BSc-Acturial Sciences</option>
-            <option value="Computer Science">BSc-Computer Science</option>
-            <option value="Mathematics of Finance">BSc-Mathematics of Finance</option>
-            <option value="Mathematical Science">BSc-Mathematical Science</option>
-            <option value="Astronomy and Astrophysics">BSc-Astronomy and Astrophysics</option>
-            <option value="Chemistry with Chemical Engineering">BSc-Chemistry with Chemical Engineering</option>
-            <option value="Nuclear Science and Engineering">BSc-Nuclear Science and Engineering</option>
-            <option value="Physical Science">BSc-Physical Science</option>
+            <option value="BSc-General">BSc-General</option>
+            <option value="BSc-Biological Science">BSc-Biological Science</option>
+            <option value="BSc-Archaeology and Geography">BSc-Archaeology and Geography</option>
+            <option value="BSc-Geological Sciences">BSc-Geological Sciences</option>
+            <option value="BSc-Acturial Sciences">BSc-Acturial Sciences</option>
+            <option value="BSc-Computer Science">BSc-Computer Science</option>
+            <option value="BSc-Mathematics of Finance">BSc-Mathematics of Finance</option>
+            <option value="BSc-Mathematical Science">BSc-Mathematical Science</option>
+            <option value="BSc-Astronomy and Astrophysics">BSc-Astronomy and Astrophysics</option>
+            <option value="BSc-Chemistry with Chemical Engineering">BSc-Chemistry with Chemical Engineering</option>
+            <option value="BSc-Nuclear Science and Engineering">BSc-Nuclear Science and Engineering</option>
+            <option value="BSc-Physical Science">BSc-Physical Science</option>
            </select>
 
         </div>
