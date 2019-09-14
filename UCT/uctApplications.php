@@ -6,7 +6,7 @@ session_start();
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Wits Application</title>
+    <title>UCT Application</title>
     <link rel="stylesheet" type="text/css" href="uctApplication.css">
   </head>
   <body>
@@ -23,6 +23,21 @@ session_start();
             <option value="Mathematics">BSc-Mathematics</option>
             <option value="Biochemistry">BSc-Biochemistry</option>
             <option value="Astrophysics">BSc-Astrophysics</option>
+	    <option value="Business Science">Bcom-Business Science</option>
+            <option value="Accounting">Bcom-Accounting</option>
+            <option value="Actuarial Science">Bcom-Actuarial Science</option>
+            <option value="Information Systems">Bcom-Information Systems</option>
+            <option value="Economics">Bcom-Economics</option>
+	    <option value="Civil Engineering">BEng-Civil Engineering</option>
+            <option value="Electrical Engineering">BEng-Electrical Engineering</option>
+            <option value="Chemical Engineering">BEng-Chemical Engineering</option>
+            <option value="Mechatronics">BEng-Machatronics</option>
+            <option value="Mechanical Engineering">BEng-Mechanical Engineering</option>
+	    <option value="Fine Arts">BA-Fine Arts</option>
+            <option value="Theatre & Performance">BA-Theatre</option>
+            <option value="Social Science">BA-Social Science</option>
+            <option value="Social Work">BA-Social Work</option>
+            <option value="Music">BA-Music</option>
   		     </select>
 
   			</div>
@@ -34,7 +49,21 @@ session_start();
             <option value="Mathematics">BSc-Mathematics</option>
             <option value="Biochemistry">BSc-Biochemistry</option>
             <option value="Astrophysics">BSc-Astrophysics</option>
-
+	    <option value="Business Science">Bcom-Business Science</option>
+            <option value="Accounting">Bcom-Accounting</option>
+            <option value="Actuarial Science">Bcom-Actuarial Science</option>
+            <option value="Information Systems">Bcom-Information Systems</option>
+            <option value="Economics">Bcom-Economics</option>
+	    <option value="Civil Engineering">BEng-Civil Engineering</option>
+            <option value="Electrical Engineering">BEng-Electrical Engineering</option>
+            <option value="Chemical Engineering">BEng-Chemical Engineering</option>
+            <option value="Mechatronics">BEng-Machatronics</option>
+            <option value="Mechanical Engineering">BEng-Mechanical Engineering</option>
+	    <option value="Fine Arts">BA-Fine Arts</option>
+            <option value="Theatre & Performance">BA-Theatre</option>
+            <option value="Social Science">BA-Social Science</option>
+            <option value="Social Work">BA-Social Work</option>
+            <option value="Music">BA-Music</option>
 		 </select>
         </div>
 
@@ -46,7 +75,21 @@ session_start();
             <option value="Mathematics">BSc-Mathematics</option>
             <option value="Biochemistry">BSc-Biochemistry</option>
             <option value="Astrophysics">BSc-Astrophysics</option>
-
+            <option value="Business Science">Bcom-Business Science</option>
+            <option value="Accounting">Bcom-Accounting</option>
+            <option value="Actuarial Science">Bcom-Actuarial Science</option>
+            <option value="Information Systems">Bcom-Information Systems</option>
+            <option value="Economics">Bcom-Economics</option>
+	    <option value="Civil Engineering">BEng-Civil Engineering</option>
+            <option value="Electrical Engineering">BEng-Electrical Engineering</option>
+            <option value="Chemical Engineering">BEng-Chemical Engineering</option>
+            <option value="Mechatronics">BEng-Machatronics</option>
+            <option value="Mechanical Engineering">BEng-Mechanical Engineering</option>
+	    <option value="Fine Arts">BA-Fine Arts</option>
+            <option value="Theatre & Performance">BA-Theatre</option>
+            <option value="Social Science">BA-Social Science</option>
+            <option value="Social Work">BA-Social Work</option>
+            <option value="Music">BA-Music</option>
            </select>
 
         </div>
