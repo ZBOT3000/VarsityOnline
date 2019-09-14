@@ -9,7 +9,7 @@ $mysql_ins="insert into wits_application (COURSE1, COURSE2, COURSE3, USER_ID) va
 $result = mysqli_query($conn,$mysql_ins);
 if  ($result)
 {
-   echo "YOU HAVE SUCCESSFULY CAPTURED YOUR WITS APPLICATION <br>";
+   echo "YOU HAVE SUCCESSFULY CAPTURED YOUR UCT APPLICATION <br>";
    echo "<p><a href='dashboard.php'>CLICK HERE TO GO BACK</a></p>";
    $_SESSION['finish']=$_SESSION['finish']+1;
 }
