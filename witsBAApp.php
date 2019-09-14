@@ -20,26 +20,26 @@ session_start();
   			<div class="Drop-Down">
   				<select name="firstChoice" class="select-box">
     				<option>Select your first Choice</option>
-            <option value="BCom-General">BCom-General</option>
-            <option value="Bcom-Accounting Science">Bcom-Accounting Science</option>
-            <option value="BCom-Accounting">Bcom-Accounting</option>
-            <option value="BCom-Economic Science">Bcom-Economic Science</option>
-            <option value="BCom-Politics,Philosophy and Economicss">Bcom-Politics,Philosophy and Economicss</option>
-            <option value="BCom-Law">Bcom-Law</option>
-            <option value="BCom-Information Systems">Bcom-Information Systems</option>
+            <option value="BA-General">BA-General</option>
+            <option value="BA-Law">BA-Law</option>
+            <option value="BA-Digital Arts">BA-Digital Arts</option>
+            <option value="BA-Dramatic Arts">BA-Dramatic Arts</option>
+            <option value="BA-Film and Television">BA-Film and Television</option>
+            <option value="BA-Fine Arts">BA-Fine Arts</option>
+            <option value="BA-Music">BA-Music</option>
   		     </select>
 
   			</div>
         <div class="Drop-Down">
           <select name="secondChoice" class="select-box">
             <option>Select your first Choice</option>
-            <option value="BCom-General">BCom-General</option>
-            <option value="Bcom-Accounting Science">Bcom-Accounting Science</option>
-            <option value="BCom-Accounting">Bcom-Accounting</option>
-            <option value="BCom-Economic Science">Bcom-Economic Science</option>
-            <option value="BCom-Politics,Philosophy and Economicss">Bcom-Politics,Philosophy and Economicss</option>
-            <option value="BCom-Law">Bcom-Law</option>
-            <option value="BCom-Information Systems">Bcom-Information Systems</option>
+            <option value="BA-General">BA-General</option>
+            <option value="BA-Digital Arts">BA-Digital Arts</option>
+            <option value="BA-Dramatic Arts">BA-Dramatic Arts</option>
+            <option value="BA-Film and Television">BA-Film and Television</option>
+            <option value="BA-Fine Arts">BA-Fine Arts</option>
+            <option value="BA-Law">BA-Law</option>
+            <option value="BA-Music">BA-Music</option>
            </select>
 
         </div>
@@ -47,13 +47,13 @@ session_start();
         <div class="Drop-Down">
           <select name="ThirdChoice" class="select-box">
             <option>Select your first Choice</option>
-            <option value="BCom-General">BCom-General</option>
-            <option value="Bcom-Accounting Science">Bcom-Accounting Science</option>
-            <option value="BCom-Accounting">Bcom-Accounting</option>
-            <option value="BCom-Economic Science">Bcom-Economic Science</option>
-            <option value="BCom-Politics,Philosophy and Economicss">Bcom-Politics,Philosophy and Economicss</option>
-            <option value="BCom-Law">Bcom-Law</option>
-            <option value="BCom-Information Systems">Bcom-Information Systems</option>
+            <option value="BA-General">BA-General</option>
+            <option value="BA-Digital Arts">BA-Digital Arts</option>
+            <option value="BA-Dramatic Arts">BA-Dramatic Arts</option>
+            <option value="BA-Film and Television">BA-Film and Television</option>
+            <option value="BA-Fine Arts">BA-Fine Arts</option>
+            <option value="BA-Law">BA-Law</option>
+            <option value="BA-Music">BA-Music</option>
            </select>
         </div>
 
