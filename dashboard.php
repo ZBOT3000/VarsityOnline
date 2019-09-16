@@ -4,7 +4,7 @@ require 'functions.php';
 if (isset($_SESSION['username']))
 {
   $_SESSION["HOME_LAN"] = "GO TO THE HIGHSCHOOL INFO BAR";
-  $_SESSION["FA_LAN"] = "AND COMPLETE THE Academics SECTION";
+  $_SESSION["FA_LAN"] = "ANDD COMPLETE THE Academics SECTION";
   $_SESSION["MATH_SUBJ"] = "";
   $_SESSION["SUBJ1"]= "";;
   $_SESSION["SUBJ2"] = "";
@@ -140,62 +140,84 @@ if ( mysqli_num_rows( $result4 ) > 0 )
 
 
     <div class="page-wrapper">
-        <!-- HEADER DESKTOP-->
-        <header class="header-desktop3 d-none d-lg-block">
-            <div class="section__content section__content--p35">
-                <div class="header3-wrap">
-                    <div class="header__logo">
-                        <a href="#">
-                            <h1><a href="Dashboard.php" style="color:white;" >Varsity Online</a></h1>
-                        </a>
-                    </div>
-                    <div class="header__navbar">
+      <!-- HEADER DESKTOP-->
+            <header class="header-desktop3 d-none d-lg-block">
+                <div class="section__content section__content--p35">
+                    <div class="header3-wrap">
+                        <div class="header__logo">
+                            <a href="#">
+                                <h1><a href="dashboard.php" style="color:white;" >Varsity Online</a></h1>
+                            </a>
 
-                      <!-- individual users -->
-                        <ul class="list-unstyled">
-                            <li class="has-sub">
-                                <a href="#">
+                        </div>
+
+                        <h2>
+                        <div class="header__navbar">
+
+                          <!-- individual users -->
+                            <ul class="list-unstyled">
+                                <li class="has-sub">
+                                    <a href="#">
+                                        <i class="fas fa-copy"></i>
+                                        <span class="bot-line"></span>Personal Details</a>
+                                    <ul class="header3-sub-list list-unstyled">
+                                        <li>
+                                            <a href="Demographics.php">Demographics</a>
+                                        </li>
+                                        <li>
+                                            <a href="ParentalDetail.php">Parental Details</a>
+                                        </li>
+                                        <li>
+                                            <a href="Academics.php">Academics</a>
+                                        </li>
+                                        <li>
+                                            <a href="school.html">Faculty</a>
+                                        </li>
+                                        <li>
+                                          <a href="test.php">test</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <!--APPLICATION-->
+
+                                <li class="has-sub">
+                                  <a href="uploadDoc.html">
                                     <i class="fas fa-copy"></i>
-                                    <span class="bot-line"></span>Personal Details</a>
-                                <ul class="header3-sub-list list-unstyled">
-                                    <li>
-                                        <a href="Demographics.php">Demographics</a>
-                                    </li>
-                                    <li>
-                                        <a href="ParentalDetail.php">Parental Details</a>
-                                    </li>
-                                </ul>
-                            </li>
+                                    <span class="header3-sub-list list-unstyled"></span>Application</a>
+                                    <ul class ="header3-sub-list list-unstyled">
+                                      <li>
+                                          <a href="wishlist.html">Add To WishList</a>
+                                      </li>
+                                      <li>
+                                          <a href="wishliststatus.html">Show WishList</a>
+                                      </li>
+                                      <li>
+                                          <a href="witsApplication.php">Wits Application</a>
+                                      </li>
+                                    </ul>
+                                </li>
 
-                            <!-- Academics Section -->
-                            <li class="has-sub">
-                              <a href="#">
-                                <i class="fas fa-copy"></i>
-                                <span class="header3-sub-list list-unstyled"></span>High School Info</a>
-                                <ul class ="header3-sub-list list-unstyled">
-                                  <li>
-                                      <a href="Academics.php">Academics</a>
-                                  </li>
-                                  <li>
-                                      <a href="School.html">Faculty</a>
-                                  </li>
-                                  <li>
-                                    <a href="test.php">test</a>
-                                  </li>
-                                </ul>
-                            </li>
+                                <!-- submit Sessions -->
+                                <li class="has-sub">
+                                  <a href="submitPage.php">
+                                    <i class="fas fa-copy"></i>
+                                    <span class="header3-sub-list list-unstyled"></span>Submit</a>
+                                </li>
 
-                            <li class="has-sub">
-                              <a href="LogOut.php">
-                                <i class="fas fa-copy"></i>
-                                <span class="header3-sub-list list-unstyled"></span>Log out</a>
-                            </li>
-                        </ul>
+                                <li class="has-sub">
+                                  <a href="LogOut.php">
+                                    <i class="fas fa-copy"></i>
+                                    <span class="header3-sub-list list-unstyled"></span>Log out</a>
+                                </li>
+                            </ul>
+                        </div>
+                      </h2>
                     </div>
                 </div>
-            </div>
-        </header>
-        <!-- END HEADER DESKTOP-->
+            </header>
+            <!-- END HEADER DESKTOP-->
 
         <!-- PAGE CONTENT-->
 
@@ -228,61 +250,62 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-lg-4">
-                          <!-- TOP CAMPAIGN-->
+                          <!-- APS Section-->
                           <div class="top-campaign">
                               <h3 class="title-3 m-b-30">APS SCORES</h3>
                               <div class="table-responsive">
-                                  <table class="table table-top-campaign">
-                                      <tbody>
-                                          <tr>
-                                            <th>
-                                              WITS APS
-                                            </th>
-                                            <th>
-                                              <?php
-                                                echo $_SESSION["APS"];
-                                               ?>
-                                            </th>
-                                          </tr>
-                                          <tr>
-                                            <th>
-                                              UNI2 APS
-                                            </th>
-                                            <th>
-                                              46
-                                            </th>
-                                          </tr>
-                                          <tr>
-                                            <th>
-                                              UNI3 APS
-                                            </th>
-                                            <th>
-                                              46
-                                            </th>
-                                          </tr>
-                                          <tr>
-                                            <th>
-                                              UNI4 APS
-                                            </th>
-                                            <th>
-                                              46
-                                            </th>
-                                          </tr>
-                                          <tr>
-                                            <th>
-                                              UNI5 APS
-                                            </th>
-                                            <th>
-                                              46
-                                            </th>
-                                          </tr>
+                                <table class="table table-top-campaign">
+                                    <tbody>
+                                        <tr>
+                                          <th>
+                                            <a href="#" id="witsa">WITS APS</a>
+                                              <script>
+                                                var elm=document.querySelector("#witsa");
+                                                elm.addEventListener("click", function (){
+                                                var num=1;
+                                              });
+                                              </script>
+                                          </th>
+                                          <th>
+                                            <?php
+                                              echo $_SESSION["WITS-APS"];
+                                             ?>
+                                          </th>
+                                        </tr>
+                                        <tr>
+                                          <th s>
+                                            <a href="#" id="uja" (click)="ujLoad()">UJ APS</a>
+                                            <script>
+                                              var elm=document.querySelector("#uja");
+                                              elm.addEventListener("click", function (){
+                                              var num=2;
+                                            });
+                                            </script>
+                                          </th>
+                                          <th>
+                                            <?php
+                                            echo $_SESSION["UJ-APS"];
+                                            ?>
+                                          </th>
+                                        </tr>
+                                        <tr>
+                                          <th>
+                                            <a href="#" id="upa">UP APS</a>
 
-                                      </tbody>
-                                  </table>
+                                          </th>
+                                          <th>
+                                            <?php
+                                            echo $_SESSION["UP-APS"];
+                                             ?>
+                                          </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
                               </div>
                           </div>
-                          <!-- END TOP CAMPAIGN-->
+                          <!-- END APS Section-->
                       </div>
+                        <!-- Academics Section-->
                         <div class="col-md-6 col-lg-4">
                             <!-- TOP CAMPAIGN-->
                             <div class="top-campaign">
@@ -380,7 +403,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                         <div class="col-md-6 col-lg-4">
                             <!-- CHART PERCENT-->
                             <div class="chart-percent-2">
-                              <canvas id="myCanvas"></canvas>
+                              <div id="chartContainer" style="height: 300px; width: 100%;"></div>
                             </div>
                             <!-- END CHART PERCENT-->
                         </div>
@@ -505,32 +528,54 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                 <div class="row">
                   <div class="col-lg-12">
                       <h3 class="title-5 m-b-35">UNIVERSITY APPLICATION Report</h3>
-                      <table class="table table-data2">
-                          <thead>
-                              <tr>
-                                  <th>Course</th>
-                                  <th>Status</th>
-                                  <th></th>
-                              </tr>
-                          </thead>
-                            <p></p>
-                          <tbody>
-                            <tr class="tr-shadow">
-                            	<td ><p id= "00" ></p></td>
-                              <td><p id = "01" class="status--process"></p></td>
-                            </tr>
-                            <tr class="tr-shadow">
-                            	<td ><p id= "10" ></p></td>
-                              <td><p id = "11" class="status--process"></p></td>
-                            </tr>
-                            <tr class="tr-shadow">
-                            	<td ><p id= "20" ></p></td>
-                              <td><p id = "21" class="status--process"></p></td>
-                            </tr>
+                      <div class="table-data__tool">
+                                  <div class="table-data__tool-left">
+                                      <div class="rs-select2--light rs-select2--md">
+                                          <select class="js-select2" name="ApplicationStatus">
+                                              <option selected="selected">Select University</option>
+                                              <option value="wits_application">Wits</option>
+                                              <option value="UJ_Application">UJ</option>
+                                              <option value="up">UP</option>
+                                              <option value="uct">UCT</option>
+                                          </select>
+                                          <div class="dropDownSelect2"></div>
+                                      </div>
+                                      <button onclick="appStatusProcess()" class="btn au-btn--green ">Change</button>
+                                  </div>
+                            </div>
+                      <div class="table-responsive table-responsive-data2">
+                        <table class="table table-data2">
+                                  <thead>
+                                      <tr>
+                                          <th>Choice</th>
+                                          <th>Course</th>
+                                          <th>Status</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr class="spacer"></tr>
+                                    <tr class="tr-shadow">
+                                        <td>1st</td>
+                                        <td id ="1choice"> c1</td>
+                                        <td>pending</td>
+                                    </tr>
 
-                          </tbody>
-                      </table>
+                                    <tr class="spacer"></tr>
+                                    <tr class="tr-shadow">
+                                        <td>2nd</td>
+                                        <td id ="1choice"> c1</td>
+                                        <td>pending</td>
+                                    </tr>
 
+                                    <tr class="spacer"></tr>
+                                    <tr class="tr-shadow">
+                                        <td>3rd</td>
+                                        <td id ="1choice"> c1</td>
+                                        <td>pending</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                      </div>
 
                   </div>
                 </div>
