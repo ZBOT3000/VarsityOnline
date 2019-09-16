@@ -6,7 +6,7 @@ if (isset($_SESSION['username']))
   $_SESSION["HOME_LAN"] = "GO TO THE HIGHSCHOOL INFO BAR";
   $_SESSION["FA_LAN"] = "- AND COMPLETE THE Academics SECTION";
   $_SESSION["MATH_SUBJ"] = "";
-  $_SESSION["SUBJ1"]= "";;
+  $_SESSION["SUBJ1"]= "";
   $_SESSION["SUBJ2"] = "";
   $_SESSION["SUBJ3"]= "";
 
@@ -418,6 +418,164 @@ $_SESSION["appStatus"] = "wits_application";
                 </div>
             </section>
             <!-- END STATISTIC CHART-->
+
+            <!-- THIS IS THE SUGGESTION SECTION-->
+            <section class="statistic-chart">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="title-5 m-b-35">SCHOOLING SECTION</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                          <!-- APS Section-->
+                          <div class="top-campaign">
+                              <h3 class="title-3 m-b-30">APS SCORES</h3>
+                              <div class="table-responsive">
+                                <table class="table table-top-campaign">
+                                    <tbody>
+                                        <tr>
+                                          <th>First Choice Suggestion
+                                          </th>
+                                          <th>
+                                            FC1
+                                          </th>
+                                        </tr>
+                                        <tr>
+                                          <th>
+                                          </th>
+                                          <th>
+                                            <?php
+                                            echo $_SESSION["UJ-APS"];
+                                            ?>
+                                          </th>
+                                        </tr>
+                                        <tr>
+                                          <th>
+                                            <a href="#" id="upa">UP APS</a>
+
+                                          </th>
+                                          <th>
+                                            <?php
+                                            echo $_SESSION["UP-APS"];
+                                             ?>
+                                          </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                              </div>
+                          </div>
+                          <!-- END WITS Section-->
+                      </div>
+                        <!-- Academics Section-->
+                        <div class="col-md-6 col-lg-4">
+                            <!-- TOP CAMPAIGN-->
+                            <div class="top-campaign">
+                                <h3 class="title-3 m-b-30">High School Academics</h3>
+                                <div class="table-responsive">
+                                    <table class="table table-top-campaign">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <?php
+                                                    echo  $_SESSION["HOME_LAN"];
+                                                     ?>
+                                                </td>
+                                                <td>
+                                                  <?php
+                                                  echo  $_SESSION["HOME_LAN_MARK"];
+                                                   ?>
+                                                  %</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                  <?php
+                                                  echo  $_SESSION["FA_LAN"];
+                                                   ?>
+                                                </td>
+                                                <td>
+                                                  <?php
+                                                  echo  $_SESSION["FA_LAN_MARK"];
+                                                   ?>
+                                                  %</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                  <?php
+                                                  echo  $_SESSION["MATH_SUBJ"];
+                                                   ?>
+                                                </td>
+                                                <td>
+                                                  <?php
+                                                  echo  $_SESSION["MATH_SUBJ_MARK"];
+                                                   ?>
+                                                  %</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                  <?php
+                                                  echo  $_SESSION["SUBJ1"];
+                                                   ?>
+                                                </td>
+                                                <td>
+                                                  <?php
+                                                  echo  $_SESSION["SUBJ1_MARK"];
+                                                   ?>
+                                                  %</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                  <?php
+                                                  echo  $_SESSION["SUBJ2"];
+                                                   ?>
+                                                </td>
+                                                <td>
+                                                  <?php
+                                                  echo  $_SESSION["SUBJ2_MARK"];
+                                                   ?>
+                                                  %</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                  <?php
+                                                  echo  $_SESSION["SUBJ3"];
+                                                   ?>
+                                                </td>
+                                                <td>
+                                                  <?php
+                                                  echo  $_SESSION["SUBJ3_MARK"];
+                                                   ?>
+                                                  %</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Life Orientation
+                                                </td>
+                                                <td>
+                                                  <?php
+                                                  echo  $_SESSION["LO_MARK"];
+                                                   ?>
+                                                  %</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- END TOP CAMPAIGN-->
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <!-- CHART PERCENT-->
+                            <div class="chart-percent-2">
+                              <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                            </div>
+                            <!-- END CHART PERCENT-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END STATISTIC CHART-->
+
+
 
             <!-- DATA TABLE-->
             <section class="p-t-20">
