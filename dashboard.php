@@ -4,9 +4,9 @@ require 'functions.php';
 if (isset($_SESSION['username']))
 {
   $_SESSION["HOME_LAN"] = "GO TO THE HIGHSCHOOL INFO BAR";
-  $_SESSION["FA_LAN"] = "- AND COMPLETE THE Academics SECTION";
+  $_SESSION["FA_LAN"] = "AND COMPLETE THE Academics SECTION";
   $_SESSION["MATH_SUBJ"] = "";
-  $_SESSION["SUBJ1"]= "";
+  $_SESSION["SUBJ1"]= "";;
   $_SESSION["SUBJ2"] = "";
   $_SESSION["SUBJ3"]= "";
 
@@ -17,9 +17,8 @@ if (isset($_SESSION['username']))
   $_SESSION["SUBJ2_MARK"] = "";
   $_SESSION["SUBJ3_MARK"] = "";
   $_SESSION["LO_MARK"] = "";
-  $_SESSION['WITS-APS'] =0;
-  $_SESSION["UJ-APS"]=0;
-  $_SESSION["UP-APS"]=0;
+
+  $_SESSION['APS'] =0;
 $str = $_SESSION['username'];
 $str = preg_replace('/\D/', '', $str);
 $_SESSION['user_id']=$str;
@@ -34,7 +33,8 @@ $result2 = mysqli_query($conn,$mysql_qry2);
 $result3 = mysqli_query($conn,$mysql_qry3);
 
 
-  if ( mysqli_num_rows( $result ) > 0 ){
+  if ( mysqli_num_rows( $result ) > 0 )
+  {
     $row = $result->fetch_assoc();
     $row = implode(" ",$row)." ";
     $_SESSION['AStatus'] = $row;
@@ -89,18 +89,11 @@ if ( mysqli_num_rows( $result4 ) > 0 )
   $_SESSION["SUBJ2_MARK"] = $rows[0]["SUBJ2_MARK"];
   $_SESSION["SUBJ3_MARK"] = $rows[0]["SUBJ3_MARK"];
   $_SESSION["LO_MARK"] = $rows[0]["LO_MARK"];
-  $_SESSION["WITS-APS"]=APS($_SESSION["FA_LAN_MARK"])+APS($_SESSION["SUBJ2_MARK"])+APS($_SESSION["SUBJ3_MARK"])+APS($_SESSION["SUBJ1_MARK"]);
-  $_SESSION["WITS-APS"] = $_SESSION["WITS-APS"]+APS_LO($_SESSION["LO_MARK"])+APS_EM($_SESSION["MATH_SUBJ_MARK"])+APS_EM($_SESSION["HOME_LAN_MARK"]);
-  //UJ APS
-  $_SESSION["UJ-APS"] = +UJAPS($_SESSION["HOME_LAN_MARK"])+UJAPS($_SESSION["FA_LAN_MARK"])+UJAPS($_SESSION["MATH_SUBJ_MARK"])+UJAPS($_SESSION["SUBJ2_MARK"])+UJAPS($_SESSION["SUBJ3_MARK"])+UJAPS($_SESSION["SUBJ1_MARK"]);
-  //UP APS which is same as UJ
-  $_SESSION["UP-APS"] = $_SESSION["UJ-APS"];
+  $_SESSION["APS"]=APS($_SESSION["FA_LAN_MARK"])+APS($_SESSION["SUBJ2_MARK"])+APS($_SESSION["SUBJ3_MARK"])+APS($_SESSION["SUBJ1_MARK"]);
+  $_SESSION["APS"] = $_SESSION["APS"]+APS_LO($_SESSION["LO_MARK"])+APS_EM($_SESSION["MATH_SUBJ_MARK"])+APS_EM($_SESSION["HOME_LAN_MARK"]);
 }
 
-$WitsAps = $_SESSION["WITS-APS"];
-$UJAps = $_SESSION["UJ-APS"];
-$UPAps = $_SESSION["UP-APS"];
-$_SESSION["appStatus"] = "wits_application";
+
 
 }else {
   header('Location: WelcomePage.html');
@@ -126,9 +119,9 @@ $_SESSION["appStatus"] = "wits_application";
     <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
 
-    <!-- Bootstrap CSS  <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">-->
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Vendor CSS-->
     <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
     <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
@@ -143,88 +136,66 @@ $_SESSION["appStatus"] = "wits_application";
 
 </head>
 
-<body class="animsition">
+<body class="animsition" onload="somefunc()">
 
 
     <div class="page-wrapper">
-      <!-- HEADER DESKTOP-->
-      <header class="header-desktop3 d-none d-lg-block">
-          <div class="section__content section__content--p35">
-              <div class="header3-wrap">
-                  <div class="header__logo">
-                      <a href="#">
-                          <h1><a href="dashboard.php" style="color:white;" >Varsity Online</a></h1>
-                      </a>
+        <!-- HEADER DESKTOP-->
+        <header class="header-desktop3 d-none d-lg-block">
+            <div class="section__content section__content--p35">
+                <div class="header3-wrap">
+                    <div class="header__logo">
+                        <a href="#">
+                            <h1><a href="Dashboard.php" style="color:white;" >Varsity Online</a></h1>
+                        </a>
+                    </div>
+                    <div class="header__navbar">
 
-                  </div>
+                      <!-- individual users -->
+                        <ul class="list-unstyled">
+                            <li class="has-sub">
+                                <a href="#">
+                                    <i class="fas fa-copy"></i>
+                                    <span class="bot-line"></span>Personal Details</a>
+                                <ul class="header3-sub-list list-unstyled">
+                                    <li>
+                                        <a href="Demographics.php">Demographics</a>
+                                    </li>
+                                    <li>
+                                        <a href="ParentalDetail.php">Parental Details</a>
+                                    </li>
+                                </ul>
+                            </li>
 
-                  <h2>
-                  <div class="header__navbar">
-
-                    <!-- individual users -->
-                      <ul class="list-unstyled">
-                          <li class="has-sub">
+                            <!-- Academics Section -->
+                            <li class="has-sub">
                               <a href="#">
-                                  <i class="fas fa-copy"></i>
-                                  <span class="bot-line"></span>Personal Details</a>
-                              <ul class="header3-sub-list list-unstyled">
-                                  <li>
-                                      <a href="Demographics.php">Demographics</a>
-                                  </li>
-                                  <li>
-                                      <a href="ParentalDetail.php">Parental Details</a>
-                                  </li>
+                                <i class="fas fa-copy"></i>
+                                <span class="header3-sub-list list-unstyled"></span>High School Info</a>
+                                <ul class ="header3-sub-list list-unstyled">
                                   <li>
                                       <a href="Academics.php">Academics</a>
                                   </li>
                                   <li>
-                                      <a href="school.html">Faculty</a>
+                                      <a href="School.html">Faculty</a>
                                   </li>
                                   <li>
                                     <a href="test.php">test</a>
                                   </li>
-                              </ul>
-                          </li>
+                                </ul>
+                            </li>
 
-
-                          <!--APPLICATION-->
-
-                          <li class="has-sub">
-                            <a href="uploadDoc.html">
-                              <i class="fas fa-copy"></i>
-                              <span class="header3-sub-list list-unstyled"></span>Application</a>
-                              <ul class ="header3-sub-list list-unstyled">
-                                <li>
-                                    <a href="wishlist.html">Add To WishList</a>
-                                </li>
-                                <li>
-                                    <a href="wishliststatus.html">Show WishList</a>
-                                </li>
-                                <li>
-                                    <a href="witsApplication.php">Wits Application</a>
-                                </li>
-                              </ul>
-                          </li>
-
-                          <!-- submit Sessions -->
-                          <li class="has-sub">
-                            <a href="submitPage.php">
-                              <i class="fas fa-copy"></i>
-                              <span class="header3-sub-list list-unstyled"></span>Submit</a>
-                          </li>
-
-                          <li class="has-sub">
-                            <a href="LogOut.php">
-                              <i class="fas fa-copy"></i>
-                              <span class="header3-sub-list list-unstyled"></span>Log out</a>
-                          </li>
-                      </ul>
-                  </div>
-                </h2>
-              </div>
-          </div>
-      </header>
-      <!-- END HEADER DESKTOP-->
+                            <li class="has-sub">
+                              <a href="LogOut.php">
+                                <i class="fas fa-copy"></i>
+                                <span class="header3-sub-list list-unstyled"></span>Log out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- END HEADER DESKTOP-->
 
         <!-- PAGE CONTENT-->
 
@@ -257,62 +228,61 @@ $_SESSION["appStatus"] = "wits_application";
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-lg-4">
-                          <!-- APS Section-->
+                          <!-- TOP CAMPAIGN-->
                           <div class="top-campaign">
                               <h3 class="title-3 m-b-30">APS SCORES</h3>
                               <div class="table-responsive">
-                                <table class="table table-top-campaign">
-                                    <tbody>
-                                        <tr>
-                                          <th>
-                                            <a href="#" id="witsa">WITS APS</a>
-                                              <script>
-                                                var elm=document.querySelector("#witsa");
-                                                elm.addEventListener("click", function (){
-                                                var num=1;
-                                              });
-                                              </script>
-                                          </th>
-                                          <th>
-                                            <?php
-                                              echo $_SESSION["WITS-APS"];
-                                             ?>
-                                          </th>
-                                        </tr>
-                                        <tr>
-                                          <th s>
-                                            <a href="#" id="uja" (click)="ujLoad()">UJ APS</a>
-                                            <script>
-                                              var elm=document.querySelector("#uja");
-                                              elm.addEventListener("click", function (){
-                                              var num=2;
-                                            });
-                                            </script>
-                                          </th>
-                                          <th>
-                                            <?php
-                                            echo $_SESSION["UJ-APS"];
-                                            ?>
-                                          </th>
-                                        </tr>
-                                        <tr>
-                                          <th>
-                                            <a href="#" id="upa">UP APS</a>
+                                  <table class="table table-top-campaign">
+                                      <tbody>
+                                          <tr>
+                                            <th>
+                                              WITS APS
+                                            </th>
+                                            <th>
+                                              <?php
+                                                echo $_SESSION["APS"];
+                                               ?>
+                                            </th>
+                                          </tr>
+                                          <tr>
+                                            <th>
+                                              UNI2 APS
+                                            </th>
+                                            <th>
+                                              46
+                                            </th>
+                                          </tr>
+                                          <tr>
+                                            <th>
+                                              UNI3 APS
+                                            </th>
+                                            <th>
+                                              46
+                                            </th>
+                                          </tr>
+                                          <tr>
+                                            <th>
+                                              UNI4 APS
+                                            </th>
+                                            <th>
+                                              46
+                                            </th>
+                                          </tr>
+                                          <tr>
+                                            <th>
+                                              UNI5 APS
+                                            </th>
+                                            <th>
+                                              46
+                                            </th>
+                                          </tr>
 
-                                          </th>
-                                          <th>
-                                            <?php
-                                            echo $_SESSION["UP-APS"];
-                                             ?>
-                                          </th>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                      </tbody>
+                                  </table>
                               </div>
                           </div>
-                          <!-- END APS Section-->
+                          <!-- END TOP CAMPAIGN-->
                       </div>
-                        <!-- Academics Section-->
                         <div class="col-md-6 col-lg-4">
                             <!-- TOP CAMPAIGN-->
                             <div class="top-campaign">
@@ -410,7 +380,7 @@ $_SESSION["appStatus"] = "wits_application";
                         <div class="col-md-6 col-lg-4">
                             <!-- CHART PERCENT-->
                             <div class="chart-percent-2">
-                              <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                              <canvas id="myCanvas"></canvas>
                             </div>
                             <!-- END CHART PERCENT-->
                         </div>
@@ -418,57 +388,6 @@ $_SESSION["appStatus"] = "wits_application";
                 </div>
             </section>
             <!-- END STATISTIC CHART-->
-
-            <!-- THIS IS THE SUGGESTION SECTION-->
-            <section class="statistic-chart">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3 class="title-5 m-b-35">SCHOOLING SECTION</h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4">
-                          <!-- APS Section-->
-                          <div class="top-campaign">
-                              <h3 class="title-3 m-b-30">APS SCORES</h3>
-                              <div class="table-responsive">
-                                <table class="table table-top-campaign">
-                                    <tbody>
-                                        <tr>
-                                          <th>First Choice Suggestion
-                                          </th>
-                                          <th>
-                                            FC1
-                                          </th>
-                                        </tr>
-                                        <tr>
-                                        <th> Second Choice Suggestion
-                                        </th>
-                                          <th>
-                                            SC2
-                                          </th>
-                                        </tr>
-                                        <tr>
-                                          <th>
-                                            3rd Choice Suggestion
-                                          </th>
-                                          <th>
-                                            TC3
-                                          </th>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                              </div>
-                          </div>
-                          <!-- END WITS Section-->
-                    </div>
-                </div>
-              </div>
-            </section>
-            <!-- END STATISTIC CHART-->
-
-
 
             <!-- DATA TABLE-->
             <section class="p-t-20">
@@ -578,86 +497,52 @@ $_SESSION["appStatus"] = "wits_application";
                 </div>
             </section>
             <!-- END DATA TABLE-->
-            <p></p>
+
 
             <!-- UNIVERSITY APPLICATION STATUS-->
-            <section class="p-t-20">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3 class="title-5 m-b-35"> UNIVERSITY APPLICATION REPORT </h3>
-                            <div class="table-data__tool">
-                                  <div class="table-data__tool-left">
-                                      <div class="rs-select2--light rs-select2--md">
-                                          <select class="js-select2" name="ApplicationStatus">
-                                              <option selected="selected">Select University</option>
-                                              <option value="wits_application">Wits</option>
-                                              <option value="UJ_Application">UJ</option>
-                                              <option value="up">UP</option>
-                                              <option value="uct">UCT</option>
-                                          </select>
-                                          <div class="dropDownSelect2"></div>
-                                      </div>
-                                      <button onclick="appStatusProcess()" class="btn au-btn--green ">Change</button>
-                                  </div>
-                              </div>
-                                <div class="table-responsive table-responsive-data2">
-                                  <table class="table table-data2">
-                                    <thead>
-                                        <tr>
-                                            <th>Choice</th>
-                                            <th>Course</th>
-                                            <th>Status</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr class="spacer"></tr>
-                                      <tr class="tr-shadow">
-                                          <td>1st</td>
-                                          <td id ="1choice">
-                                          <?php require 'conn.php';
-                                          $c1 = $_SESSION["appStatus"];
-                                          $mysql_qry = "select COURSE1 FROM $c1 WHERE USER_ID = '$ID'; ";
-                                          $result2 = mysqli_query($conn,$mysql_qry);
-                                          $row = $result2->fetch_assoc();
-                                          $un = implode(" ",$row);
-                                          echo $un?></td>
-                                          <td>pending</td>
-                                      </tr>
-                                      <tr class="tr-shadow">
-                                          <td>2nd</td>
-                                          <td id ="1choice"><?php require 'conn.php';
-                                          $mysql_qry = "select COURSE2 FROM $c1 WHERE USER_ID = '$ID'; ";
-                                          $result2 = mysqli_query($conn,$mysql_qry);
-                                          $row = $result2->fetch_assoc();
-                                          $un = implode(" ",$row);
-                                          echo $un?></td>
-                                          <td>Pending</td>
-                                      </tr>
-                                      <tr class="tr-shadow">
-                                          <td>3rd</td>
-                                          <td id ="1choice"><?php require 'conn.php';
-                                          $mysql_qry = "select COURSE3 FROM $c1 WHERE USER_ID = '$ID'; ";
-                                          $result2 = mysqli_query($conn,$mysql_qry);
-                                          $row = $result2->fetch_assoc();
-                                          $un = implode(" ",$row);
-                                          echo $un?></td>
-                                          <td>Pending</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </section>
+            <section>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                      <h3 class="title-5 m-b-35">UNIVERSITY APPLICATION Report</h3>
+                      <table class="table table-data2">
+                          <thead>
+                              <tr>
+                                  <th>Course</th>
+                                  <th>Status</th>
+                                  <th></th>
+                              </tr>
+                          </thead>
+                            <p></p>
+                          <tbody>
+                            <tr class="tr-shadow">
+                            	<td ><p id= "00" ></p></td>
+                              <td><p id = "01" class="status--process"></p></td>
+                            </tr>
+                            <tr class="tr-shadow">
+                            	<td ><p id= "10" ></p></td>
+                              <td><p id = "11" class="status--process"></p></td>
+                            </tr>
+                            <tr class="tr-shadow">
+                            	<td ><p id= "20" ></p></td>
+                              <td><p id = "21" class="status--process"></p></td>
+                            </tr>
+
+                          </tbody>
+                      </table>
+
+
+                  </div>
+                </div>
+              </div>
+            </section>
             <!-- COPYRIGHT-->
             <section class="p-t-60 p-b-20">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="copyright">
-                                <p>Copyright © 2019 VarsityOnline. All rights reserved.</p>
+                                <p>Copyright © 2019 LBMSolutions. All rights reserved.</p>
                             </div>
                         </div>
                     </div>
@@ -687,12 +572,12 @@ $_SESSION["appStatus"] = "wits_application";
     <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
     <script src="vendor/chartjs/Chart.bundle.min.js"></script>
     <script src="vendor/select2/select2.min.js"></script>
+
     <!-- pie chart -->
     <script type="text/javascript" src="Pie.js"></script>
 
-    <script src="pie.min.js"></script>
  				<script>
-    				function somefunc() {
+				  function somefunc() {
 				    var formData = new FormData();
 				    var httpReq = new XMLHttpRequest();
 				    httpReq.open("POST", "status.php", false);
@@ -724,29 +609,6 @@ $_SESSION["appStatus"] = "wits_application";
 				    httpReq.send(formData);
 
 				  }</script>
-
-    <script>
-    document.getElementById("ApplicationStatus").addEventListener("click", appStatusProcess);
-
-    function appStatusProcess()
-    {
-
-      if (document.getElementById("appStatusProcess").value == "wits_application")
-      {
-        <?php
-        $_SESSION["appStatus"] = "wits_application";
-         ?>
-      } else if (document.getElementById("appStatusProcess").value == "UJ_Application")
-      {
-        <?php
-        $_SESSION["appStatus"] = "uj_application";
-         ?>
-
-      }else{
-        document.getElementById("1choice").style.color = "red";
-      }
-    }
-    </script>
 
     <!-- Main JS-->
     <script src="js/main.js"></script>
