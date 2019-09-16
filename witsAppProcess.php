@@ -12,7 +12,7 @@ session_start();
     <link rel="stylesheet" type="text/css" href="witsApplication.css">
   </head>
   <body>
-    <h1>SELECT A SPEIFIC FACULTY BELOW</h1>
+    <h1>SELECT A SPECIFIC FACULTY BELOW</h1>
     <div class="Container">
 
       <p> <a href="witsApplication.php"> Science Faculty</a> </p>
