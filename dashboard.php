@@ -194,7 +194,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                           <a href="wishliststatus.html">Show WishList</a>
                                       </li>
                                       <li>
-                                          <a href="witsApplication.php">Wits Application</a>
+                                          <a href="witsAppProcess.php">Wits Application</a>
                                       </li>
                                     </ul>
                                 </li>
