@@ -126,9 +126,9 @@ $_SESSION["appStatus"] = "wits_application";
     <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
 
-    <!-- Bootstrap CSS-->
-    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+    <!-- Bootstrap CSS  <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">-->
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Vendor CSS-->
     <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
     <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
@@ -143,7 +143,7 @@ $_SESSION["appStatus"] = "wits_application";
 
 </head>
 
-<body class="animsition" onload="somefunc()">
+<body class="animsition">
 
 
     <div class="page-wrapper">
@@ -443,23 +443,18 @@ $_SESSION["appStatus"] = "wits_application";
                                           </th>
                                         </tr>
                                         <tr>
+                                        <th> Second Choice Suggestion
+                                        </th>
                                           <th>
-                                          </th>
-                                          <th>
-                                            <?php
-                                            echo $_SESSION["UJ-APS"];
-                                            ?>
+                                            SC2
                                           </th>
                                         </tr>
                                         <tr>
                                           <th>
-                                            <a href="#" id="upa">UP APS</a>
-
+                                            3rd Choice Suggestion
                                           </th>
                                           <th>
-                                            <?php
-                                            echo $_SESSION["UP-APS"];
-                                             ?>
+                                            TC3
                                           </th>
                                         </tr>
                                     </tbody>
@@ -467,111 +462,9 @@ $_SESSION["appStatus"] = "wits_application";
                               </div>
                           </div>
                           <!-- END WITS Section-->
-                      </div>
-                        <!-- Academics Section-->
-                        <div class="col-md-6 col-lg-4">
-                            <!-- TOP CAMPAIGN-->
-                            <div class="top-campaign">
-                                <h3 class="title-3 m-b-30">High School Academics</h3>
-                                <div class="table-responsive">
-                                    <table class="table table-top-campaign">
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <?php
-                                                    echo  $_SESSION["HOME_LAN"];
-                                                     ?>
-                                                </td>
-                                                <td>
-                                                  <?php
-                                                  echo  $_SESSION["HOME_LAN_MARK"];
-                                                   ?>
-                                                  %</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                  <?php
-                                                  echo  $_SESSION["FA_LAN"];
-                                                   ?>
-                                                </td>
-                                                <td>
-                                                  <?php
-                                                  echo  $_SESSION["FA_LAN_MARK"];
-                                                   ?>
-                                                  %</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                  <?php
-                                                  echo  $_SESSION["MATH_SUBJ"];
-                                                   ?>
-                                                </td>
-                                                <td>
-                                                  <?php
-                                                  echo  $_SESSION["MATH_SUBJ_MARK"];
-                                                   ?>
-                                                  %</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                  <?php
-                                                  echo  $_SESSION["SUBJ1"];
-                                                   ?>
-                                                </td>
-                                                <td>
-                                                  <?php
-                                                  echo  $_SESSION["SUBJ1_MARK"];
-                                                   ?>
-                                                  %</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                  <?php
-                                                  echo  $_SESSION["SUBJ2"];
-                                                   ?>
-                                                </td>
-                                                <td>
-                                                  <?php
-                                                  echo  $_SESSION["SUBJ2_MARK"];
-                                                   ?>
-                                                  %</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                  <?php
-                                                  echo  $_SESSION["SUBJ3"];
-                                                   ?>
-                                                </td>
-                                                <td>
-                                                  <?php
-                                                  echo  $_SESSION["SUBJ3_MARK"];
-                                                   ?>
-                                                  %</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Life Orientation
-                                                </td>
-                                                <td>
-                                                  <?php
-                                                  echo  $_SESSION["LO_MARK"];
-                                                   ?>
-                                                  %</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <!-- END TOP CAMPAIGN-->
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <!-- CHART PERCENT-->
-                            <div class="chart-percent-2">
-                              <div id="chartContainer" style="height: 300px; width: 100%;"></div>
-                            </div>
-                            <!-- END CHART PERCENT-->
-                        </div>
                     </div>
                 </div>
+              </div>
             </section>
             <!-- END STATISTIC CHART-->
 
@@ -756,7 +649,8 @@ $_SESSION["appStatus"] = "wits_application";
                                 </div>
                               </div>
                             </div>
-                          </section>
+                          </div>
+                        </section>
             <!-- COPYRIGHT-->
             <section class="p-t-60 p-b-20">
                 <div class="container">
@@ -798,32 +692,7 @@ $_SESSION["appStatus"] = "wits_application";
 
     <script src="pie.min.js"></script>
  				<script>
-        var witsAps = <?php echo $WitsAps ?>;
-        var ujAps = <?php echo $UJAps ?>;
-        var upAps = <?php echo $UPAps ?>;
-        var num=1;
-
-        function ujLoad(){
-          num=2;
-          document.canvas.window.reload();
-        }
-
-        function witsLoad(){
-          num=1;
-        }
-
-        function upLoad(){
-          num=3;
-
-        }
-
-        var elm=document.querySelector("#upa");
-          elm.addEventListener("click", function (){
-          var APS = upAps;
-        });
-
-
-				  function somefunc() {
+    				function somefunc() {
 				    var formData = new FormData();
 				    var httpReq = new XMLHttpRequest();
 				    httpReq.open("POST", "status.php", false);
