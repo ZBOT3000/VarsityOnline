@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'functions.php';
+require 'php/functions.php';
 if (isset($_SESSION['username']))
 {
   $_SESSION["HOME_LAN"] = "GO TO THE HIGHSCHOOL INFO BAR";
