@@ -265,13 +265,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                     <tbody>
                                         <tr>
                                           <th>
-                                            <a href="#" id="witsa">WITS APS</a>
-                                              <script>
-                                                var elm=document.querySelector("#witsa");
-                                                elm.addEventListener("click", function (){
-                                                var num=1;
-                                              });
-                                              </script>
+                                            <a href="#" onclick="witsLa()">WITS APS</a>
                                           </th>
                                           <th>
                                             <?php
@@ -281,13 +275,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                         </tr>
                                         <tr>
                                           <th s>
-                                            <a href="#" id="uja" (click)="ujLoad()">UJ APS</a>
-                                            <script>
-                                              var elm=document.querySelector("#uja");
-                                              elm.addEventListener("click", function (){
-                                              var num=2;
-                                            });
-                                            </script>
+                                            <a href="#" onclick="ujLa()">UJ APS</a>
                                           </th>
                                           <th>
                                             <?php
@@ -297,8 +285,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                         </tr>
                                         <tr>
                                           <th>
-                                            <a href="#" id="upa">UP APS</a>
-
+                                            <a href="#" onclick="upLa()">UP APS</a>
                                           </th>
                                           <th>
                                             <?php
@@ -604,12 +591,6 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                         <tr>
                                           <th s>
                                             <a href="#" id="uja" (click)="ujLoad()">UJ APS</a>
-                                            <script>
-                                              var elm=document.querySelector("#uja");
-                                              elm.addEventListener("click", function (){
-                                              var num=2;
-                                            });
-                                            </script>
                                           </th>
                                           <th>
                                             <?php
@@ -869,7 +850,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
     <script src="vendor/select2/select2.min.js"></script>
 
     <!-- pie chart -->
-    <script type="text/javascript" src="Pie.js"></script>
+    <script src="pie.min.js"></script>
 
  				<script>
 				  function somefunc() {
@@ -907,6 +888,90 @@ if ( mysqli_num_rows( $result4 ) > 0 )
 
     <!-- Main JS-->
     <script src="js/main.js"></script>
+
+    <!-- Pie Chart js -->
+    <script>
+
+init();
+
+var num = 1;
+var Witsaps = <?php echo $_SESSION["WITS-APS"];?>;
+var UJaps = <?php echo $_SESSION["UJ-APS"];?>;
+var UPaps = <?php echo $_SESSION["UP-APS"];?>;
+
+function init() {
+var data = [
+          {label:  "Computer Science ", y: 40, exploded: true,},
+          {label: "Biological Science", y: 35,exploded: true,},
+          {label: "Mathematics of Finance", y : 35,exploded: true,},
+          {label:  "Astronomy", y :43,exploded: true,},
+          {label:  "Nuclear Science", y: 43,exploded: true,},
+          {label:  "Chemistry", y: 43,exploded: true,},
+          {label:  "Chemical Engineering", y: 40,exploded: true,},
+          {label:  "Civil Engineering", y: 43,exploded: true,},
+          {label:  "Electrical Engineering", y: 36,exploded: true,},
+          {label:  "Mechanical Engineering", y: 40,exploded: true,},
+          {label:  "Mining Engineering", y: 34,exploded: true},
+          {label:  "Aeronautical Engineering", y: 40,exploded: true,}
+        ]
+
+  var ac = num;
+  if(ac==1){
+    var Aps = Witsaps;
+  }else if(ac==2){
+    var Aps = UJaps;
+  } else if(ac==3){
+    var Aps = UPaps;
+  }
+
+
+
+
+
+for(var i=0;i<data.length;i++){
+  if (Aps<data[i].y){
+      data[i].color = "red";
+    }
+    else{
+      data[i].color = "green"
+    }
+}
+
+
+var chart = new CanvasJS.Chart("chartContainer", {
+  theme: "light1",
+  exportEnabled: true,
+  animationEnabled: true,
+  title: {
+    text: "Quick Summary"
+  },
+  data: [{
+    type: "pie",
+    startAngle:90,
+    toolTipContent: "<b>{label}</b>: {y}",
+    dataPoints: data
+  }]
+});
+
+chart.render();
+}
+
+function witsLa(){
+  num=1;
+  init();
+}
+
+function ujLa(){
+  num=2;
+  init();
+}
+
+function upLa(){
+  num=3;
+  init();
+}
+
+</script>
 
 
 </body>
