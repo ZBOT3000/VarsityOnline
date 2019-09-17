@@ -25,7 +25,7 @@ $str = $_SESSION['username'];
 $str = preg_replace('/\D/', '', $str);
 $_SESSION['user_id']=$str;
 
-require 'conn.php';
+require 'php/conn.php';
 $ID=(int)$_SESSION['user_id'];
 $mysql_qry="select STATUS from current_academics where USER_ID like $ID;";
 $mysql_qry2="select STATUS from demographics where USER_ID like $ID;";
