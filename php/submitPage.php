@@ -89,7 +89,7 @@ echo $_SESSION['finish'];
     <meta charset="utf-8">
     <title></title>
     <!-- Main CSS-->
-    <link href="submitPage.css" rel="stylesheet" media="all">
+    <link href="css/submitPage.css" rel="stylesheet" media="all">
   </head>
   <body>
     <h1>Review Page</h1>

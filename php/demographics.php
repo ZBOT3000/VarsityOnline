@@ -8,7 +8,7 @@
 
 <div id="mySidenav" class="sidenav">
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="Dashboard.php">Dashboard</a>
+  <a href="dashboard.php">Dashboard</a>
   <a href="newPassword.php">New Password</a>
   <a href="Academics.php">Academics</a>
 </div>
@@ -27,7 +27,7 @@ function closeNav() {
 
 <head>
 	<title>Personal Details</title>
-  <link rel="stylesheet" type="text/css" href="Demographics.css">
+  <link rel="stylesheet" type="text/css" href="css/Demographics.css">
 </head>
 <body>
 

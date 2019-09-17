@@ -229,7 +229,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                           <a href="wishliststatus.html">Show WishList</a>
                                       </li>
                                       <li>
-                                          <a href="WITS/witsAppProcess.php">Wits Application</a>
+                                          <a href="http://localhost/varsityonline/VarsityOnline/WITS/witsAppProcess.php">Wits Application</a>
                                       </li>
                                     </ul>
                                 </li>
@@ -599,14 +599,34 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                         <td >WITS</td>
                                         <td id ="W1choice">
                                           <?php
-
                                           $ID=(int)$_SESSION['user_id'];
-                                          $mysql_qry="select STATUS from current_academics where USER_ID like $ID;";
+                                          $mysql_qry="select course1 from wits_application where USER_ID like $ID;";
+                                          $result2 = mysqli_query($conn,$mysql_qry);
+                                          $row = $result2->fetch_assoc();
+                                          $un = implode(" ",$row);
+                                          echo $un ;
                                            ?>
-
                                         </td>
-                                        <td id ="W2choice">2nd</td>
-                                        <td id ="W3choice">3rd</td>
+                                        <td id ="W2choice">
+                                          <?php
+                                          $ID=(int)$_SESSION['user_id'];
+                                          $mysql_qry="select course2 from wits_application where USER_ID like $ID;";
+                                          $result2 = mysqli_query($conn,$mysql_qry);
+                                          $row = $result2->fetch_assoc();
+                                          $un = implode(" ",$row);
+                                          echo $un ;
+                                           ?>
+                                        </td>
+                                        <td id ="W3choice">
+                                          <?php
+                                          $ID=(int)$_SESSION['user_id'];
+                                          $mysql_qry="select course3 from wits_application where USER_ID like $ID;";
+                                          $result2 = mysqli_query($conn,$mysql_qry);
+                                          $row = $result2->fetch_assoc();
+                                          $un = implode(" ",$row);
+                                          echo $un ;
+                                           ?>
+                                        </td>
                                     </tr>
 
                                     <tr class="spacer"></tr>

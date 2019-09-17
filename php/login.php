@@ -27,7 +27,7 @@ function closeNav() {
 
 <head>
 	<title>LOG IN </title>
-	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
 
 </head>
 

@@ -30,7 +30,7 @@ function closeNav() {
 
 <head>
 	<title>ACADEMICS</title>
-  <link rel="stylesheet" type="text/css" href="Academics.css">
+  <link rel="stylesheet" type="text/css" href="css/Academics.css">
 </head>
 <body>
 
