@@ -701,7 +701,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
     <script src="vendor/select2/select2.min.js"></script>
 
     <!-- pie chart -->
-    <script src="pie.min.js"></script>
+    <script src="../pie.min.js"></script>
 
  				<script>
 				  function somefunc() {
