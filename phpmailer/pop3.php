@@ -1,6 +1,6 @@
 <?php
 
-function testing2($a,$b){
+function testing($a,$b){
 	if($a>$b){
 	 return $a;
 	}
@@ -16,7 +16,7 @@ function testing2($a,$b){
 
 
 
-function testing($mark)
+function testings($mark)
 {
 	$total =0 ;
 	if ($mark >= 80 and $mark <101)
