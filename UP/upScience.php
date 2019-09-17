@@ -10,7 +10,7 @@ session_start();
     <link rel="stylesheet" type="text/css" href="upApplication.css">
   </head>
   <body>
-    <h1>University of Pretoria APPLICATION</h1>
+    <h1>SCIENCE FUCULTY APPLICATION </h1>
     <div class="LogIn-Form">
   		<form id="LogIn-Form"  method="post" action="upApplicationPHP.php">
   			<h1>FILL IN YOUR ACADEMICS INFOMATION BELOW </h1><br>

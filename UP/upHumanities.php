@@ -10,7 +10,7 @@ session_start();
     <link rel="stylesheet" type="text/css" href="upApplication.css">
   </head>
   <body>
-    <h1>University of Pretoria APPLICATION</h1>
+    <h1>HUMANITIES FUCULTY APPLICATION</h1>
     <div class="LogIn-Form">
   		<form id="LogIn-Form"  method="post" action="upApplicationPHP.php">
   			<h1>FILL IN YOUR ACADEMICS INFOMATION BELOW </h1><br>
@@ -19,13 +19,13 @@ session_start();
   			<select name="firstChoice" class="select-box">
     				<option>Select your first Choice</option>
 				    <option value="Polotical Science">BA-Political Science</option>
-				    <option value="Biological Science">BA-Fine Arts</option>
-				    <option value="Computer Science">BA-Philosophy</option>
-				    <option value="Chemistry">BA-Politics</option>
-				    <option value="Mathematics of Finance">BA-Laguages</option>
-  				    <option value="Physical Science">BA-Social Work</option>
-              <option value="Physical Science">BA-LAW</option>
-              <option value="Physical Science">BA-Music & Drama</option>
+				    <option value="Fine Arts">BA-Fine Arts</option>
+				    <option value="Philosophy">BA-Philosophy</option>
+				    <option value="Politics">BA-Politics</option>
+				    <option value="Languages">BA-Laguages</option>
+  				    <option value="Social Work">BA-Social Work</option>
+              			   <option value="Law">BA-LAW</option>
+               			  <option value="Music And Drama">BA-Music & Drama</option>
   		        </select>
 
   			</div>
@@ -33,14 +33,14 @@ session_start();
 			<div class="Drop-Down">
 			  <select name="secondChoice" class="select-box">
 			    <option>Select your Second Choice</option>
-           <option value="Polotical Science">BA-Political Science</option>
-           <option value="Biological Science">BA-Fine Arts</option>
-           <option value="Computer Science">BA-Philosophy</option>
-           <option value="Chemistry">BA-Politics</option>
-           <option value="Mathematics of Finance">BA-Laguages</option>
-             <option value="Physical Science">BA-Social Work</option>
-             <option value="Physical Science">BA-LAW</option>
-             <option value="Physical Science">BA-Music & Drama</option>
+              			   <option value="Polotical Science">BA-Political Science</option>
+				    <option value="Fine Arts">BA-Fine Arts</option>
+				    <option value="Philosophy">BA-Philosophy</option>
+				    <option value="Politics">BA-Politics</option>
+				    <option value="Languages">BA-Laguages</option>
+  				    <option value="Social Work">BA-Social Work</option>
+              			   <option value="Law">BA-LAW</option>
+               			  <option value="Music And Drama">BA-Music & Drama</option>
              </select>
 
 			</div>
@@ -48,14 +48,14 @@ session_start();
 			<div class="Drop-Down">
 			  <select name="ThirdChoice" class="select-box">
 			    <option>Select your Third Choice</option>
-          <option value="Polotical Science">BA-Political Science</option>
-          <option value="Biological Science">BA-Fine Arts</option>
-          <option value="Computer Science">BA-Philosophy</option>
-          <option value="Chemistry">BA-Politics</option>
-          <option value="Mathematics of Finance">BA-Laguages</option>
-            <option value="Physical Science">BA-Social Work</option>
-            <option value="Physical Science">BA-LAW</option>
-            <option value="Physical Science">BA-Music & Drama</option>
+				    s<option value="Polotical Science">BA-Political Science</option>
+				    <option value="Fine Arts">BA-Fine Arts</option>
+				    <option value="Philosophy">BA-Philosophy</option>
+				    <option value="Politics">BA-Politics</option>
+				    <option value="Languages">BA-Laguages</option>
+  				    <option value="Social Work">BA-Social Work</option>
+              			   <option value="Law">BA-LAW</option>
+               			  <option value="Music And Drama">BA-Music & Drama</option>
 			 </select>
 
 			</div>
