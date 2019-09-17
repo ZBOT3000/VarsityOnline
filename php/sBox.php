@@ -25,7 +25,7 @@ session_start();
 $q = intval($_GET['q']);
 
 
-require 'VarsityOnline/conn.php';
+require 'conn.php';
 if (!$conn) {
     die('Could not connect: ' . mysqli_error($conn));
 }

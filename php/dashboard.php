@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'php/functions.php';
+require 'functions.php';
 if (isset($_SESSION['username']))
 {
   $_SESSION["HOME_LAN"] = "GO TO THE HIGHSCHOOL INFO BAR";
@@ -25,7 +25,7 @@ $str = $_SESSION['username'];
 $str = preg_replace('/\D/', '', $str);
 $_SESSION['user_id']=$str;
 
-require 'php/conn.php';
+require 'conn.php';
 $ID=(int)$_SESSION['user_id'];
 $mysql_qry="select STATUS from current_academics where USER_ID like $ID;";
 $mysql_qry2="select STATUS from demographics where USER_ID like $ID;";
