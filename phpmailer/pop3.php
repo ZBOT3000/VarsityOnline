@@ -1,6 +1,6 @@
 <?php
 
-function testing($a,$b){
+function testing2($a,$b){
 	if($a>$b){
 	 return $a;
 	}
@@ -14,15 +14,9 @@ function testing($a,$b){
 
 }
 
-function generateNewString($len = 10){
-	$token = "hftdctTCFYGVUH23tsdfssfgdfsg5645657TVTC";
-	$token = str_shuffle($token);
-	$token = substr($token,0,$len);
 
-	return $token;
-}
 
-function UJAPS($mark)
+function testing($mark)
 {
 	$total =0 ;
 	if ($mark >= 80 and $mark <101)
