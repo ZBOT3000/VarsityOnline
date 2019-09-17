@@ -110,6 +110,34 @@ if ( mysqli_num_rows( $result4 ) > 0 )
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- suggestion box ahjax -->
+            <script>
+          function showUser(str) {
+            if (str == "") {
+                document.getElementById("txtHint").innerHTML = "";
+                return;
+            } else {
+                if (window.XMLHttpRequest) {
+                    // code for IE7+, Firefox, Chrome, Opera, Safari
+                    xmlhttp = new XMLHttpRequest();
+                } else {
+                    // code for IE6, IE5
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("txtHint").innerHTML = this.responseText;
+                    }
+                };
+                xmlhttp.open("GET","sBox.php?q="+str,true);
+                xmlhttp.send();
+            }
+          }
+          </script>
+    <!-- suggestion box ahjax -->
+
+
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -407,217 +435,20 @@ if ( mysqli_num_rows( $result4 ) > 0 )
             <!-- END STATISTIC CHART-->
 
             <!-- SUGGESTION CHART-->
-            <section class="statistic-chart">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3 class="title-5 m-b-35">SCHOOLING SECTION</h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- WITS Section-->
-                        <div class="col-md-6 col-lg-4">
-                          <!-- APS Section-->
-                          <div class="top-campaign">
-                              <h3 class="title-3 m-b-30">WITS SUGGESTIONS</h3>
-                              <div class="table-responsive">
-                                <table class="table table-top-campaign">
-                                    <tbody>
-                                        <tr>
-                                          <th>
-                                            <a href="#" id="witsa"> 1st Choice</a>
-                                          </th>
-                                          <th>
-                                              FIRST SUGGESTION
-                                          </th>
-                                        </tr>
-                                        <tr>
-                                          <th s>
-                                            <a href="#" id="uja" (click)="ujLoad()">2nd Choice</a>
-                                          </th>
-                                          <th>
-                                            SECOND SUGGESTION
-                                          </th>
-                                        </tr>
-                                        <tr>
-                                          <th>
-                                            3rd Choice
-                                          </th>
-                                          <th>
-                                            THIRD SUGGESTION
-                                          </th>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                              </div>
-                          </div>
-                          <!-- END APS Section-->
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                          <!-- APS Section-->
-                          <div class="top-campaign">
-                              <h3 class="title-3 m-b-30">APS SCORES</h3>
-                              <div class="table-responsive">
-                                <table class="table table-top-campaign">
-                                    <tbody>
-                                        <tr>
-                                          <th>
-                                            <a href="#" id="witsa">WITS APS</a>
-                                              <script>
-                                                var elm=document.querySelector("#witsa");
-                                                elm.addEventListener("click", function (){
-                                                var num=1;
-                                              });
-                                              </script>
-                                          </th>
-                                          <th>
-                                            <?php
-                                              echo $_SESSION["WITS-APS"];
-                                             ?>
-                                          </th>
-                                        </tr>
-                                        <tr>
-                                          <th s>
-                                            <a href="#" id="uja" (click)="ujLoad()">UJ APS</a>
-                                            <script>
-                                              var elm=document.querySelector("#uja");
-                                              elm.addEventListener("click", function (){
-                                              var num=2;
-                                            });
-                                            </script>
-                                          </th>
-                                          <th>
-                                            <?php
-                                            echo $_SESSION["UJ-APS"];
-                                            ?>
-                                          </th>
-                                        </tr>
-                                        <tr>
-                                          <th>
-                                            <a href="#" id="upa">UP APS</a>
+            <section>
+                <form>
+                <select name="users" onchange="showUser(this.value)">
+                <option value="">Select Varsity To see Suggestions:</option>
+                <option value="1">University of the Witwatersrand</option>
+                <option value="2">University of Pretoria</option>
+                <option value="3">University of Johanessburg</option>
+                <option value="4 ">University of Cape Town</option>
 
-                                          </th>
-                                          <th>
-                                            <?php
-                                            echo $_SESSION["UP-APS"];
-                                             ?>
-                                          </th>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                              </div>
-                          </div>
-                          <!-- END APS Section-->
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                          <!-- APS Section-->
-                          <div class="top-campaign">
-                              <h3 class="title-3 m-b-30">APS SCORES</h3>
-                              <div class="table-responsive">
-                                <table class="table table-top-campaign">
-                                    <tbody>
-                                        <tr>
-                                          <th>
-                                            <a href="#" id="witsa">WITS APS</a>
-                                              <script>
-                                                var elm=document.querySelector("#witsa");
-                                                elm.addEventListener("click", function (){
-                                                var num=1;
-                                              });
-                                              </script>
-                                          </th>
-                                          <th>
-                                            <?php
-                                              echo $_SESSION["WITS-APS"];
-                                             ?>
-                                          </th>
-                                        </tr>
-                                        <tr>
-                                          <th s>
-                                            <a href="#" id="uja" (click)="ujLoad()">UJ APS</a>
-                                            <script>
-                                              var elm=document.querySelector("#uja");
-                                              elm.addEventListener("click", function (){
-                                              var num=2;
-                                            });
-                                            </script>
-                                          </th>
-                                          <th>
-                                            <?php
-                                            echo $_SESSION["UJ-APS"];
-                                            ?>
-                                          </th>
-                                        </tr>
-                                        <tr>
-                                          <th>
-                                            <a href="#" id="upa">UP APS</a>
-
-                                          </th>
-                                          <th>
-                                            <?php
-                                            echo $_SESSION["UP-APS"];
-                                             ?>
-                                          </th>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                              </div>
-                          </div>
-                          <!-- END APS Section-->
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                          <!-- UCT Section-->
-                          <div class="top-campaign">
-                              <h3 class="title-3 m-b-30">APS SCORES</h3>
-                              <div class="table-responsive">
-                                <table class="table table-top-campaign">
-                                    <tbody>
-                                        <tr>
-                                          <th>
-                                            <a href="#" id="witsa">WITS APS</a>
-                                              <script>
-                                                var elm=document.querySelector("#witsa");
-                                                elm.addEventListener("click", function (){
-                                                var num=1;
-                                              });
-                                              </script>
-                                          </th>
-                                          <th>
-                                            <?php
-                                              echo $_SESSION["WITS-APS"];
-                                             ?>
-                                          </th>
-                                        </tr>
-                                        <tr>
-                                          <th s>
-                                            <a href="#" id="uja" (click)="ujLoad()">UJ APS</a>
-                                          </th>
-                                          <th>
-                                            <?php
-                                            echo $_SESSION["UJ-APS"];
-                                            ?>
-                                          </th>
-                                        </tr>
-                                        <tr>
-                                          <th>
-                                            <a href="#" id="upa">UP APS</a>
-
-                                          </th>
-                                          <th>
-                                            <?php
-                                            echo $_SESSION["UP-APS"];
-                                             ?>
-                                          </th>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                              </div>
-                          </div>
-                          <!-- END UCT Section-->
-                        </div>
-
-                    </div>
-                </div>
+                </select>
+                </form>
+                <br>
+              <div ><b>Suggested Courses</b></div>
+              <div id="txtHint"><b>***********************************</b></div>
             </section>
             <!-- END SUGGESTION CHART-->
 
