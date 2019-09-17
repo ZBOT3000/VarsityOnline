@@ -16,6 +16,6 @@ if  ($result)
 else
 {
     echo "SOME OF THE INFOMATION ENTERED WAS INCORRECT PLEASE RETRY AGAIN";
-    echo "<p><a href='witsApplication.php'>CLICK HERE TO GO BACK</a></p>";
+    echo "<p><a href='uctApplications.php'>CLICK HERE TO GO BACK</a></p>";
 }
  ?>

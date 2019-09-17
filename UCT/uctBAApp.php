@@ -7,10 +7,11 @@ session_start();
   <head>
     <meta charset="utf-8">
     <title>UCT Application</title>
-    <link rel="stylesheet" type="text/css" href="uctApplication.css">
+    <link rel="stylesheet" type="text/css" href="uctBAApp.css">
   </head>
   <body>
     <h1>UCT APPLICATION</h1>
+    <h1>HUMANITIES</h1>
     <div class="LogIn-Form">
   		<form id="LogIn-Form"  method="post" action="uctComAppPHP.php">
   			<h1>FILL IN YOUR ACADEMICS INFOMATION BELOW </h1><br>
@@ -18,34 +19,34 @@ session_start();
   			<div class="Drop-Down">
   				<select name="firstChoice" class="select-box">
     				<option>Select your first Choice</option>
-            <option value="Fine Arts">BA-Fine Arts</option>
-            <option value="Theatre & Performance">BA-Theatre</option>
-            <option value="Social Science">BA-Social Science</option>
-            <option value="Social Work">BA-Social Work</option>
-            <option value="Music">BA-Music</option>
+            <option value="Fine Arts">Fine Arts</option>
+            <option value="Theatre & Performance">Theatre & Performance</option>
+            <option value="Social Science">Social Science</option>
+            <option value="Social Work">Social Work</option>
+            <option value="Music">Music</option>
   		     </select>
 
   			</div>
         <div class="Drop-Down">
           <select name="secondChoice" class="select-box">
-            <option>Select your first Choice</option>
-            <option value="Fine Arts">BA-Fine Arts</option>
-            <option value="Theatre & Performance">BA-Theatre</option>
-            <option value="Social Science">BA-Social Science</option>
-            <option value="Social Work">BA-Social Work</option>
-            <option value="Music">BA-Music</option>
+            <option>Select your second Choice</option>
+            <option value="Fine Arts">Fine Arts</option>
+            <option value="Theatre & Performance">Theatre & Performance</option>
+            <option value="Social Science">Social Science</option>
+            <option value="Social Work">Social Work</option>
+            <option value="Music">Music</option>
            </select>
 
         </div>
 
         <div class="Drop-Down">
           <select name="ThirdChoice" class="select-box">
-            <option>Select your first Choice</option>
-            <option value="Fine Arts">BA-Fine Arts</option>
-            <option value="Theatre & Performance">BA-Theatre</option>
-            <option value="Social Science">BA-Social Science</option>
-            <option value="Social Work">BA-Social Work</option>
-            <option value="Music">BA-Music</option>
+            <option>Select your third Choice</option>
+            <option value="Fine Arts">Fine Arts</option>
+            <option value="Theatre & Performance">Theatre & Performance</option>
+            <option value="Social Science">Social Science</option>
+            <option value="Social Work">Social Work</option>
+            <option value="Music">Music</option>
            </select>
         </div>
 
