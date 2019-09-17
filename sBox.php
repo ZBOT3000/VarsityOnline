@@ -20,13 +20,12 @@ th {text-align: left;}
 
 
 <?php
-
+session_start();
 
 $q = intval($_GET['q']);
 
 
-$test_aps = 36;
-require 'conn.php';
+require 'VarsityOnline/conn.php';
 if (!$conn) {
     die('Could not connect: ' . mysqli_error($conn));
 }
@@ -34,19 +33,19 @@ mysqli_select_db($conn,"d1434995");
 
 if($q == "1"){
 
-  $sql="SELECT * FROM wits WHERE APS <= '".$test_aps."'";
+  $sql="SELECT * FROM wits WHERE APS <= '".$_SESSION["WITS-APS"]."'";
 
 }
 
 if($q == "2"){
 
-  $sql="SELECT * FROM UP WHERE APS <= '".$test_aps."'";
+  $sql="SELECT * FROM UP WHERE APS <= '".$_SESSION["UP-APS"]."'";
 
 }
 
 if($q == "3"){
 
-  $sql="SELECT * FROM UJ WHERE APS <= '".$test_aps."'";
+  $sql="SELECT * FROM UJ WHERE APS <= '".$_SESSION["UJ-APS"]."'";
 
 }
 

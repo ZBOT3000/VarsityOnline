@@ -1,6 +1,6 @@
 <?php
-require "conn.php";
 session_start();
+require 'conn.php';
 $id = (int)$_SESSION['user_id'];
 $first = $_POST["firstChoice"];
 $second = $_POST["secondChoice"];
@@ -12,7 +12,7 @@ $result = mysqli_query($conn,$mysql_ins);
 if  ($result)
 {
    echo "YOU HAVE SUCCESSFULY CAPTURED YOUR WITS APPLICATION <br>";
-   echo "<p><a href='dashboard.php'>CLICK HERE TO GO BACK</a></p>";
+   echo "<p><a href='VarsityOnline/VarsityOnline/dashboard.php'>CLICK HERE TO GO BACK</a></p>";
    $_SESSION['finish']=$_SESSION['finish']+1;
 }
 else
