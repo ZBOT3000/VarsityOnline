@@ -229,7 +229,16 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                           <a href="wishliststatus.html">Show WishList</a>
                                       </li>
                                       <li>
-                                          <a href="http://localhost/varsityonline/VarsityOnline/WITS/witsAppProcess.php">Wits Application</a>
+                                          <a href="../WITS/witsAppProcess.php">Wits Application</a>
+                                      </li>
+                                      <li>
+                                          <a href="../UP/upAppProcess.php">UP Application</a>
+                                      </li>
+                                      <li>
+                                          <a href="../UJ/ujAppProcess.php">UJ Application</a>
+                                      </li>
+                                      <li>
+                                          <a href="../UCT/uctAppProcess.php">UCT Application</a>
                                       </li>
                                     </ul>
                                 </li>
