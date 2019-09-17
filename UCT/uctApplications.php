@@ -13,7 +13,7 @@ session_start();
     <h1>UCT APPLICATION</h1>
      <h1>SCIENCE</h1>
     <div class="LogIn-Form">
-  		<form id="LogIn-Form"  method="post" action="uctApplicationPHP.php">
+  		<form id="LogIn-Form"  method="post" action="uctApplicationsPHP.php">
   			<h1>FILL IN YOUR ACADEMICS INFOMATION BELOW </h1><br>
   			<!-- <input type="text" name="SN" class="form-control" placeholder="Enter your School Name" required><br>-->
   			<div class="Drop-Down">

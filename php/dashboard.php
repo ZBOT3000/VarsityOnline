@@ -641,25 +641,106 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                     <tr class="spacer"></tr>
                                     <tr class="tr-shadow">
                                         <td>UJ</td>
-                                        <td id ="UJ1choice">1st</td>
-                                        <td id ="UJ2choice">2nd</td>
-                                        <td id ="UJ3choice">3rd</td>
+                                        <td id ="W1choice">
+                                          <?php
+                                          $ID=(int)$_SESSION['user_id'];
+                                          $mysql_qry="select course1 from uj_application where USER_ID like $ID;";
+                                          $result2 = mysqli_query($conn,$mysql_qry);
+                                          $row = $result2->fetch_assoc();
+                                          $un = implode(" ",$row);
+                                          echo $un ;
+                                           ?>
+                                        </td>
+                                        <td id ="W2choice">
+                                          <?php
+                                          $ID=(int)$_SESSION['user_id'];
+                                          $mysql_qry="select course2 from uj_application where USER_ID like $ID;";
+                                          $result2 = mysqli_query($conn,$mysql_qry);
+                                          $row = $result2->fetch_assoc();
+                                          $un = implode(" ",$row);
+                                          echo $un ;
+                                           ?>
+                                        </td>
+                                        <td id ="W3choice">
+                                          <?php
+                                          $ID=(int)$_SESSION['user_id'];
+                                          $mysql_qry="select course3 from uj_application where USER_ID like $ID;";
+                                          $result2 = mysqli_query($conn,$mysql_qry);
+                                          $row = $result2->fetch_assoc();
+                                          $un = implode(" ",$row);
+                                          echo $un ;
+                                           ?>
+                                        </td>
                                     </tr>
 
                                     <tr class="spacer"></tr>
                                     <tr class="tr-shadow">
                                         <td>UCT</td>
-                                        <td id ="UCT1choice">1st</td>
-                                        <td id ="UCT2choice">2nd</td>
-                                        <td id ="UCTchoice">3rd</td>
+                                        <td id ="W1choice">
+                                          <?php
+                                          $ID=(int)$_SESSION['user_id'];
+                                          $mysql_qry="select course1 from uct_application where USER_ID like $ID;";
+                                          $result2 = mysqli_query($conn,$mysql_qry);
+                                          $row = $result2->fetch_assoc();
+                                          $un = implode(" ",$row);
+                                          echo $un ;
+                                           ?>
+                                        </td>
+                                        <td id ="W2choice">
+                                          <?php
+                                          $ID=(int)$_SESSION['user_id'];
+                                          $mysql_qry="select course2 from uct_application where USER_ID like $ID;";
+                                          $result2 = mysqli_query($conn,$mysql_qry);
+                                          $row = $result2->fetch_assoc();
+                                          $un = implode(" ",$row);
+                                          echo $un ;
+                                           ?>
+                                        </td>
+                                        <td id ="W3choice">
+                                          <?php
+                                          $ID=(int)$_SESSION['user_id'];
+                                          $mysql_qry="select course3 from uct_application where USER_ID like $ID;";
+                                          $result2 = mysqli_query($conn,$mysql_qry);
+                                          $row = $result2->fetch_assoc();
+                                          $un = implode(" ",$row);
+                                          echo $un ;
+                                           ?>
+                                        </td>
                                     </tr>
 
                                     <tr class="spacer"></tr>
                                     <tr class="tr-shadow">
                                         <td>UP</td>
-                                        <td id ="UP1choice">1st</td>
-                                        <td id ="UP2choice">2nd</td>
-                                        <td id ="UP3choice">3rd</td>
+                                        <td id ="W1choice">
+                                          <?php
+                                          $ID=(int)$_SESSION['user_id'];
+                                          $mysql_qry="select course1 from up_application where USER_ID like $ID;";
+                                          $result2 = mysqli_query($conn,$mysql_qry);
+                                          $row = $result2->fetch_assoc();
+                                          $un = implode(" ",$row);
+                                          echo $un ;
+                                           ?>
+                                        </td>
+                                        <td id ="W2choice">
+                                          <?php
+                                          $ID=(int)$_SESSION['user_id'];
+                                          $mysql_qry="select course2 from up_application where USER_ID like $ID;";
+                                          $result2 = mysqli_query($conn,$mysql_qry);
+                                          $row = $result2->fetch_assoc();
+                                          $un = implode(" ",$row);
+                                          echo $un ;
+                                           ?>
+                                        </td>
+                                        <td id ="W3choice">
+                                          <?php
+                                          $ID=(int)$_SESSION['user_id'];
+                                          $mysql_qry="select course3 from up_application where USER_ID like $ID;";
+                                          $result2 = mysqli_query($conn,$mysql_qry);
+                                          $row = $result2->fetch_assoc();
+                                          $un = implode(" ",$row);
+                                          echo $un ;
+                                           ?>
+                                        </td>
                                     </tr>
                                   </tbody>
                                 </table>

@@ -9,7 +9,7 @@ session_start();
   <head>
     <meta charset="utf-8">
     <title>UCT Application</title>
-    <link rel="stylesheet" type="text/css" href="uctApplication.css">
+    <link rel="stylesheet" type="text/css" href="uctApplications.css">
   </head>
   <body>
     <h1>SELECT A SPECIFIC FACULTY BELOW</h1>
