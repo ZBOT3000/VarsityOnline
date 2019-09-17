@@ -1,5 +1,5 @@
 <?php
-function testing($mark)
+function mark($mark)
 {
 	$total =0 ;
 	if ($mark >= 80 and $mark <101)
