@@ -60,12 +60,12 @@ function closeNav() {
 			<div class="Drop-Down">
 				<select name="HL" class="form-control">
 				<option>Select Home Language</option>
-			  	<option value="English">English</option>
+			  <option value="English">English</option>
 				<option value="Afrikaans">Afrikaans</option>
 				<option value="Zulu">Zulu</option>
 				<option value="Xhosa">Xhosa</option>
-	   	  		<option value="SeSotho">SeSotho</option>
-		    	<option value="SeTswana">SeTswana</option>
+	   	  <option value="SeSotho">SeSotho</option>
+		  	<option value="SeTswana">SeTswana</option>
 				<option value="Ndebele">Ndebele</option>
 				<option value="SeSwati">SeSwati</option>
 				<option value="Tsonga">Tsonga</option>
@@ -215,6 +215,29 @@ function closeNav() {
 		</form>
 
 	</div>
+
+  <script type="text/javascript">
+  var password = document.getElementById("HL")
+  ,confirm_password = document.getElementById("FAL");
+
+  function validatePassword()
+  {
+      if(password.value == confirm_password.value)
+      {
+      confirm_password.setCustomValidity("Home language and FAL are the same");
+      } else
+      {
+      confirm_password.setCustomValidity('');
+      }
+  }
+
+  password.onchange = validatePassword;
+  confirm_password.onkeyup = validatePassword;
+  </script>
+
+
+
+
 
 
 </body>

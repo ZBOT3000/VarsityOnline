@@ -3,8 +3,8 @@ session_start();
 require 'functions.php';
 if (isset($_SESSION['username']))
 {
-  $_SESSION["HOME_LAN"] = "GO TO THE HIGHSCHOOL INFO BAR";
-  $_SESSION["FA_LAN"] = "ANDD COMPLETE THE Academics SECTION";
+  $_SESSION["HOME_LAN"] = "GO TO THE PERSONAL DETAILS BAR";
+  $_SESSION["FA_LAN"] = "AND COMPLETE THE Academics SECTION";
   $_SESSION["MATH_SUBJ"] = "";
   $_SESSION["SUBJ1"]= "";;
   $_SESSION["SUBJ2"] = "";
@@ -223,12 +223,6 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                     <span class="header3-sub-list list-unstyled"></span>Application</a>
                                     <ul class ="header3-sub-list list-unstyled">
                                       <li>
-                                          <a href="wishlist.html">Add To WishList</a>
-                                      </li>
-                                      <li>
-                                          <a href="wishliststatus.html">Show WishList</a>
-                                      </li>
-                                      <li>
                                           <a href="../WITS/witsAppProcess.php">Wits Application</a>
                                       </li>
                                       <li>
@@ -311,7 +305,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                           </th>
                                         </tr>
                                         <tr>
-                                          <th s>
+                                          <th>
                                             <a href="#" onclick="ujLa()">UJ APS</a>
                                           </th>
                                           <th>
@@ -358,6 +352,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                             </tr>
                                             <tr>
                                                 <td>
+                                                  FAL -
                                                   <?php
                                                   echo  $_SESSION["FA_LAN"];
                                                    ?>

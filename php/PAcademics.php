@@ -31,7 +31,7 @@
   {
   	 echo "YOU HAVE SUCCESSFULY CAPTURED YOUR ACADEMICS <br>";
      echo "<p><a href='dashboard.php'>CLICK HERE TO GO BACK</a></p>";
-     $_SESSION['finish']=$_SESSION['finish']+1;
+     //$_SESSION['finish']=$_SESSION['finish']+1;
   }
   else
   {
