@@ -112,7 +112,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
 <head>
 
   <!-- suggestion box ahjax -->
-            <script>
+    <script>
           function showUser(str) {
             if (str == "") {
                 document.getElementById("txtHint").innerHTML = "";
@@ -136,6 +136,32 @@ if ( mysqli_num_rows( $result4 ) > 0 )
           }
           </script>
     <!-- suggestion box ahjax -->
+
+    <!-- interests ahjax -->
+      <script>
+            function showUser(str) {
+              if (str == "") {
+                  document.getElementById("txtHint").innerHTML = "";
+                  return;
+              } else {
+                  if (window.XMLHttpRequest) {
+                      // code for IE7+, Firefox, Chrome, Opera, Safari
+                      xmlhttp = new XMLHttpRequest();
+                  } else {
+                      // code for IE6, IE5
+                      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                  }
+                  xmlhttp.onreadystatechange = function() {
+                      if (this.readyState == 4 && this.status == 200) {
+                          document.getElementById("txtHint").innerHTML = this.responseText;
+                      }
+                  };
+                  xmlhttp.open("GET","PInterest.php?q="+str,true);
+                  xmlhttp.send();
+              }
+            }
+            </script>
+      <!-- interests box ahjax -->
 
 
     <!-- Required meta tags-->
@@ -233,6 +259,18 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                       </li>
                                       <li>
                                           <a href="../UCT/uctAppProcess.php">UCT Application</a>
+                                      </li>
+                                    </ul>
+                                </li>
+
+                                <!-- Careers Sessions -->
+                                <li class="has-sub">
+                                  <a href="submitPage.php">
+                                    <i class="fas fa-copy"></i>
+                                    <span class="header3-sub-list list-unstyled"></span>Career</a>
+                                    <ul class ="header3-sub-list list-unstyled">
+                                      <li>
+                                          <a href="../php/interests.php">Interests</a>
                                       </li>
                                     </ul>
                                 </li>
@@ -455,7 +493,6 @@ if ( mysqli_num_rows( $result4 ) > 0 )
               <div id="txtHint"><b>***********************************</b></div>
             </section>
             <!-- END SUGGESTION CHART-->
-
             <!-- Information TABLE-->
             <section class="p-t-20">
                 <div class="container">
