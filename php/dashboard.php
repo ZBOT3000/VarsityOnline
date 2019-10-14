@@ -240,7 +240,6 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                     </ul>
                                 </li>
 
-
                                 <!--APPLICATION-->
 
                                 <li class="has-sub">
@@ -270,7 +269,10 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                     <span class="header3-sub-list list-unstyled"></span>Career</a>
                                     <ul class ="header3-sub-list list-unstyled">
                                       <li>
-                                          <a href="../php/interests.php">Interests</a>
+                                          <a href="../php/interests.php">Select Interests</a>
+                                      </li>
+                                      <li>
+                                          <a href="../php/PInterest.php">Interet Suggested Courses</a>
                                       </li>
                                     </ul>
                                 </li>
