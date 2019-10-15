@@ -611,21 +611,6 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                 <div class="row">
                   <div class="col-lg-12">
                       <h3 class="title-5 m-b-35">UNIVERSITY APPLICATION Report</h3>
-                      <div class="table-data__tool">
-                                  <div class="table-data__tool-left">
-                                      <div class="rs-select2--light rs-select2--md">
-                                          <select class="js-select2" name="ApplicationStatus">
-                                              <option selected="selected">Select University</option>
-                                              <option value="wits_application">Wits</option>
-                                              <option value="UJ_Application">UJ</option>
-                                              <option value="up">UP</option>
-                                              <option value="uct">UCT</option>
-                                          </select>
-                                          <div class="dropDownSelect2"></div>
-                                      </div>
-                                      <button onclick="appStatusProcess()" class="btn au-btn--green ">Change</button>
-                                  </div>
-                            </div>
                       <div class="table-responsive table-responsive-data2">
                         <table class="table table-data2">
                                   <thead>
