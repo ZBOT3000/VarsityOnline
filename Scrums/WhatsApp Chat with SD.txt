@@ -205,6 +205,7 @@ Maybe cron jobs ability idk sometimes u need it
 3/6/19, 16:56 - Joy: Chilled
 3/6/19, 18:40 - Lungile: Yebo
 3/6/19, 18:47 - Khanyisile Sixhaxa: 👍🏽
+
 3/6/19, 18:54 - Joy: Email sent
 3/6/19, 19:04 - Fentse: Si'grand bafwethu?
 3/6/19, 19:05 - Ag: Are these all tables
@@ -218,68 +219,68 @@ Eg
 
 Password: test123
 Salted password :funtest124fun
-3/6/19, 21:52 - Lungile: This is a very very simple explaination hope it helps
-3/6/19, 21:52 - Fentse: We'll look into it
-3/6/19, 21:52 - Lungile: Okay awe
-3/6/19, 21:52 - Lungile: Its pretty easy to do wont take u longer than 15 min
-3/6/19, 21:53 - Khanyisile Sixhaxa: oh yeah I get it
-3/6/19, 21:54 - Ag: <Media omitted>
-3/6/19, 21:55 - Lungile: Yeah things like dat
-3/6/19, 21:55 - Fentse: Fede bafwethu
-3/6/19, 21:56 - Lungile: I dont think its too much extra work
-3/6/19, 21:56 - Ag: <Media omitted>
-3/7/19, 07:47 - Joy: Sorry guys... My wifi was acting up last night... Hence the lack of communication... Also I couldn't edit the css file... Bit I will do that after class
-3/7/19, 11:02 - Joy: <Media omitted>
-3/7/19, 11:09 - Ag: <Media omitted>
-3/7/19, 11:50 - Khanyisile Sixhaxa: Everyone has to be on taiga guysings
-3/7/19, 11:52 - Joy: I will email him again
-3/7/19, 11:52 - Joy: So we all need accounts on taiga?
-3/7/19, 11:55 - Khanyisile Sixhaxa: Yess so we can all be able to view and edit tasks
-3/7/19, 11:55 - Joy: Alright
-3/7/19, 12:04 - Joy: I linked my github and taiga accounts..
-3/7/19, 12:04 - Lungile: How do u do dat
-3/7/19, 12:05 - Joy: When you sign up for taiga just sign up using github... It's an option on the bottom of the screen
-3/7/19, 12:16 - Khanyisile Sixhaxa: Just sign into taiga using github
-3/7/19, 12:25 - Lungile: Okay awe
-3/7/19, 12:25 - Joy: Well I'm connect... so you can do the things now
-3/7/19, 12:25 - Joy: <Media omitted>
-3/7/19, 12:29 - Ag: <Media omitted>
-3/7/19, 12:52 - Khanyisile Sixhaxa: I'm gonna need the emails you use for your account to invite you
-3/7/19, 12:52 - Joy: 1316769@students.wits.ac.za
-3/7/19, 12:58 - Joy: Aren't we supposed to make a new branch on github... Or should we just keep committing to the master branch?
-3/7/19, 13:00 - Fentse: Good point. It seems i cant pull Lungile's code
-3/7/19, 13:00 - Ag: 1422811@students.wits.ac.za
-3/7/19, 13:03 - Khanyisile Sixhaxa: Apparently there's a max of three members so I think that's fine
-3/7/19, 13:03 - Lungile: 1434995@students.wits.ac.za
-3/7/19, 13:03 - Joy: Alright cool
-3/7/19, 13:35 - Joy: Currently busy with the login page...
-3/7/19, 13:36 - Joy: Then also... on taiga we need to rate the different task (user stories) according to ux, front and back plus design...
-3/7/19, 13:38 - Ag: I'm currently busy with the server(The VM)
-3/7/19, 13:38 - Joy: Alright... Cool
-3/7/19, 16:52 - Fentse: Yo for the Register.html page,the password part is missing. I'll commit a template of the salt algorithm on github then yall will just fill in the blanks
-3/7/19, 16:54 - Ag: Awe
-3/7/19, 16:56 - Fentse: Also User_ID(student no.)
-3/7/19, 17:04 - Lungile: just added the password, we dont need to add a student number
-3/7/19, 17:04 - Fentse: Fede I'll change the code
-3/7/19, 17:06 - Lungile: how do i get on to this travis thingy
-3/7/19, 17:11 - Fentse: <Media omitted>
-3/7/19, 17:30 - Joy: ???
-3/7/19, 17:33 - Lungile: im also confused
-3/7/19, 17:36 - Fentse: The way you're able to see if your commit builds is by either going to pull request(like how i showed you on the vid) or going to the actual site
-3/7/19, 17:41 - Joy: <Media omitted>
-3/7/19, 17:47 - Fentse: Travis builds your project and runs tests to check for errors
-3/7/19, 17:47 - Joy: How though?
-3/7/19, 17:50 - Fentse: When you run your build,Travis clones your github repo into a new environment,and carries out a series of tasks to build and test code
-3/7/19, 17:52 - Joy: Is it an automatic thing... Or did you set the task for it to build
-3/7/19, 18:00 - Lungile: what needs to go in the wiki
-3/7/19, 18:02 - Fentse: Need to define the build
-3/7/19, 18:20 - Joy: Good Q
-3/7/19, 18:20 - Joy: Can you do it
-3/7/19, 20:00 - Lungile: how do i run the log in html on github
-3/7/19, 21:14 - Joy: 🤷🏾‍♂
-3/7/19, 22:32 - Lungile: Does the travis thing do it
-3/7/19, 22:33 - Ag: Guys the server is giving me headaches ey
-3/7/19, 22:46 - Khanyisile Sixhaxa: What's wrong w it?
+10/6/19, 21:52 - Lungile: This is a very very simple explaination hope it helps
+10/6/19, 21:52 - Fentse: We'll look into it
+10/6/19, 21:52 - Lungile: Okay awe
+10/6/19, 21:52 - Lungile: Its pretty easy to do wont take u longer than 15 min
+10/6/19, 21:53 - Khanyisile Sixhaxa: oh yeah I get it
+10/6/19, 21:54 - Ag: <Media omitted>
+10/6/19, 21:55 - Lungile: Yeah things like dat
+10/6/19, 21:55 - Fentse: Fede bafwethu
+10/6/19, 21:56 - Lungile: I dont think its too much extra work
+10/6/19, 21:56 - Ag: <Media omitted>
+10/7/19, 07:47 - Joy: Sorry guys... My wifi was acting up last night... Hence the lack of communication... Also I couldn't edit the css file... Bit I will do that after class
+10/7/19, 11:02 - Joy: <Media omitted>
+10/7/19, 11:09 - Ag: <Media omitted>
+10/7/19, 11:50 - Khanyisile Sixhaxa: Everyone has to be on taiga guysings
+10/7/19, 11:52 - Joy: I will email him again
+10/7/19, 11:52 - Joy: So we all need accounts on taiga?
+10/7/19, 11:55 - Khanyisile Sixhaxa: Yess so we can all be able to view and edit tasks
+10/7/19, 11:55 - Joy: Alright
+10/7/19, 12:04 - Joy: I linked my github and taiga accounts..
+10/7/19, 12:04 - Lungile: How do u do dat
+10/7/19, 12:05 - Joy: When you sign up for taiga just sign up using github... It's an option on the bottom of the screen
+10/7/19, 12:16 - Khanyisile Sixhaxa: Just sign into taiga using github
+10/7/19, 12:25 - Lungile: Okay awe
+10/7/19, 12:25 - Joy: Well I'm connect... so you can do the things now
+10/7/19, 12:25 - Joy: <Media omitted>
+10/7/19, 12:29 - Ag: <Media omitted>
+10/7/19, 12:52 - Khanyisile Sixhaxa: I'm gonna need the emails you use for your account to invite you
+10/7/19, 12:52 - Joy: 1316769@students.wits.ac.za
+10/7/19, 12:58 - Joy: Aren't we supposed to make a new branch on github... Or should we just keep committing to the master branch?
+10/7/19, 13:00 - Fentse: Good point. It seems i cant pull Lungile's code
+10/7/19, 13:00 - Ag: 1422811@students.wits.ac.za
+10/7/19, 13:03 - Khanyisile Sixhaxa: Apparently there's a max of three members so I think that's fine
+10/7/19, 13:03 - Lungile: 1434995@students.wits.ac.za
+10/7/19, 13:03 - Joy: Alright cool
+10/7/19, 13:35 - Joy: Currently busy with the login page...
+10/7/19, 13:36 - Joy: Then also... on taiga we need to rate the different task (user stories) according to ux, front and back plus design...
+10/7/19, 13:38 - Ag: I'm currently busy with the server(The VM)
+10/7/19, 13:38 - Joy: Alright... Cool
+10/7/19, 16:52 - Fentse: Yo for the Register.html page,the password part is missing. I'll commit a template of the salt algorithm on github then yall will just fill in the blanks
+10/7/19, 16:54 - Ag: Awe
+10/7/19, 16:56 - Fentse: Also User_ID(student no.)
+10/7/19, 17:04 - Lungile: just added the password, we dont need to add a student number
+10/7/19, 17:04 - Fentse: Fede I'll change the code
+10/7/19, 17:06 - Lungile: how do i get on to this travis thingy
+10/7/19, 17:11 - Fentse: <Media omitted>
+10/7/19, 17:30 - Joy: ???
+10/7/19, 17:33 - Lungile: im also confused
+10/7/19, 17:36 - Fentse: The way you're able to see if your commit builds is by either going to pull request(like how i showed you on the vid) or going to the actual site
+10/7/19, 17:41 - Joy: <Media omitted>
+10/7/19, 17:47 - Fentse: Travis builds your project and runs tests to check for errors
+10/7/19, 17:47 - Joy: How though?
+10/7/19, 17:50 - Fentse: When you run your build,Travis clones your github repo into a new environment,and carries out a series of tasks to build and test code
+10/7/19, 17:52 - Joy: Is it an automatic thing... Or did you set the task for it to build
+10/7/19, 18:00 - Lungile: what needs to go in the wiki
+10/7/19, 18:02 - Fentse: Need to define the build
+10/7/19, 18:20 - Joy: Good Q
+10/7/19, 18:20 - Joy: Can you do it
+10/7/19, 20:00 - Lungile: how do i run the log in html on github
+10/7/19, 21:14 - Joy: 🤷🏾‍♂
+10/7/19, 22:32 - Lungile: Does the travis thing do it
+10/7/19, 22:33 - Ag: Guys the server is giving me headaches ey
+10/7/19, 22:46 - Khanyisile Sixhaxa: What's wrong w it?
 3/7/19, 22:47 - Ag: Lamp😭
 3/7/19, 22:49 - Khanyisile Sixhaxa: Should we document it as an issue?
 3/7/19, 23:05 - Ag: Yes please. But I will run it again tomorrow
