@@ -36,13 +36,22 @@ th {text-align: left;}
 session_start();
 require 'conn.php';
 
+$int1 = $_POST["int1"];
+$int2 = $_POST["int2"];
+$int3 = $_POST["int3"];
 
-$qry1 = "select * from wits where INTEREST = 'Chemistry' or INTEREST = 'Mathematics' or INTEREST = 'Technology'";
-$qry2 = "select * from up where INTEREST = 'Chemistry' or INTEREST = 'Mathematics' or INTEREST = 'Technology'";
+$qry1 = "select * from wits where INTEREST = '$int1' or INTEREST = '$int2' or INTEREST = '$int3'";
+$qry2 = "select * from up where INTEREST = '$int1' or INTEREST = '$int2' or INTEREST = '$int3'";
+$qry3 = "select * from uj where INTEREST = '$int1' or INTEREST = '$int2' or INTEREST = '$int3'";
+$qry4 = "select * from uct where INTEREST = '$int1' or INTEREST = '$int2' or INTEREST = '$int3'";
 
 
 $result1 = mysqli_query($conn,$qry1);
 $result2 = mysqli_query($conn,$qry2);
+$result3 = mysqli_query($conn,$qry3);
+$result4 = mysqli_query($conn,$qry4);
+
+      // Wits Section
       echo "
       <h1>WITS UNIVERSITY COURSES BASED ON YOUR INTERESTS</h1>
       <table>
@@ -67,7 +76,7 @@ $result2 = mysqli_query($conn,$qry2);
         }
       }
       echo "</table>";
-
+      // UP Section
       echo "
       <h1>UNIVERSITY OF PRETORIA COURSES BASED ON YOUR INTERESTS</h1>
       <table>
@@ -94,9 +103,61 @@ $result2 = mysqli_query($conn,$qry2);
       echo "</table>";
       echo "";
 
+
+      //Uj Section
+      echo "
+      <h1>UNIVERSITY OF JOHANESSBURG COURSES BASED ON YOUR INTERESTS</h1>
+      <table>
+      <tr>
+      <th>FUCULTY</th>
+      <th>COURSE</th>
+      <th>APS</th>
+      </tr>";
+      // uj section
+      if (!$result3) {
+
+      }
+      else if ( mysqli_num_rows( $result3 ) > 0 )
+      {
+        while($row1 = mysqli_fetch_array($result3))
+        {
+            echo "<tr>";
+            echo "<td>" . $row1['FACULTY'] . "</td>";
+            echo "<td>" . $row1['COURSE'] . "</td>";
+            echo "<td>" . $row1['APS'] . "</td>";
+            echo "</tr>";
+        }
+      }
+      echo "</table>";
+
+
+      //Uct Section
+      echo "
+      <h1>UNIVERSITY OF CAPE TOWN COURSES BASED ON YOUR INTERESTS</h1>
+      <table>
+      <tr>
+      <th>FUCULTY</th>
+      <th>COURSE</th>
+      <th>APS</th>
+      </tr>";
+      if (!$result4) {
+
+      }
+      else if ( mysqli_num_rows( $result4 ) > 0 )
+      {
+        while($row1 = mysqli_fetch_array($result4))
+        {
+            echo "<tr>";
+            echo "<td>" . $row1['FACULTY'] . "</td>";
+            echo "<td>" . $row1['COURSE'] . "</td>";
+            echo "<td>" . $row1['APS'] . "</td>";
+            echo "</tr>";
+        }
+      }
+      echo "</table>";
+
+
       echo "<button>" . "<a href='../PHP/dashboard.php'>"."Back To Dashboard "."</a>" . "</button>";
-
-
       mysqli_close($conn);
 
 ?>

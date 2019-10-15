@@ -130,3 +130,7 @@ body {
 form .submit:hover{
 	background-color: darkblue;
 }
+
+p {
+  fontcolor: white; 
+}

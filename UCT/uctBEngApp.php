@@ -20,7 +20,6 @@ session_start();
   				<select name="firstChoice" class="select-box">
     				<option>Select your first Choice</option>
             <option value="Civil Engineering">BEng Civil Engineering</option>
-	    <option>Civil engineers create, improve and protect the environment in which we live. They plan, design and oversee construction and maintenance of building structures and infrastructure.</option>
             <option value="Electrical Engineering">BEng Electrical Engineering</option>
             <option>The Electrical Engineering degree curriculum at UCT has been designed to be flexible. Electrical engineers can choose to follow a high technology career in research and development.</option>
             <option value="Chemical Engineering">BEng Chemical Engineering</option>
@@ -53,6 +52,15 @@ session_start();
             <option value="Mechatronics">BEng Machatronics</option>
             <option value="Mechanical Engineering">BEng Mechanical Engineering</option>
            </select>
+        </div>
+
+        <div class="">
+          <h3>Civil Engineering</h3>
+          <p>
+            Civil engineers create, improve and protect the environment in which we live.
+            They plan, design and oversee construction and maintenance of
+            building structures and infrastructure.
+          </p>
         </div>
 
         <div>

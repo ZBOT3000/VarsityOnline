@@ -1,4 +1,4 @@
-<?php
+  <?php
 session_start();
 
 
@@ -18,7 +18,6 @@ session_start();
            <select name="int1" class="select-box">
        				<option>Select your first Choice</option>
    				    <option value="Technology">Technology</option>
-   				    <option value="Theatre">Theatre</option>
    				    <option value="Acting">Acting</option>
    				    <option value="Problem solving">Problem solving</option>
    				    <option value="Reading">Reading</option>
@@ -33,6 +32,7 @@ session_start();
               <option value="Chemistry">Chemistry</option>
               <option value="Cars and Automotives">Cars and Automotives</option>
               <option value="Space and all things small">Space and all things small</option>
+              <option value="Social Work">Social Work</option>
 
      		   </select>
          </div>
@@ -41,7 +41,6 @@ session_start();
            <select name="int2" class="select-box">
        				<option>Select your first Choice</option>
    				    <option value="Technology">Technology</option>
-   				    <option value="Theatre">Theatre</option>
    				    <option value="Acting">Acting</option>
    				    <option value="Problem solving">Problem solving</option>
    				    <option value="Reading">Reading</option>
@@ -64,7 +63,6 @@ session_start();
            <select name="int3" class="select-box">
        				<option>Select your first Choice</option>
    				    <option value="Technology">Technology</option>
-   				    <option value="Theatre">Theatre</option>
    				    <option value="Acting">Acting</option>
    				    <option value="Problem solving">Problem solving</option>
    				    <option value="Reading">Reading</option>
