@@ -53,6 +53,39 @@ session_start();
 			 </select>
 
 			</div>
+			<div class="">
+			<h3>Applied Mathematics</h3>
+          <p>
+            Civil engineers create, improve and protect the environment in which we live.
+            They plan, design and oversee construction and maintenance of
+            building structures and infrastructure.
+          </p>
+        </div>
+        <div class="">
+          <h3>Biological Science</h3>
+          <p>
+           The Electrical Engineering degree curriculum at UCT has been designed to be flexible. Electrical engineers can choose to follow a high technology career in research and development.
+          </p>
+        </div>
+        <div class="">
+          <h3>Computer Science</h3>
+          <p>
+        Chemical engineers apply the principles of chemistry, biology, physics, and math to solve problems that involve the use of fuel, drugs, food, and many other products.
+          </p>
+        </div>
+        <div class="">
+          <h3>Chemistry</h3>
+          <p>
+         Design, develop, maintain and manage high technology engineering systems for the automation of industrial tasks
+          </p>
+        </div>
+        <div class="">
+          <h3>Mathematics of Finance</h3>
+          <p>
+Mechanical engineers design power-producing machines such as electric generators, involves understanding and harnessing forces and energy in machines for the benefit of society
+          </p>
+        </div>
+			
 
         <div>
            <input type="submit" name = "submit" class="sumbit" value="SUBMIT">
