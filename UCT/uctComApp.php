@@ -20,10 +20,15 @@ session_start();
   				<select name="firstChoice" class="select-box">
     				<option>Select your first Choice</option>
             <option value="Business Science">Bcom Business Science</option>
+	    <option> Business skills are in high demand worldwide. They develop leaders with knowledge and expertise across a broad range of disciplines that have immediate value in the workplace</option>
             <option value="Accounting">Bcom Accounting</option>
+	    <option> Provides financial information to management by researching and analyzing accounting data; preparing reports. Prepares asset, liability, and capital account entries by compiling and analyzing.</option>
             <option value="Actuarial Science">Bcom Actuarial Science</option>
+	    <option> Actuaries analyze the financial costs of risk and uncertainty. They use mathematics, statistics, and financial theory to assess the risk that an event will occur.</option>
             <option value="Information Systems">Bcom Information Systems</option>
+            <option> Information systems managers, or IT managers, are responsible for the secure and effective operation of all computer systems, related applications, hardware and software.</option>
             <option value="Economics">Bcom Economics</option>
+            <option> Economists often study historical trends and use them to make forecasts. Specifically, economists may analyze issues such as consumer demand and sales to help a company maximize its profits.</option>
   		     </select>
 
   			</div>
