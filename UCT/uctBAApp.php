@@ -20,15 +20,15 @@ session_start();
   				<select name="firstChoice" class="select-box">
     				<option>Select your first Choice</option>
             <option value="Fine Arts">BA Fine Arts</option>
-            <option>Fine artists work across a variety of mediums – paper, metal, clay, photographic film, and wood. They sell their works to museums, art galleries or directly to customers.</option>
+            <option>The degree is designed to enable students to develop as artists at a level of best practice.</option>
             <option value="Theatre & Performance">BA Theatre & Performance</option>
-            <option>Performers entertain audiences through recorded or live shows, presentations, and exhibitions. They can be found working in diverse settings such as theaters and music video sets.</option>
+            <option>These qualifications are intended for those who wish to work professionally in the theatre as performers, makers, designers, teachers, and facilitators or as academics and researchers.</option>
             <option value="Social Science">BA Social Science</option>
             <option>Responsible for studying and researching the link between society and human behavior. Specializes in any of the natural sciences, including anthropology, archaeology, criminology, economics.</option>
             <option value="Social Work">BA Social Work</option>
-            <option>Social workers help clients handle everyday life problems. They often assist clients who have issues caused by neglect, abuse, domestic violence, mental health and substance abuse.</option>
+            <option>Social Workers interact with individuals, families, groups and communities in life-skills training, adult education, economic empowerment and various prevention programmes.</option>
             <option value="Music">BA Music</option>
-            <option>Perform music for live audiences and recordings. Audition for positions in orchestras, choruses, bands, and other types of music groups.</option>
+            <option>The School offers training in the entire range of orchestral instruments, piano, organ, voice, African percussion and jazz. </option>
   		     </select>
 
   			</div>
