@@ -272,7 +272,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                           <a href="../php/interests.php">Select Interests</a>
                                       </li>
                                       <li>
-                                        <a href="../php/careers.html"></a>
+                                        <a href="../php/Career.html">Career Information</a>
                                       </li>
                                     </ul>
                                 </li>
