@@ -22,13 +22,13 @@ session_start();
             <option value="Business Science">Bcom Business Science</option>
 	    <option> Business skills are in high demand worldwide. They develop leaders with knowledge and expertise across a broad range of disciplines that have immediate value in the workplace</option>
             <option value="Accounting">Bcom Accounting</option>
-	    <option> Provides financial information to management by researching and analyzing accounting data; preparing reports. Prepares asset, liability, and capital account entries by compiling and analyzing.</option>
+	    <option> Graduates become general managers, tax advisors, internal auditors or business advisors. The CA option is designed for students who intend to qualify as Chartered Accountants.</option>
             <option value="Actuarial Science">Bcom Actuarial Science</option>
-	    <option> Actuaries analyze the financial costs of risk and uncertainty. They use mathematics, statistics, and financial theory to assess the risk that an event will occur.</option>
+	    <option> This is intended for students with a strong numerate ability who wish to enter the actuarial or allied professions. </option>
             <option value="Information Systems">Bcom Information Systems</option>
-            <option> Information systems managers, or IT managers, are responsible for the secure and effective operation of all computer systems, related applications, hardware and software.</option>
+            <option> The curriculum deals not only with the information technologies but also imparts students with the skills to analyse user requirements and develop information systems.</option>
             <option value="Economics">Bcom Economics</option>
-            <option> Economists often study historical trends and use them to make forecasts. Specifically, economists may analyze issues such as consumer demand and sales to help a company maximize its profits.</option>
+            <option> This focuses on financial issues and provides students with the skills needed to operate in the world of finance.</option>
   		     </select>
 
   			</div>
