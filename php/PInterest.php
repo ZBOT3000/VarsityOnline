@@ -18,6 +18,12 @@ table, td, th {
     -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
 }
+body {
+	margin: 20;
+	padding :0;
+	background-image:
+  radial-gradient(white,silver);
+}
 
 th {text-align: left;}
 </style>
