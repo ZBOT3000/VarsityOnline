@@ -6,6 +6,32 @@ session_start();
  <!DOCTYPE html>
  <html lang="en" dir="ltr">
    <head>
+     <style>
+     table {
+         width: 100%;
+         border-collapse: collapse;
+     }
+
+     table, td, th {
+         border: 1px solid black;
+         padding: 5px;
+         color: darkblue;
+         -webkit-border-radius: 10px;
+         -moz-border-radius: 10px;
+         border-radius: 10px;
+         -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+         -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+         box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+     }
+     body {
+     	margin: 20;
+     	padding :0;
+     	background-image:
+       radial-gradient(white,silver);
+     }
+
+     th {text-align: left;}
+     </style>
      <meta charset="utf-8">
      <title>Interets Page</title>
    </head>

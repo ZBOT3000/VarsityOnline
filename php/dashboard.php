@@ -137,33 +137,6 @@ if ( mysqli_num_rows( $result4 ) > 0 )
           </script>
     <!-- suggestion box ahjax -->
 
-    <!-- interests ahjax -->
-      <script>
-            function showUser(str) {
-              if (str == "") {
-                  document.getElementById("txtHint").innerHTML = "";
-                  return;
-              } else {
-                  if (window.XMLHttpRequest) {
-                      // code for IE7+, Firefox, Chrome, Opera, Safari
-                      xmlhttp = new XMLHttpRequest();
-                  } else {
-                      // code for IE6, IE5
-                      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-                  }
-                  xmlhttp.onreadystatechange = function() {
-                      if (this.readyState == 4 && this.status == 200) {
-                          document.getElementById("txtHint").innerHTML = this.responseText;
-                      }
-                  };
-                  xmlhttp.open("GET","PInterest.php?q="+str,true);
-                  xmlhttp.send();
-              }
-            }
-            </script>
-      <!-- interests box ahjax -->
-
-
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -231,12 +204,6 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                         <li>
                                             <a href="Academics.php">Academics</a>
                                         </li>
-                                        <li>
-                                            <a href="school.html">Faculty</a>
-                                        </li>
-                                        <li>
-                                          <a href="test.php">test</a>
-                                        </li>
                                     </ul>
                                 </li>
 
@@ -273,6 +240,12 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                       </li>
                                       <li>
                                         <a href="../php/Career.html">Career Information</a>
+                                      </li>
+                                      <li>
+                                        <a href="upEngineeringCurriculum.html">Engineering Curriculum</a>
+                                      </li>
+                                      <li>
+                                        <a href="upScienceCurriculum.html">Science Curriculum</a>
                                       </li>
                                     </ul>
                                 </li>
@@ -486,7 +459,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                 <option value="1">University of the Witwatersrand</option>
                 <option value="2">University of Pretoria</option>
                 <option value="3">University of Johanessburg</option>
-                <option value="4 ">University of Cape Town</option>
+                <!--<option value="4 ">University of Cape Town</option>-->
 
                 </select>
                 </form>
