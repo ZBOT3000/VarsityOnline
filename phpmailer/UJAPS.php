@@ -1,5 +1,5 @@
 <?php
-class markTest{
+
 function mark($mark)
 {
 	$total =0 ;
@@ -23,5 +23,5 @@ function mark($mark)
 
 	return $total;
 	}
-}
+
  ?>
