@@ -15,7 +15,7 @@ function testings($a,$b){
 		return $b;
 }
 
-function mark($mark)
+function marks($mark)
 {
 	$total =0 ;
 	if ($mark >= 80 and $mark <101)
