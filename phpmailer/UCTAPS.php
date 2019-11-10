@@ -1,6 +1,6 @@
 <?php
 
-function APS ($mark) {
+function UCT_APS ($mark) {
 	$total = 0;
 	if ($mark >= 90)
 	{
