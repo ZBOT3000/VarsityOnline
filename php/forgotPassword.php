@@ -91,7 +91,7 @@
                 email.css('border','1px solid green');
 
                 $.ajax({
-                  url:'forgotPassword.php',
+                  url:'https://lbmsolutions.co.za/php/forgotPassword.php',
                   method:'POST',
                   dataType:'json',
                   data :{
