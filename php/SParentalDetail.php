@@ -19,7 +19,7 @@ $result = mysqli_query($conn,$mysql_qry);
 if  ($result)
 {
    echo "YOU HAVE SUCCESSFULY CAPTURED YOUR PARENTAL DETAILS <br>";
-   echo "<p><a href='Dashboard.php'>CLICK HERE TO GO BACK</a></p>";
+   echo "<p><a href='dashboard.php'>CLICK HERE TO GO BACK</a></p>";
    $_SESSION['finish']=$_SESSION['finish']+1;
 }else
 {

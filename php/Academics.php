@@ -11,9 +11,7 @@
 
 <div id="mySidenav" class="sidenav">
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="Dashboard.php">Dashboard</a>
-  <a href="Demographics.php">Demographics</a>
-  <a href="newPassword.php">New Password</a>
+<a href="../php/dashboard.php">Dashboard</a>
 </div>
 
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
@@ -56,9 +54,8 @@ function closeNav() {
 			</select>
 			</div>
 			<!--<input type="text" name="CG" class="form-control" placeholder="Enter your current Grade" required><br>-->
-
 			<div class="Drop-Down">
-				<select name="HL" class="form-control">
+				<select name="HL" id="HL" class="form-control">
 				<option>Select Home Language</option>
 			  <option value="English">English</option>
 				<option value="Afrikaans">Afrikaans</option>
@@ -77,9 +74,9 @@ function closeNav() {
 
 
 			<div class="Drop-Down">
-			<select name="FAL" class="form-control">
+			<select name="FAL" id="FAL" class="form-control">
 			  <option>Select First Additional Language</option>
-			  <option value="English">FAL English</option>
+			  <option value="English">English</option>
 			  <option value="Afrikaans">FAL Afrikaans</option>
 			  <option value="Zulu">FAL Zulu</option>
 			  <option value="Xhosa">FAL Xhosa</option>
@@ -217,22 +214,19 @@ function closeNav() {
 	</div>
 
   <script type="text/javascript">
-  var password = document.getElementById("HL")
-  ,confirm_password = document.getElementById("FAL");
-
-  function validatePassword()
+  $(function()
   {
-      if(password.value == confirm_password.value)
-      {
-      confirm_password.setCustomValidity("Home language and FAL are the same");
-      } else
-      {
-      confirm_password.setCustomValidity('');
-      }
-  }
 
-  password.onchange = validatePassword;
-  confirm_password.onkeyup = validatePassword;
+  $("#FAL").change(function()
+  {
+  if ($('option:selected', this).text() == $('#HL').val($(this).val()))
+  {
+      $("#FAL")setCustomValidity("Languages match");
+  }
+  else {
+  }
+  });
+  });
   </script>
 
 

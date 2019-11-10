@@ -196,7 +196,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                         <span class="bot-line"></span>Personal Details</a>
                                     <ul class="header3-sub-list list-unstyled">
                                         <li>
-                                            <a href="Demographics.php">Demographics</a>
+                                            <a href="demographics.php">Demographics</a>
                                         </li>
                                         <li>
                                             <a href="ParentalDetail.php">Parental Details</a>
@@ -352,7 +352,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                     <table class="table table-top-campaign">
                                         <tbody>
                                             <tr>
-                                                <td>
+                                                <td contenteditable='true'>
                                                     <?php
                                                     echo  $_SESSION["HOME_LAN"];
                                                      ?>

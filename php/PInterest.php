@@ -157,7 +157,7 @@ $result4 = mysqli_query($conn,$qry4);
       echo "</table>";
 
 
-      echo "<button>" . "<a href='../PHP/dashboard.php'>"."Back To Dashboard "."</a>" . "</button>";
+      echo "<button>" . "<a href='../php/dashboard.php'>"."Back To Dashboard "."</a>" . "</button>";
       mysqli_close($conn);
 
 ?>

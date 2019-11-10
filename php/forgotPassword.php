@@ -1,12 +1,12 @@
  <?php
     if(isset($_POST["email"]))
     {
-      require 'phpmailer/PHPMailerAutoload.php';
-      require 'functions.php';
-      require 'conn.php';
+      require '../phpmailer/PHPMailerAutoload.php';
+      require '../php/functions.php';
+      require '../php/conn.php';
 
       $email = $_POST["email"];
-      $mysql_qry="select * from REGISTER where email = '$email';";
+      $mysql_qry="select * from register where email = '$email';";
       $result = mysqli_query($conn,$mysql_qry);
 
       if (mysqli_num_rows($result)>0)
@@ -38,8 +38,8 @@
             Inorder to reset your password please click on the link below:
 
             <a href=
-            'http://vor.lbmsolutions.co.za/resetPassword.php?email=$email&token=$token'
-            >http://vor.lbmsolutions.co.za/resetPassword.php?email=$email&token=$token</a><br><br>
+            'http://lbmsolutions.co.za/php/resetPassword.php?email=$email&token=$token'
+            >http://lbmsolutions.co.za/php/resetPassword.php?email=$email&token=$token</a><br><br>
 
             Kind Regards<br>
             VarsityOnline
@@ -73,7 +73,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-6 col-md-offset-3" align="center">
-          <img src="logo.jpg"><br><br>
+          <img src="../logo.jpg"><br><br>
           <input type="email" class="form-control" id="email" placeholder="Your email address"><br>
           <input type="button" class="btn btn-primary" value="Reset Password">
           <br><br>

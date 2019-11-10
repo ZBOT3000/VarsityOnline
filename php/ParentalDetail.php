@@ -10,10 +10,7 @@
 
 <div id="mySidenav" class="sidenav">
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="Dashboard.php">Dashboard</a>
-  <a href="Demographics.php">Demographics</a>
-  <a href="newPassword.php">New Password</a>
-  <a href="Academics.php">Academics</a>
+  <a href="dashboard.php">Dashboard</a>
 </div>
 
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>

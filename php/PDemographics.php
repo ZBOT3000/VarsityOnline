@@ -25,7 +25,7 @@ $ID = (int)$_SESSION['user_id'];
   else
   {
      echo "SOME OF THE INFOMATION ENTERED WAS INCORRECT PLEASE RETRY AGAIN";
-     echo "<p><a href='Demographics.php'>CLICK HERE TO GO BACK</a></p>";
+     echo "<p><a href='demographics.php'>CLICK HERE TO GO BACK</a></p>";
      //echo "<p><a href='http://lamp.ms.wits.ac.za/~s1434995/VarsityOnline/Demographics.php'>CLICK HERE TO GO BACK</a></p>";
   }
 
