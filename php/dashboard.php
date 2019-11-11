@@ -210,7 +210,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                 <!--APPLICATION-->
 
                                 <li class="has-sub">
-                                  <a href="uploadDoc.html">
+                                  <a href="../html/uploadDoc.html">
                                     <i class="fas fa-copy"></i>
                                     <span class="header3-sub-list list-unstyled"></span>Application</a>
                                     <ul class ="header3-sub-list list-unstyled">
