@@ -45,11 +45,13 @@ session_start();
        				<option>Select your first Choice</option>
    				    <option value="Technology">Technology</option>
    				    <option value="Acting">Acting</option>
+              <option value="Design">Designing</option>
    				    <option value="Problem solving">Problem solving</option>
    				    <option value="Reading">Reading</option>
      				  <option value="Politics">Politics</option>
               <option value="Medical field">Medical field</option>
               <option value="Animals">Animals</option>
+              <option value="Tourism">Tourism</option>
               <option value="Mathematics">Mathematics</option>
               <option value="Accounting and Finance and Money">Accounting and Finance and Money</option>
               <option value="Music and Instruments">Music and Instruments</option>
@@ -65,44 +67,50 @@ session_start();
 
          <div class="Drop-Down">
            <select name="int2" class="select-box">
-       				<option>Select your first Choice</option>
-   				    <option value="Technology">Technology</option>
-   				    <option value="Acting">Acting</option>
-   				    <option value="Problem solving">Problem solving</option>
-   				    <option value="Reading">Reading</option>
-     				  <option value="Politics">Politics</option>
-              <option value="Medical field">Medical field</option>
-              <option value="Animals">Animals</option>
-              <option value="Mathematics">Mathematics</option>
-              <option value="Accounting and Finance and Money">Accounting and Finance and Money</option>
-              <option value="Music and Instruments">Music and Instruments</option>
-              <option value="Public speaking">Public speaking</option>
-              <option value="Mining and Minerals">Mining and Minerals</option>
-              <option value="Chemistry">Chemistry</option>
-              <option value="Cars and Automotives">Cars and Automotives</option>
-              <option value="Space and all things small">Space and all things small</option>
+             <option>Select your second Choice</option>
+             <option value="Technology">Technology</option>
+             <option value="Acting">Acting</option>
+             <option value="Design">Designing</option>
+             <option value="Problem solving">Problem solving</option>
+             <option value="Reading">Reading</option>
+             <option value="Politics">Politics</option>
+             <option value="Medical field">Medical field</option>
+             <option value="Animals">Animals</option>
+             <option value="Tourism">Tourism</option>
+             <option value="Mathematics">Mathematics</option>
+             <option value="Accounting and Finance and Money">Accounting and Finance and Money</option>
+             <option value="Music and Instruments">Music and Instruments</option>
+             <option value="Public speaking">Public speaking</option>
+             <option value="Mining and Minerals">Mining and Minerals</option>
+             <option value="Chemistry">Chemistry</option>
+             <option value="Cars and Automotives">Cars and Automotives</option>
+             <option value="Space and all things small">Space and all things small</option>
+             <option value="Social Work">Social Work</option>
 
      		   </select>
          </div>
 
          <div class="Drop-Down">
            <select name="int3" class="select-box">
-       				<option>Select your first Choice</option>
-   				    <option value="Technology">Technology</option>
-   				    <option value="Acting">Acting</option>
-   				    <option value="Problem solving">Problem solving</option>
-   				    <option value="Reading">Reading</option>
-     				  <option value="Politics">Politics</option>
-              <option value="Medical field">Medical field</option>
-              <option value="Animals">Animals</option>
-              <option value="Mathematics">Mathematics</option>
-              <option value="Accounting and Finance and Money">Accounting and Finance and Money</option>
-              <option value="Music and Instruments">Music and Instruments</option>
-              <option value="Public speaking">Public speaking</option>
-              <option value="Mining and Minerals">Mining and Minerals</option>
-              <option value="Chemistry">Chemistry</option>
-              <option value="Cars and Automotives">Cars and Automotives</option>
-              <option value="Space and all things small">Space and all things small</option>
+             <option>Select your third Choice</option>
+             <option value="Technology">Technology</option>
+             <option value="Acting">Acting</option>
+             <option value="Design">Designing</option>
+             <option value="Problem solving">Problem solving</option>
+             <option value="Reading">Reading</option>
+             <option value="Politics">Politics</option>
+             <option value="Medical field">Medical field</option>
+             <option value="Animals">Animals</option>
+             <option value="Tourism">Tourism</option>
+             <option value="Mathematics">Mathematics</option>
+             <option value="Accounting and Finance and Money">Accounting and Finance and Money</option>
+             <option value="Music and Instruments">Music and Instruments</option>
+             <option value="Public speaking">Public speaking</option>
+             <option value="Mining and Minerals">Mining and Minerals</option>
+             <option value="Chemistry">Chemistry</option>
+             <option value="Cars and Automotives">Cars and Automotives</option>
+             <option value="Space and all things small">Space and all things small</option>
+             <option value="Social Work">Social Work</option>
 
      		   </select>
          </div>
