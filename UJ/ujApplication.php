@@ -12,7 +12,7 @@ session_start();
     <link rel="stylesheet" type="text/css" href="ujApplications.css">
   </head>
   <body>
-    <h1>WITS APPLICATION</h1>
+    <h1>UJ APPLICATION</h1>
     <div class="LogIn-Form">
   		<form id="LogIn-Form"  method="post" action="ujApplicationPHP.php">
   			<h1>FILL IN YOUR ACADEMICS INFOMATION BELOW </h1><br>
@@ -54,33 +54,31 @@ session_start();
       <div class="">
           <h3>APPLIED MATHEMATICS AND COMPUTER SCIENCE</h3>
           <p>
-            Civil engineers create, improve and protect the environment in which we live.
-            They plan, design and oversee construction and maintenance of
-            building structures and infrastructure.
+ A computer science graduate is trained in the principles underlying computing, the development and use of programming languages and the application of computers as tools in problem solving
           </p>
         </div>
         <div class="">
           <h3>BIOCHEMISTRY AND BOTANY</h3>
           <p>
-           The Electrical Engineering degree curriculum at UCT has been designed to be flexible. Electrical engineers can choose to follow a high technology career in research and development.
+Biochemistry is the study of the molecules and chemical processes which occur in all living organisms. Biochemistry is fundamental to understanding mechanisms in molecular and cell biology.
           </p>
         </div>
         <div class="">
           <h3>MATHEMATICS AND MATHEMATICAL STATISTICS (WITH FINANCIAL ORIENTATION)</h3>
           <p>
-        Chemical engineers apply the principles of chemistry, biology, physics, and math to solve problems that involve the use of fuel, drugs, food, and many other products.
+ Mathematics is the science of structure, quantity, change and space and the interactions between them.
           </p>
         </div>
         <div class="">
           <h3>ZOOLOGY AND BIOCHEMISTRY</h3>
           <p>
-         Design, develop, maintain and manage high technology engineering systems for the automation of industrial tasks
+         Zoologists are biological scientists who specialize in the study of animals and their ecosystems.
           </p>
         </div>
         <div class="">
           <h3>PHYSICS AND MATHEMATICS</h3>
           <p>
-Mechanical engineers design power-producing machines such as electric generators, involves understanding and harnessing forces and energy in machines for the benefit of society
+ Physicists are highly trained scientists who study matter and the universe. They measure and study phenomena from the subatomic to the cosmic level
           </p>
         </div>
 
