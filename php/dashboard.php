@@ -41,7 +41,7 @@ $result3 = mysqli_query($conn,$mysql_qry3);
     $row = implode(" ",$row)." ";
     $_SESSION['AStatus'] = $row;
   } else {
-    $_SESSION['AStatus'] = "Incompleted";
+    $_SESSION['AStatus'] = "Incomplete";
   }
 
 if ( mysqli_num_rows( $result2 ) > 0 )
@@ -50,7 +50,7 @@ if ( mysqli_num_rows( $result2 ) > 0 )
   $row2 = implode(" ",$row2)." ";
   $_SESSION['Dstatus'] = $row2;
 }else {
-  $_SESSION['Dstatus'] = "Incompleted";
+  $_SESSION['Dstatus'] = "Incomplete";
 }
 if ( mysqli_num_rows( $result3 ) > 0 )
 {
@@ -58,7 +58,7 @@ if ( mysqli_num_rows( $result3 ) > 0 )
   $row3 = implode(" ",$row3)." ";
   $_SESSION['Parentalstatus'] = $row3;
 }else {
-  $_SESSION['Parentalstatus'] ="Incompleted";
+  $_SESSION['Parentalstatus'] ="Incomplete";
 }
 
 $mysql_qry4 = "select * from current_academics where user_id=$ID;";
@@ -510,7 +510,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                                       echo $_SESSION['Parentalstatus'];
                                                     }
                                                     else {
-                                                      echo "Incompleted";
+                                                      echo "Incomplete";
                                                     }
                                                   ?>
                                                 </span>
@@ -536,7 +536,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                                       echo $_SESSION['Dstatus'];
                                                     }
                                                     else {
-                                                      echo "Incompleted";
+                                                      echo "Incomplete";
                                                     }
                                                   ?>
                                                 </span>
@@ -562,7 +562,7 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                                       echo $_SESSION['AStatus'];
                                                     }
                                                     else {
-                                                      echo "Incompleted";
+                                                      echo "Incomplete";
                                                     }
                                                   ?>
                                                   </span>

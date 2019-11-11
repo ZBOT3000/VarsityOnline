@@ -75,7 +75,7 @@
         <div class="col-md-6 col-md-offset-3" align="center">
           <img src="../logo.jpg"><br><br>
           <input type="email" class="form-control" id="email" placeholder="Your email address"><br>
-          <input type="button" class="btn btn-primary" value="Reset Password">
+          <input type="submit" class="btn btn-primary" value="Reset Password">
           <br><br>
           <p id="response"></p>
         </div>
