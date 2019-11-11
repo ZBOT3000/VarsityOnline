@@ -1,3 +1,3 @@
 <?php
-header("Location: ../VarsityOnline/html/WelcomePage.html");
+header("Location: ../html/WelcomePage.html");
  ?>
