@@ -28,6 +28,31 @@
             <directory suffix=".php">./phpmailer/HelloWorld.php</directory>
            </whitelist>
          </filter>
+         
+              <filter>
+           <whitelist>
+            <directory suffix=".php">./phpmailer/WITSAPS2.php</directory>
+           </whitelist>
+         </filter>
+         
+              <filter>
+           <whitelist>
+            <directory suffix=".php">./phpmailer/UCTAPS.php</directory>
+           </whitelist>
+         </filter>
+         
+              <filter>
+           <whitelist>
+            <directory suffix=".php">./phpmailer/UJAPS.php</directory>
+           </whitelist>
+         </filter>
+         
+               <filter>
+           <whitelist>
+            <directory suffix=".php">./phpmailer/WITSAPS.php</directory>
+           </whitelist>
+         </filter>
+         
 
          <logging>
            <log type="coverage-html" target="test_reports/coverage" title="coverage" charset="UTF-8" yui="true" highlight="true"
