@@ -1,6 +1,6 @@
 <?php
   session_start();
-  echo $_SESSION['user_id'];
+
 
  ?>
 
@@ -38,10 +38,8 @@ function closeNav() {
 			<h1>FILL IN YOUR ACADEMICS INFOMATION BELOW </h1><br>
 			<!-- <input type="text" name="SN" class="form-control" placeholder="Enter your School Name" required><br>-->
 			<div class="Drop-Down">
-				<select name="SN" class="form-control">
-				<option>Select a School</option>
-			  	<option value="St Benedicts">Bennies</option>
-				<option value="St Johns">ST Johns</option>
+        <h2>High School Name</h2>
+        <input type="text" class="form-control" name="SN">
 			</select>
 
 			</div>
@@ -49,7 +47,6 @@ function closeNav() {
 			<div class="Drop-Down">
 				<select name="CG" class="form-control">
 				<option>Select a Grade</option>
-			  	<option value="11">11</option>
 				<option value="12">12</option>
 			</select>
 			</div>
@@ -69,14 +66,14 @@ function closeNav() {
 				<option value="Venda">Venda</option>
 				<option value="SePedi">SePedi</option>
 			</select>
-			<input type="text" class="form-control" name="HLMark" placeholder="HLMark" >
+			<input type="number" class="form-control" min="0" max="100" name="HLMark"  placeholder="Home Language Mark">
 			</div>
 
 
 			<div class="Drop-Down">
 			<select name="FAL" id="FAL" class="form-control">
 			  <option>Select First Additional Language</option>
-			  <option value="English">English</option>
+			  <option value="English">FAL English</option>
 			  <option value="Afrikaans">FAL Afrikaans</option>
 			  <option value="Zulu">FAL Zulu</option>
 			  <option value="Xhosa">FAL Xhosa</option>
@@ -88,7 +85,7 @@ function closeNav() {
 			  <option value="Venda">FAL Venda</option>
 			  <option value="SePedi">FAL SePedi</option>
 			</select>
-			<input type="text" class="form-control" name="FALMark" placeholder="FALMark">
+			<input type="number" class="form-control"  min="0" max="100" name="FALMark"  placeholder="FALMark">
 			</div>
 
 			<div class="Drop-Down">
@@ -97,7 +94,7 @@ function closeNav() {
 				  <option value="Mathematics">Mathematics</option>
 				  <option value="MathLit">Mathematics Literacy</option>
 			</select>
-			<input type="text" class="form-control" name="MathMark" placeholder="MathMark">
+			<input type="number" class="form-control"  min="0" max="100" name="MathMark" placeholder="MathMark">
 			</div>
 			<!--This is the drop down for First subject choice -->
 			<div class="Drop-Down">
@@ -130,7 +127,7 @@ function closeNav() {
 					<option value="Tourism">Tourism</option>
 					<option value="Visual Arts">Visual Arts</option>
 				</select>
-				<input type="text" class="form-control" name="sub1Mark" placeholder="sub1Mark">
+				<input type="number" class="form-control"  min="0" max="100" name="sub1Mark" placeholder="sub1Mark">
 			</div>
 			<!--This is the drop down for second subject choice -->
 			<div class="Drop-Down" name="Subject2"	>
@@ -163,7 +160,7 @@ function closeNav() {
 					<option value="Tourism">Tourism</option>
 					<option value="Visual Arts">Visual Arts</option>
 				</select>
-				<input type="text" class="form-control" name="sub2Mark" placeholder="sub2Mark">
+				<input type="number" class="form-control"  min="0" max="100" name="sub2Mark" placeholder="sub2Mark">
 			</div>
 			<!--This is the drop down for Third subject choice -->
 
@@ -197,12 +194,12 @@ function closeNav() {
 					<option value="Tourism">Tourism</option>
 					<option value="Visual Arts">Visual Arts</option>
 				</select>
-				<input type="text" class="form-control" name="sub3Mark" placeholder="sub3Mark">
+				<input type="number" class="form-control"  min="0" max="100" name="sub3Mark" placeholder="sub3Mark">
 			</div>
 
 			<div>
 				<h2>Life Orientation</h2>
-				<input type="text" class="form-control" name="LOMark">
+				<input type="number" class="form-control"  min="0" max="100" name="LOMark">
 			</div>
 
       <div>
