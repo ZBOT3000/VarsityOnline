@@ -10,7 +10,7 @@ $result = mysqli_query($conn,$mysql_ins);
 if  ($result)
 {
    echo "YOU HAVE SUCCESSFULY CAPTURED YOUR UP APPLICATION <br>";
-   echo "<p><a href='dashboard.php'>CLICK HERE TO GO BACK</a></p>";
+   echo "<p><a href='../php/dashboard.php'>CLICK HERE TO GO BACK</a></p>";
    $_SESSION['finish']=$_SESSION['finish']+1;
 }
 else

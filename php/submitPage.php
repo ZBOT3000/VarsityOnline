@@ -78,8 +78,7 @@ if ( mysqli_num_rows( $result3 ) > 0 )
 
 }
 
-echo $_SESSION['finish'];
-
+echo $guardian;
 
 
  ?>
@@ -167,17 +166,17 @@ echo $_SESSION['finish'];
                 <tbody>
                   <tr class="row100">
                     <td class="column100 column1" data-column="column1">Guardian Status</td>
-                    <td class="column100 column2" data-column="column2"><?php $guardian ?></td>
+                    <td class="column100 column2" data-column="column2"><?php echo $guardian; ?></td>
                   </tr>
 
                   <tr class="row100">
                     <td class="column100 column1" data-column="column1">Name</td>
-                    <td class="column100 column2" data-column="column2"><?php echo $Gname ?></td>
+                    <td class="column100 column2" data-column="column2"><?php echo $Gname; ?></td>
                   </tr>
 
                   <tr class="row100">
                     <td class="column100 column1" data-column="column1">Surname</td>
-                    <td class="column100 column2" data-column="column2"><?php echo $Gsurname ?></td>
+                    <td class="column100 column2" data-column="column2"><?php echo $Gsurname; ?></td>
                   </tr>
 
                   <tr class="row100">

@@ -25,6 +25,11 @@ if  ($result)
 	$str = $_SESSION['username'];
   $str = preg_replace('/\D/', '', $str);
   $_SESSION['user_id']=$str;
+
+	$mysql="update register SET Password = MD5('$password') WHERE USER_ID = $str;";
+	$resultt = mysqli_query($conn,$mysql);
+
+
 	header("Location: dashboard.php");
 }
 else
