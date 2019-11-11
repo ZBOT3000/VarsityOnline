@@ -12,7 +12,7 @@ session_start();
     <link rel="stylesheet" type="text/css" href="ujApplications.css">
   </head>
   <body>
-    <h1>WITS APPLICATION</h1>
+    <h1>UJ APPLICATION</h1>
     <div class="LogIn-Form">
   		<form id="LogIn-Form"  method="post" action="ujApplicationPHP.php">
   			<h1>FILL IN YOUR ACADEMICS INFOMATION BELOW </h1><br>
