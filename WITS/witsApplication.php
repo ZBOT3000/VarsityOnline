@@ -71,8 +71,36 @@ session_start();
             <option value="BSc-Physical Science">BSc-Physical Science</option>
            </select>
 
+ <div class="">
+          <h3>Computer Science</h3>
+          <p>
+A computer science graduate is trained in the principles underlying computing, the development and use of programming languages and the application of computers as tools in problem solving
+          </p>
         </div>
-
+        <div class="">
+          <h3>Physics</h3>
+          <p>
+Physics is about understanding the nature of matter and radiation in the language of mathematics, and as such is a central fundamental discipline in science.
+          </p>
+        </div>
+        <div class="">
+          <h3>Mathematics</h3>
+          <p>
+  Mathematics is the science of structure, quantity, change and space and the interactions between them.
+          </p>
+        </div>
+        <div class="">
+          <h3>Biochemistry</h3>
+          <p>
+Biochemistry is the study of the molecules and chemical processes which occur in all living organisms. Biochemistry is fundamental to understanding mechanisms in molecular and cell biology.
+          </p>
+        </div>
+        <div class="">
+          <h3>Astrophysics</h3>
+          <p>
+The Astrophysics major requires a strong mathematics and physics foundation
+          </p>
+        </div>
         <div>
            <input type="submit" name = "submit" class="sumbit" value="SUBMIT">
         </div>
