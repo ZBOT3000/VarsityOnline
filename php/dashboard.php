@@ -907,27 +907,67 @@ var UPaps = <?php echo $_SESSION["UP-APS"];?>;
 
 function init() {
 var data = [
-          {label:  "Computer Science ", y: 40, exploded: true,},
-          {label: "Biological Science", y: 35,exploded: true,},
-          {label: "Mathematics of Finance", y : 35,exploded: true,},
+          {label:  "COMPUTER SCIENCE ", y: 40, exploded: true,},
+          {label: "Biological Sciences", y: 40,exploded: true,},
+          {label: "Mathematics of Finance", y : 42,exploded: true,},
           {label:  "Astronomy", y :43,exploded: true,},
-          {label:  "Nuclear Science", y: 43,exploded: true,},
+          {label:  "Nuclear Sciences", y: 43,exploded: true,},
           {label:  "Chemistry", y: 43,exploded: true,},
-          {label:  "Chemical Engineering", y: 40,exploded: true,},
-          {label:  "Civil Engineering", y: 43,exploded: true,},
+          {label:  "Chemical Engineering", y: 42,exploded: true,},
+          {label:  "Civil Engineering", y: 36,exploded: true,},
           {label:  "Electrical Engineering", y: 36,exploded: true,},
           {label:  "Mechanical Engineering", y: 40,exploded: true,},
-          {label:  "Mining Engineering", y: 34,exploded: true},
+          {label:  "Mining Engineering", y: 40,exploded: true},
           {label:  "Aeronautical Engineering", y: 40,exploded: true,}
         ]
+
+	
 
   var ac = num;
   if(ac==1){
     var Aps = Witsaps;
   }else if(ac==2){
     var Aps = UJaps;
+	data = [
+          {label:  "APPLIED MATHEMATICS AND COMPUTER SCIENCE ", y: 31, exploded: true,},
+          {label: "BIOCHEMISTRY AND BOTANY", y: 30,exploded: true,},
+          {label: "MATHEMATICS AND MATHEMATICAL STATISTICS", y : 33,exploded: true,},
+          {label:  "ZOOLOGY AND BIOCHEMISTRY", y :30,exploded: true,},
+          {label:  "PHYSICS AND MATHEMATICS", y: 31,exploded: true,},
+          {label:  "CHEMICAL ENGINEERING", y: 30,exploded: true,},
+          {label:  "MINING ENGINEERING", y: 23,exploded: true,},
+          {label:  "CIVIL ENGINEERING", y: 32,exploded: true,},
+          {label:  "ELECTRICAL ENGINEERING", y: 32,exploded: true,},
+          {label:  "ACCOUNTING (CA)", y: 33,exploded: true,},
+          {label:  "FINANCE", y: 28,exploded: true},
+          {label:  "INFORMATION SYSTEMS", y: 26,exploded: true,},
+	  {label: "ACCOUNTING", y : 28,exploded: true,},
+          {label:  "ECONOMICS AND ECONOMETRICS", y :28,exploded: true,},
+          {label:  "SOCIAL SCIENCES", y: 27,exploded: true,},
+          {label:  "POLITICS AND INTERNATIONAL RELATIONS", y: 27,exploded: true,},
+          {label:  "LANGUAGE PRACTICE", y: 27,exploded: true,},
+          {label:  "POLITICS, PHILOSOPHY AND ECONOMICS", y: 27,exploded: true,},
+          {label:  "FILM AND TELEVISION STUDIES", y: 27,exploded: true,}
+	]
+        
   } else if(ac==3){
     var Aps = UPaps;
+	data = [
+          {label:  "COMPUTER SCIENCE ", y: 30, exploded: true,},
+          {label: "Biological Sciences", y: 32,exploded: true,},
+          {label: "Mathematics of Finance", y : 30,exploded: true,},
+          {label:  "APPLIED MATHEMATICS", y :34,exploded: true,},
+          {label:  "PHYSICAL SCIENCE", y: 34,exploded: true,},
+          {label:  "Chemistry", y: 34,exploded: true,},
+          {label:  "POLITICAL SCIENCE", y: 30,exploded: true,},
+          {label:  "FINE ARTS", y: 30,exploded: true,},
+          {label:  "LANGUAGES", y: 30,exploded: true,},
+          {label:  "LAW", y: 30,exploded: true,},
+          {label:  "PHILOSOPHY", y: 32,exploded: true},
+          {label:  "POLITICS", y: 32,exploded: true,},
+	  {label:  "SOCIAL WORK", y: 32,exploded: true,},
+          {label:  "MUSIC AND DRAMA", y: 32,exploded: true},
+        ]
   }
 
 
