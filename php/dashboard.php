@@ -921,7 +921,7 @@ var data = [
           {label:  "Aeronautical Engineering", y: 40,exploded: true,}
         ]
 
-	
+
 
   var ac = num;
   if(ac==1){
@@ -949,7 +949,7 @@ var data = [
           {label:  "POLITICS, PHILOSOPHY AND ECONOMICS", y: 27,exploded: true,},
           {label:  "FILM AND TELEVISION STUDIES", y: 27,exploded: true,}
 	]
-        
+
   } else if(ac==3){
     var Aps = UPaps;
 	data = [
