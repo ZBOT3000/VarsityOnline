@@ -258,6 +258,12 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                       <li>
                                         <a href="upScienceCurriculum.html">Science Curriculum</a>
                                       </li>
+                                      <li>
+                                        <a href="upHumanitiesCurriculum.html">Humanities Curriculum</a>
+                                      </li>
+                                      <li>
+                                        <a href="upCommerceCurriculum.html">Commerce Curriculum</a>
+                                      </li>
                                     </ul>
                                 </li>
 
