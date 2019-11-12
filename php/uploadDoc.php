@@ -32,9 +32,9 @@
 
 							//check if file was loaded to servre
 								if(move_uploaded_file($file_tmp, $file_destination)){
-
-									//echo "Success";
-									header('Location: dashboard.php');
+									
+									echo "YOU HAVE SUCCESSFULLY UPLOADED YOUR DOCUMENTS";
+									echo "<p><a href='dashboard.php'>Go back</a></p>";
 								}
 						}
 							else{
@@ -56,15 +56,15 @@
 			echo "<p><a href='uploadDoc.html'>Go back</a></p>";
 		}
 		//print_r();
-		
+
 		//if(move_uploaded_file($file_tem_Loc, $file_store)){
-		
+
 		//echo "Files Uploaded";
 		//}
-		
-		
-		
-	
+
+
+
+
 	}
 	else{
 			echo "<h1>ERROR: NO FILE</h1>";
@@ -73,6 +73,3 @@
 
 	}
 ?>
-
-
-

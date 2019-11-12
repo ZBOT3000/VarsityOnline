@@ -21,6 +21,7 @@ if (isset($_SESSION['username']))
   $_SESSION["WITS-APS"] =0;
   $_SESSION["UJ-APS"] = 0;
   $_SESSION["UP-APS"]=0;
+  $_SESSION["UCT-APS"]=0;
 $str = $_SESSION['username'];
 $str = preg_replace('/\D/', '', $str);
 $_SESSION['user_id']=$str;
@@ -91,13 +92,20 @@ if ( mysqli_num_rows( $result4 ) > 0 )
   $_SESSION["SUBJ2_MARK"] = $rows[0]["SUBJ2_MARK"];
   $_SESSION["SUBJ3_MARK"] = $rows[0]["SUBJ3_MARK"];
   $_SESSION["LO_MARK"] = $rows[0]["LO_MARK"];
+    //Wits APS
   $_SESSION["WITS-APS"]=APS($_SESSION["FA_LAN_MARK"])+APS($_SESSION["SUBJ2_MARK"])+APS($_SESSION["SUBJ3_MARK"])+APS($_SESSION["SUBJ1_MARK"]);
   $_SESSION["WITS-APS"] = $_SESSION["WITS-APS"]+APS_LO($_SESSION["LO_MARK"])+APS_EM($_SESSION["MATH_SUBJ_MARK"])+APS_EM($_SESSION["HOME_LAN_MARK"]);
-
+  // UJ and UP APS
   $_SESSION["UJ-APS"]=UJAPS($_SESSION["FA_LAN_MARK"])+UJAPS($_SESSION["SUBJ2_MARK"])+UJAPS($_SESSION["SUBJ3_MARK"])+UJAPS($_SESSION["SUBJ1_MARK"]);
   $_SESSION["UJ-APS"] = $_SESSION["UJ-APS"]+UJAPS($_SESSION["MATH_SUBJ_MARK"])+UJAPS($_SESSION["HOME_LAN_MARK"]);
 
   $_SESSION["UP-APS"]=$_SESSION["UJ-APS"];
+
+  //Uct APS
+  $_SESSION["UCT-APS"]= $_SESSION["FA_LAN_MARK"]+$_SESSION["SUBJ2_MARK"]+$_SESSION["SUBJ3_MARK"]+$_SESSION["SUBJ1_MARK"];
+  $_SESSION["UCT-APS"] = $_SESSION["UCT-APS"]+$_SESSION["MATH_SUBJ_MARK"]+$_SESSION["HOME_LAN_MARK"];
+  $_SESSION["UCT-APS"] = $_SESSION["UCT-APS"] / 15;
+  $_SESSION["UCT-APS"] = round($_SESSION["UCT-APS"]);
 }
 
 
@@ -203,6 +211,9 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                         </li>
                                         <li>
                                             <a href="Academics.php">Academics</a>
+                                        </li>
+                                        <li>
+                                          <a href="../html/uploadDoc.html">Upload Documents</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -334,6 +345,16 @@ if ( mysqli_num_rows( $result4 ) > 0 )
                                           <th>
                                             <?php
                                             echo $_SESSION["UP-APS"];
+                                             ?>
+                                          </th>
+                                        </tr>
+                                        <tr>
+                                          <th>
+                                            <a href="#" onclick="upLa()">UCT APS</a>
+                                          </th>
+                                          <th>
+                                            <?php
+                                            echo $_SESSION["UCT-APS"];
                                              ?>
                                           </th>
                                         </tr>
