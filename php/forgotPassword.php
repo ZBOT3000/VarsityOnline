@@ -19,17 +19,7 @@
 
         $mail = new PHPMailer();
 
-        $mail->isSMTP();
-        $mail->Host = "mail.lbmsolutions.co.za";
-        $mail->SMTPSecure = "ssl";
-        $mail->Port = 465;
-        $mail->SMTPAuth = true;
-        $mail->Username = 'test@lbmsolutions.co.za';
-        $mail->Password = 'Testing@29';
-        $mail->setFrom('test@lbmsolutions.co.za', 'VarsityOnline');
-        $mail->addAddress($email);
-        $mail->Subject = 'Reset Password';
-        $mail->isHTML(true);
+
 
 
         $mail->Body="
